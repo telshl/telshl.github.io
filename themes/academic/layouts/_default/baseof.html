@@ -14,7 +14,17 @@
 
 <header class="site-header">
   <div class="header-inner">
-    <a href="/" class="site-name">羅世宏</a>
+    <a href="/" class="site-logo" aria-label="羅世宏 首頁">
+      <svg width="160" height="36" viewBox="0 0 160 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- 六邊形徽章 -->
+        <polygon points="18,2 30,9 30,23 18,30 6,23 6,9" fill="none" stroke="white" stroke-width="1.2"/>
+        <text x="18" y="20" font-family="Georgia, serif" font-size="11" font-weight="400" fill="white" text-anchor="middle" letter-spacing="0.05em">SHL</text>
+        <!-- 中文名 -->
+        <text x="42" y="17" font-family="Noto Serif TC, serif" font-size="15" font-weight="300" fill="white" letter-spacing="0.06em">羅世宏</text>
+        <!-- 英文名 -->
+        <text x="42" y="29" font-family="Georgia, serif" font-size="8.5" fill="rgba(255,255,255,0.5)" letter-spacing="0.12em">SHIH-HUNG LO</text>
+      </svg>
+    </a>
     <nav class="site-nav">
       {{ range .Site.Menus.main }}
       <a href="{{ .URL }}" {{ if eq $.RelPermalink .URL }}class="active"{{ end }}>{{ .Name }}</a>

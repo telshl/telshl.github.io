@@ -76,15 +76,14 @@ a:hover { border-bottom-color: var(--accent); }
   height: 60px;
 }
 
-.site-name {
-  font-family: var(--serif);
-  font-size: 1rem;
-  font-weight: 700;
-  color: var(--paper);
-  letter-spacing: 0.05em;
+.site-logo {
+  display: flex;
+  align-items: center;
   border: none;
+  opacity: 1;
+  transition: opacity 0.2s;
 }
-.site-name:hover { border: none; opacity: 0.8; }
+.site-logo:hover { border: none; opacity: 0.8; }
 
 .site-nav { display: flex; gap: 0; }
 .site-nav a {
