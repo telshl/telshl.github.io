@@ -1,0 +1,82 @@
+{{ define "main" }}
+
+<!-- 英雄區 -->
+<section class="hero">
+  <div class="hero-inner">
+
+    <!-- 左欄：照片 -->
+    <div class="hero-photo-col">
+      <div class="hero-photo-wrap">
+        <img src="/img/profile.jpg" alt="羅世宏教授" class="hero-photo">
+      </div>
+    </div>
+
+    <!-- 中欄：主要文字 -->
+    <div class="hero-text">
+      <p class="hero-eyebrow">國立中正大學傳播系</p>
+      <h1>羅世宏</h1>
+      <span class="hero-name-en">Prof. Shih-Hung Lo</span>
+      <div class="hero-rule"></div>
+      <p class="hero-desc">
+        傳播政治經濟學研究者，長期關注媒體改革、新聞業危機與社群媒體批判理論。
+        在學術工作之外，持續以中文寫作介入台灣公共論述，參與媒體改造學社（媒改社）與 weReport 調查報導獎學金計畫。
+      </p>
+      <div class="hero-links">
+        <a href="/publications/" class="btn-primary">學術出版</a>
+        <a href="{{ .Site.Params.substack }}" class="btn-ghost" target="_blank" rel="noopener">前往 Substack 閱讀評論 →</a>
+      </div>
+    </div>
+
+    <!-- 右欄：研究領域 -->
+    <div class="hero-fields">
+      <p class="fields-label">研究領域</p>
+      <div class="field-item">傳播政治經濟學</div>
+      <div class="field-item">媒體改革與媒體政策</div>
+      <div class="field-item">社群媒體批判理論</div>
+      <div class="field-item">新聞業與民主政治</div>
+      <div class="field-item">事實查核與資訊治理</div>
+      <div class="field-item">中國傳媒研究</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- 近期著作 -->
+<div class="page-container">
+  <p class="section-label">代表著作</p>
+  <div class="books-grid">
+    <div class="book-card">
+      <a href="https://www.books.com.tw/products/0010984921" target="_blank" rel="noopener">
+        <img class="book-cover" src="https://static.wixstatic.com/media/697c5b_f092e48f9411487b941f738b70d4fa75~mv2.png" alt="媒體與大眾傳播理論">
+      </a>
+      <p class="book-title">《媒體與大眾傳播理論》</p>
+      <p class="book-year">2023</p>
+    </div>
+    <div class="book-card">
+      <a href="https://www.books.com.tw/products/0010909273" target="_blank" rel="noopener">
+        <img class="book-cover" src="https://static.wixstatic.com/media/697c5b_9a3116d7370f4f4980fda4fcc41c9ad0~mv2.gif" alt="新聞崩壞 何以民主？">
+      </a>
+      <p class="book-title">《新聞崩壞 何以民主？》</p>
+      <p class="book-year">2021</p>
+    </div>
+    <div class="book-card">
+      <a href="http://www.books.com.tw/products/0010748726" target="_blank" rel="noopener">
+        <img class="book-cover" src="https://static.wixstatic.com/media/697c5b_a26553a7f9da46069bde8ed6b75e94ed~mv2.jpg" alt="社群媒體批判理論">
+      </a>
+      <p class="book-title">《社群媒體批判理論》</p>
+      <p class="book-year">2016</p>
+    </div>
+    <div class="book-card">
+      <a href="https://www.books.com.tw/products/0010937968" target="_blank" rel="noopener">
+        <img class="book-cover" src="https://static.wixstatic.com/media/697c5b_b1ad142043924b40b2b2e4e4ef7b943b~mv2.gif" alt="文化研究：理論與實踐">
+      </a>
+      <p class="book-title">《文化研究：理論與實踐》（譯著，第五版）</p>
+      <p class="book-year">2022</p>
+    </div>
+  </div>
+  <div style="margin-top: 2rem;">
+    <a href="/publications/" style="font-family: var(--sans); font-size: 0.85rem; color: var(--accent);">查看完整出版清單 →</a>
+  </div>
+</div>
+
+{{ end }}

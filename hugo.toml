@@ -1,0 +1,41 @@
+baseURL = "https://yourusername.github.io/"
+languageCode = "zh"
+title = "羅世宏 | 中正大學傳播系教授"
+theme = "academic"
+defaultContentLanguage = "zh"
+enableRobotsTXT = true
+
+[params]
+  name = "羅世宏"
+  nameEn = "Shih-Hung Lo"
+  position = "國立中正大學傳播系教授"
+  description = "傳播政治經濟學、媒體改革、社群媒體批判理論"
+  substack = "https://substack.com/@telshl"
+  email = "telshl@ccu.edu.tw"
+
+[menu]
+  [[menu.main]]
+    name = "關於我"
+    url = "/about/"
+    weight = 1
+  [[menu.main]]
+    name = "學術出版"
+    url = "/publications/"
+    weight = 2
+  [[menu.main]]
+    name = "公共評論"
+    url = "/commentary/"
+    weight = 3
+  [[menu.main]]
+    name = "媒體報導"
+    url = "/media/"
+    weight = 4
+  [[menu.main]]
+    name = "聯絡方式"
+    url = "/contact/"
+    weight = 5
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

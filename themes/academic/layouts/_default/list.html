@@ -1,0 +1,16 @@
+{{ define "main" }}
+<div class="page-container">
+  <p class="section-label">{{ .Title }}</p>
+  <div class="prose">{{ .Content }}</div>
+
+  {{ if .Pages }}
+  <ul class="year-list">
+    {{ range .Pages }}
+    <li class="year-item">
+      <a href="{{ .Permalink }}" class="year-link">{{ .Title }}</a>
+    </li>
+    {{ end }}
+  </ul>
+  {{ end }}
+</div>
+{{ end }}
