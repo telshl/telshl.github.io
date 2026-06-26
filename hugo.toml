@@ -1,4 +1,4 @@
-baseURL = "https://yourusername.github.io/"
+baseURL = "https://telshl.github.io/"
 languageCode = "zh"
 title = "羅世宏 | 中正大學傳播系教授"
 theme = "academic"
@@ -11,7 +11,7 @@ enableRobotsTXT = true
   position = "國立中正大學傳播系教授"
   description = "傳播政治經濟學、媒體改革、社群媒體批判理論"
   substack = "https://substack.com/@telshl"
-  email = "telshl@ccu.edu.tw"
+  email = "shihhung.lo@gmail.com"
 
 [menu]
   [[menu.main]]
