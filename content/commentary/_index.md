@@ -4,5 +4,5 @@ title: "公共評論"
 
 長期於《上報》、《信傳媒》、《鏡報新聞網》、《客新聞》、《人間福報》、《思想坦克》、《獨立評論@天下》、台灣事實查核中心等平台發表評論。
 
-完整文章亦收錄於 [Substack 專欄](https://substack.com/@telshl)。
+其他的書寫作品，請見：個人部落格 [Substack](https://substack.com/@telshl)。
 
