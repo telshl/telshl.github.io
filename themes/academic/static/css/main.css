@@ -418,6 +418,9 @@ a:hover { border-bottom-color: var(--accent); }
 }
 
 /* ── 行動裝置 ── */
+/* 漢堡按鈕：桌機隱藏 */
+.nav-toggle { display: none; }
+
 @media (max-width: 768px) {
   html { font-size: 16px; }
   .hero-inner { grid-template-columns: 1fr; gap: 2rem; }
@@ -426,9 +429,55 @@ a:hover { border-bottom-color: var(--accent); }
   .hero-fields { border-left: none; padding-left: 0; border-top: 1px solid rgba(247,245,240,0.12); padding-top: 1.5rem; }
   .hero h1 { font-size: 2.2rem; }
   .books-grid { grid-template-columns: repeat(2, 1fr); }
-  .site-nav { display: none; }
   .commentary-item { grid-template-columns: 1fr; }
   .commentary-meta { margin-top: -0.5rem; }
+
+  /* 漢堡選單按鈕 */
+  .nav-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  .nav-toggle span {
+    display: block;
+    width: 100%;
+    height: 1.5px;
+    background: rgba(247,245,240,0.75);
+    transition: all 0.25s;
+    transform-origin: center;
+  }
+  .nav-toggle.open span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+  .nav-toggle.open span:nth-child(2) { opacity: 0; }
+  .nav-toggle.open span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+  /* 選單收起與展開 */
+  .site-nav {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: var(--ink);
+    flex-direction: column;
+    border-top: 1px solid rgba(247,245,240,0.08);
+    z-index: 99;
+  }
+  .site-nav.open { display: flex; }
+  .site-nav a {
+    height: auto;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid rgba(247,245,240,0.06);
+    font-size: 0.9rem;
+  }
+
+  /* header 需要 position: relative 讓選單定位正確 */
+  .site-header { position: relative; }
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -25,13 +25,24 @@
         <text x="42" y="29" font-family="Georgia, serif" font-size="8.5" fill="rgba(255,255,255,0.5)" letter-spacing="0.12em">SHIH-HUNG LO</text>
       </svg>
     </a>
-    <nav class="site-nav">
+    <nav class="site-nav" id="site-nav">
       {{ range .Site.Menus.main }}
       <a href="{{ .URL }}" {{ if eq $.RelPermalink .URL }}class="active"{{ end }}>{{ .Name }}</a>
       {{ end }}
     </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-label="開啟選單">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </header>
+<script>
+  document.getElementById('nav-toggle').addEventListener('click', function() {
+    var nav = document.getElementById('site-nav');
+    var btn = document.getElementById('nav-toggle');
+    nav.classList.toggle('open');
+    btn.classList.toggle('open');
+  });
+</script>
 
 <main>
   {{ block "main" . }}{{ end }}
