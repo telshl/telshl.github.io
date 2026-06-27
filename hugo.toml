@@ -1,6 +1,6 @@
 baseURL = "https://telshl.github.io/"
 languageCode = "zh"
-title = "羅世宏 | 中正大學傳播系教授"
+title = "羅世宏 | Shih-Hung Lo"
 theme = "academic"
 defaultContentLanguage = "zh"
 enableRobotsTXT = true
@@ -9,31 +9,50 @@ enableRobotsTXT = true
   name = "羅世宏"
   nameEn = "Shih-Hung Lo"
   position = "國立中正大學傳播系教授"
-  description = "傳播政治經濟學、媒體改革、社群媒體批判理論"
+  description = "Research, Books, Public Writings, Media, Democracy, Platforms and AI"
   substack = "https://substack.com/@telshl"
   email = "shihhung.lo@gmail.com"
 
 [menu]
   [[menu.main]]
-    name = "關於我"
-    url = "/about/"
+    name = "首頁"
+    url = "/"
     weight = 1
+
   [[menu.main]]
-    name = "學術出版"
-    url = "/publications/"
+    name = "關於"
+    url = "/about/"
     weight = 2
+
   [[menu.main]]
-    name = "公共評論"
-    url = "/commentary/"
+    name = "著作"
+    url = "/books/"
     weight = 3
+
   [[menu.main]]
-    name = "媒體報導"
-    url = "/media/"
+    name = "研究"
+    url = "/research/"
     weight = 4
+
   [[menu.main]]
-    name = "聯絡方式"
-    url = "/contact/"
+    name = "出版"
+    url = "/publications/"
     weight = 5
+
+  [[menu.main]]
+    name = "評論"
+    url = "/commentary/"
+    weight = 6
+
+  [[menu.main]]
+    name = "媒體"
+    url = "/media/"
+    weight = 7
+
+  [[menu.main]]
+    name = "聯絡"
+    url = "/contact/"
+    weight = 8
 
 [markup]
   [markup.goldmark]
