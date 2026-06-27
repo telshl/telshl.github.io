@@ -1,6 +1,12 @@
 {{ define "main" }}
 <div class="page-container">
-  <p class="section-label">{{ .Title }}</p>
+  {{ if not (findRE "<h1" .Content 1) }}
+  <header class="page-header">
+    <p class="section-label">{{ .Type | default "Page" }}</p>
+    <h1 class="page-title">{{ .Title }}</h1>
+    {{ with .Description }}<p class="page-description">{{ . }}</p>{{ end }}
+  </header>
+  {{ end }}
   <div class="prose">
     {{ .Content }}
   </div>

@@ -1012,3 +1012,35 @@ a:hover { border-bottom-color: var(--accent); }
 }
 
 /* Version 3.2：首頁 Hero 精修，縮小個人照片並改善比例與留白。 */
+
+
+/* ============================================
+   Version 4.1：語意頁首與 SEO 友善頁面標題
+   ============================================ */
+.page-header {
+  max-width: 760px;
+  margin-bottom: 2.2rem;
+}
+
+.page-title {
+  font-size: clamp(2rem, 4vw, 2.65rem);
+  letter-spacing: 0.01em;
+  margin: 0 0 0.85rem;
+}
+
+.page-description {
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  line-height: 1.85;
+  color: var(--ink-mid);
+  max-width: 720px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 1060px) {
+  .site-nav a {
+    padding-left: 0.68rem;
+    padding-right: 0.68rem;
+    font-size: 0.76rem;
+  }
+}

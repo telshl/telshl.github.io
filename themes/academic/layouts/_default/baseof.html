@@ -3,10 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Params.name }}{{ end }}</title>
-  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-  <meta property="og:title" content="{{ .Title }}">
-  <meta property="og:type" content="website">
+  {{ $title := cond .IsHome .Site.Title (printf "%s | %s" .Title .Site.Params.name) }}
+  {{ $description := cond (ne .Description "") .Description .Site.Params.description }}
+  {{ $canonical := .Permalink }}
+  {{ $image := .Site.Params.image | default "img/profile.jpg" | absURL }}
+  <title>{{ $title }}</title>
+  <meta name="description" content="{{ $description }}">
+  <link rel="canonical" href="{{ $canonical }}">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:site_name" content="{{ .Site.Title }}">
+  <meta property="og:title" content="{{ $title }}">
+  <meta property="og:description" content="{{ $description }}">
+  <meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
+  <meta property="og:url" content="{{ $canonical }}">
+  <meta property="og:image" content="{{ $image }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ $title }}">
+  <meta name="twitter:description" content="{{ $description }}">
+  <meta name="twitter:image" content="{{ $image }}">
+  {{ if .IsHome }}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "{{ .Site.Params.name }}",
+    "alternateName": "{{ .Site.Params.nameEn }}",
+    "jobTitle": "{{ .Site.Params.position }}",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "國立中正大學"
+    },
+    "url": "{{ .Site.BaseURL }}",
+    "image": "{{ $image }}",
+    "email": "mailto:{{ .Site.Params.email }}",
+    "sameAs": [
+      "{{ .Site.Params.substack }}"
+    ],
+    "knowsAbout": [
+      "傳播政治經濟學",
+      "媒體改革",
+      "新聞業危機",
+      "平台治理",
+      "事實查核",
+      "人工智慧與公共傳播"
+    ]
+  }
+  </script>
+  {{ end }}
   <link rel="stylesheet" href="/css/main.css">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>羅</text></svg>">
 </head>
