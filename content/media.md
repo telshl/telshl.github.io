@@ -7,27 +7,59 @@ description: "羅世宏教授媒體引用、採訪、演講、論壇與公共討
 
 ## 媒體引用
 
-### 2026
+<div class="media-year-block">
+  <h3>2026</h3>
+  <div class="media-archive-list">
+    <article class="media-archive-item">
+      <div class="article-date">2026-06-22</div>
+      <div class="article-main">
+        <h4 class="article-title"><a href="https://tcnn.org.tw/archives/278007" target="_blank" rel="noopener">全球新聞信任度近十年最低 社群片段傳播不利查核</a></h4>
+        <p class="article-meta"><span class="article-source">台灣教會公報</span></p>
+      </div>
+    </article>
+    <article class="media-archive-item">
+      <div class="article-date">2026-06-21</div>
+      <div class="article-main">
+        <h4 class="article-title"><a href="https://www.epochtimes.com/b5/26/6/21/n14793601.htm" target="_blank" rel="noopener">社群影音首超電視 成新聞主要來源</a></h4>
+        <p class="article-meta"><span class="article-source">大紀元</span></p>
+      </div>
+    </article>
+    <article class="media-archive-item">
+      <div class="article-date">2026-06-17</div>
+      <div class="article-main">
+        <h4 class="article-title"><a href="https://news.pts.org.tw/article/813414" target="_blank" rel="noopener">社群平台成全球最廣泛新聞來源 新聞信任度僅剩37％創新低</a></h4>
+        <p class="article-meta"><span class="article-source">公視新聞網</span></p>
+      </div>
+    </article>
+    <article class="media-archive-item">
+      <div class="article-date">2026-06-17</div>
+      <div class="article-main">
+        <h4 class="article-title"><a href="https://www.merit-times.com/news/517494" target="_blank" rel="noopener">AI爬蟲吃掉新聞流量 媒體經營模式拉警報</a></h4>
+        <p class="article-meta"><span class="article-source">人間福報</span></p>
+      </div>
+    </article>
+  </div>
+</div>
 
-**2026-06-22**
-- 〈[全球新聞信任度近十年最低 社群片段傳播不利查核](https://tcnn.org.tw/archives/278007)〉，《台灣教會公報》，2026-06-22。
-
-**2026-06-21**
-- 〈[社群影音首超電視 成新聞主要來源](https://www.epochtimes.com/b5/26/6/21/n14793601.htm)〉，《大紀元》，2026-06-21。
-
-**2026-06-17**
-- 〈[社群平台成全球最廣泛新聞來源 新聞信任度僅剩37％創新低](https://news.pts.org.tw/article/813414)〉，《公視新聞網》，2026-06-17。
-- 〈[社群平台成全球最廣泛新聞來源 新聞信任度僅剩37％創新低](https://www.epochtimes.com.tw/n506063/%E7%A4%BE%E7%BE%A4%E5%B9%B3%E5%8F%B0%E6%88%90%E5%85%A8%E7%90%83%E6%9C%80%E5%BB%A3%E6%B3%9B%E6%96%B0%E8%81%9E%E4%BE%86%E6%BA%90-%E6%96%B0%E8%81%9E%E4%BF%A1%E4%BB%BB%E5%BA%A6%E5%83%85%E5%89%A937%EF%BC%85%E5%89%B5%E6%96%B0%E4%BD%8E.html)〉，《大紀元》，2026-06-17。
-- 〈[AI爬蟲吃掉新聞流量 媒體經營模式拉警報](https://www.merit-times.com/news/517494)〉，《人間福報》，2026-06-17。
-- 〈[社群平台成全球最廣泛新聞來源 新聞信任度僅剩37％創新低](https://tw.news.yahoo.com/%E7%A4%BE%E7%BE%A4%E5%B9%B3%E5%8F%B0%E6%88%90%E5%85%A8%E7%90%83%E6%9C%80%E5%BB%A3%E6%B3%9B%E6%96%B0%E8%81%9E%E4%BE%86%E6%BA%90-%E6%96%B0%E8%81%9E%E4%BF%A1%E4%BB%BB%E5%BA%A6%E5%83%85%E5%89%A937-%E5%89%B5%E6%96%B0%E4%BD%8E-045828366.html)〉，《Yahoo新聞》，2026-06-17。
-
-### 2025
-
-**2025-03-25**
-- 〈[中國時報媒體報導（2025-03-25）](https://www.chinatimes.com/newspapers/20250325000577-260109)〉，《中國時報》，2025-03-25。
-
-**2025-03-24**
-- 〈[中國時報媒體報導（2025-03-24）](https://www.chinatimes.com/newspapers/20250324000414-260118)〉，《中國時報》，2025-03-24。
+<div class="media-year-block">
+  <h3>2025</h3>
+  <div class="media-archive-list">
+    <article class="media-archive-item">
+      <div class="article-date">2025-03-25</div>
+      <div class="article-main">
+        <h4 class="article-title"><a href="https://www.chinatimes.com/newspapers/20250325000577-260109" target="_blank" rel="noopener">中國時報媒體報導（2025-03-25）</a></h4>
+        <p class="article-meta"><span class="article-source">中國時報</span></p>
+      </div>
+    </article>
+    <article class="media-archive-item">
+      <div class="article-date">2025-03-24</div>
+      <div class="article-main">
+        <h4 class="article-title"><a href="https://www.chinatimes.com/newspapers/20250324000414-260118" target="_blank" rel="noopener">中國時報媒體報導（2025-03-24）</a></h4>
+        <p class="article-meta"><span class="article-source">中國時報</span></p>
+      </div>
+    </article>
+  </div>
+</div>
 
 ---
 

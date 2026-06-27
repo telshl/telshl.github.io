@@ -99,18 +99,29 @@
       <a href="{{ .URL }}" {{ if eq $.RelPermalink .URL }}class="active"{{ end }}>{{ .Name }}</a>
       {{ end }}
     </nav>
-    <button class="nav-toggle" id="nav-toggle" aria-label="開啟選單">
+    <button class="nav-toggle" id="nav-toggle" aria-label="開啟選單" aria-expanded="false" aria-controls="site-nav">
       <span></span><span></span><span></span>
     </button>
   </div>
 </header>
 <script>
-  document.getElementById('nav-toggle').addEventListener('click', function() {
+  (function() {
     var nav = document.getElementById('site-nav');
     var btn = document.getElementById('nav-toggle');
-    nav.classList.toggle('open');
-    btn.classList.toggle('open');
-  });
+    if (!nav || !btn) return;
+    btn.addEventListener('click', function() {
+      var isOpen = nav.classList.toggle('open');
+      btn.classList.toggle('open', isOpen);
+      btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+    nav.querySelectorAll('a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        nav.classList.remove('open');
+        btn.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+      });
+    });
+  })();
 </script>
 
 <main>
@@ -118,14 +129,18 @@
 </main>
 
 <footer class="site-footer">
-  <div class="footer-inner">
-    <div class="footer-name">{{ .Site.Params.name }}｜{{ .Site.Params.position }}</div>
-    <div class="footer-links">
+  <div class="footer-inner footer-inner-v2">
+    <div class="footer-main">
+      <div class="footer-name">{{ .Site.Params.name }}｜{{ .Site.Params.position }}</div>
+      <p class="footer-desc">Media, Democracy, Platforms &amp; Public Knowledge</p>
+    </div>
+    <div class="footer-links footer-links-v2" aria-label="公開連結">
       <a href="{{ .Site.Params.substack }}" target="_blank" rel="noopener">Substack</a>
+      <a href="/en/">English</a>
       <a href="mailto:{{ .Site.Params.email }}">Email</a>
     </div>
     <div class="footer-copy">
-      © {{ now.Year }} {{ .Site.Params.nameEn }}. 國立中正大學傳播系.
+      © {{ now.Year }} {{ .Site.Params.nameEn }}. 國立中正大學傳播系. Built as a public academic archive.
     </div>
   </div>
 </footer>

@@ -7,7 +7,7 @@
     {{ with .Description }}<p class="page-description">{{ . }}</p>{{ end }}
   </header>
   {{ end }}
-  <div class="prose">
+  <div class="prose page-content page-section-{{ .Section }}{{ with .File }} page-file-{{ .BaseFileName }}{{ end }}">
     {{ .Content }}
   </div>
 </div>

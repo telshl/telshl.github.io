@@ -8,7 +8,7 @@
   </header>
   {{ end }}
 
-  <div class="prose">{{ .Content }}</div>
+  <div class="prose page-content page-section-{{ .Section }}{{ with .File }} page-file-{{ .BaseFileName }}{{ end }}">{{ .Content }}</div>
 
   {{ if .Pages }}
   <ul class="year-list">

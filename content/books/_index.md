@@ -17,7 +17,7 @@ description: "羅世宏教授代表著作、譯著、編著與出版計畫，涵
 
   <div class="book-feature-card book-meta-card">
     <a href="https://www.books.com.tw/products/0010984921" target="_blank" rel="noopener">
-      <img class="book-feature-cover" src="https://static.wixstatic.com/media/697c5b_f092e48f9411487b941f738b70d4fa75~mv2.png" alt="媒體與大眾傳播理論">
+      <img class="book-feature-cover" src="/img/books/media-mass-communication-theory.png" alt="媒體與大眾傳播理論">
     </a>
     <div>
       <h2>《媒體與大眾傳播理論》</h2>
@@ -34,7 +34,7 @@ description: "羅世宏教授代表著作、譯著、編著與出版計畫，涵
 
   <div class="book-feature-card book-meta-card">
     <a href="https://www.books.com.tw/products/0010909273" target="_blank" rel="noopener">
-      <img class="book-feature-cover" src="https://static.wixstatic.com/media/697c5b_9a3116d7370f4f4980fda4fcc41c9ad0~mv2.gif" alt="新聞崩壞 何以民主？">
+      <img class="book-feature-cover" src="/img/books/journalism-crisis-democracy.png" alt="新聞崩壞 何以民主？">
     </a>
     <div>
       <h2>《新聞崩壞 何以民主？》</h2>
@@ -51,7 +51,7 @@ description: "羅世宏教授代表著作、譯著、編著與出版計畫，涵
 
   <div class="book-feature-card book-meta-card">
     <a href="http://www.books.com.tw/products/0010748726" target="_blank" rel="noopener">
-      <img class="book-feature-cover" src="https://static.wixstatic.com/media/697c5b_a26553a7f9da46069bde8ed6b75e94ed~mv2.jpg" alt="社群媒體批判理論">
+      <img class="book-feature-cover" src="/img/books/critical-theory-social-media.png" alt="社群媒體批判理論">
     </a>
     <div>
       <h2>《社群媒體批判理論》</h2>
@@ -68,7 +68,7 @@ description: "羅世宏教授代表著作、譯著、編著與出版計畫，涵
 
   <div class="book-feature-card book-meta-card">
     <a href="https://www.books.com.tw/products/0010937968" target="_blank" rel="noopener">
-      <img class="book-feature-cover" src="https://static.wixstatic.com/media/697c5b_b1ad142043924b40b2b2e4e4ef7b943b~mv2.gif" alt="文化研究：理論與實踐">
+      <img class="book-feature-cover" src="/img/books/cultural-studies-theory-practice.png" alt="文化研究：理論與實踐">
     </a>
     <div>
       <h2>《文化研究：理論與實踐》</h2>
