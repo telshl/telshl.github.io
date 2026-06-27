@@ -525,3 +525,44 @@ a:hover { border-bottom-color: var(--accent); }
 .prose h2 {
   margin-top: 3rem;
 }
+
+/* ── Research Themes 區塊 ── */
+.themes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.theme-card {
+  padding: 1.5rem;
+  border: 1px solid var(--rule);
+  background: var(--paper-dark);
+  transition: border-color 0.2s;
+}
+
+.theme-card:hover {
+  border-color: var(--accent);
+}
+
+.theme-title {
+  font-family: var(--serif);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 0.6rem;
+  line-height: 1.4;
+}
+
+.theme-desc {
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  color: var(--ink-mid);
+  line-height: 1.7;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .themes-grid { grid-template-columns: 1fr; gap: 1rem; }
+}
