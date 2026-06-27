@@ -1,26 +1,45 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="{{ .Params.lang | default .Site.LanguageCode }}">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {{ $pageLang := .Params.lang | default .Site.LanguageCode }}
+  {{ $ogLocale := cond (eq $pageLang "en") "en_US" "zh_TW" }}
   {{ $title := cond .IsHome .Site.Title (printf "%s | %s" .Title .Site.Params.name) }}
-  {{ $description := cond (ne .Description "") .Description .Site.Params.description }}
+  {{ $description := (cond (ne .Description "") .Description .Site.Params.description) | plainify }}
   {{ $canonical := .Permalink }}
-  {{ $image := .Site.Params.image | default "img/profile.jpg" | absURL }}
+  {{ $image := .Site.Params.image | default "img/og-image.png" | absURL }}
+  {{ $imageAlt := .Site.Params.imageAlt | default .Site.Title }}
   <title>{{ $title }}</title>
   <meta name="description" content="{{ $description }}">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="{{ $pageLang }}">
   <link rel="canonical" href="{{ $canonical }}">
-  <meta property="og:locale" content="zh_TW">
+  {{ if eq $pageLang "en" }}
+  <link rel="alternate" hreflang="en" href="{{ $canonical }}">
+  <link rel="alternate" hreflang="zh-TW" href="{{ .Site.BaseURL }}">
+  {{ else }}
+  <link rel="alternate" hreflang="zh-TW" href="{{ $canonical }}">
+  <link rel="alternate" hreflang="en" href="{{ "en/" | absURL }}">
+  {{ end }}
+  <link rel="alternate" hreflang="x-default" href="{{ .Site.BaseURL }}">
+  <meta property="og:locale" content="{{ $ogLocale }}">
   <meta property="og:site_name" content="{{ .Site.Title }}">
+  <meta property="og:locale:alternate" content="{{ if eq $pageLang "en" }}zh_TW{{ else }}en_US{{ end }}">
   <meta property="og:title" content="{{ $title }}">
   <meta property="og:description" content="{{ $description }}">
-  <meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
+  <meta property="og:type" content="{{ if .IsHome }}website{{ else if eq .RelPermalink "/about/" }}profile{{ else }}article{{ end }}">
   <meta property="og:url" content="{{ $canonical }}">
   <meta property="og:image" content="{{ $image }}">
+  <meta property="og:image:secure_url" content="{{ $image }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="{{ $imageAlt }}">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{ $title }}">
   <meta name="twitter:description" content="{{ $description }}">
   <meta name="twitter:image" content="{{ $image }}">
+  <meta name="twitter:image:alt" content="{{ $imageAlt }}">
   {{ if .IsHome }}
   <script type="application/ld+json">
   {
@@ -29,17 +48,30 @@
     "name": "{{ .Site.Params.name }}",
     "alternateName": "{{ .Site.Params.nameEn }}",
     "jobTitle": "{{ .Site.Params.position }}",
+    "description": "{{ .Site.Params.description }}",
+    "url": "{{ .Site.BaseURL }}",
+    "image": "{{ (.Site.Params.profileImage | default "img/profile.jpg") | absURL }}",
+    "email": "mailto:{{ .Site.Params.email }}",
+    "worksFor": {
+      "@type": "CollegeOrUniversity",
+      "name": "National Chung Cheng University",
+      "alternateName": "國立中正大學"
+    },
     "affiliation": {
       "@type": "CollegeOrUniversity",
-      "name": "國立中正大學"
+      "name": "National Chung Cheng University",
+      "alternateName": "國立中正大學"
     },
-    "url": "{{ .Site.BaseURL }}",
-    "image": "{{ $image }}",
-    "email": "mailto:{{ .Site.Params.email }}",
     "sameAs": [
       "{{ .Site.Params.substack }}"
     ],
     "knowsAbout": [
+      "Political Economy of Communication",
+      "Media Reform",
+      "Journalism Crisis",
+      "Platform Governance",
+      "Fact-Checking",
+      "AI and Public Communication",
       "傳播政治經濟學",
       "媒體改革",
       "新聞業危機",

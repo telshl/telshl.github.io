@@ -9,8 +9,10 @@ enableRobotsTXT = true
   name = "羅世宏"
   nameEn = "Shih-Hung Lo"
   position = "國立中正大學傳播系教授"
-  description = "羅世宏教授個人網站，聚焦媒體制度、新聞業危機、平台治理、事實查核與 AI 時代的公共傳播秩序。"
-  image = "img/profile.jpg"
+  description = "羅世宏教授個人網站，聚焦媒體制度、新聞業危機、平台治理、事實查核、AI 傳播秩序與民主公共知識。"
+  image = "img/og-image.png"
+  imageAlt = "羅世宏教授｜Media, Democracy, Platforms & Public Knowledge"
+  profileImage = "img/profile.jpg"
   substack = "https://substack.com/@telshl"
   email = "shihhung.lo@gmail.com"
 
@@ -54,6 +56,11 @@ enableRobotsTXT = true
     name = "聯絡"
     url = "/contact/"
     weight = 8
+
+  [[menu.main]]
+    name = "EN"
+    url = "/en/"
+    weight = 9
 
 [markup]
   [markup.goldmark]

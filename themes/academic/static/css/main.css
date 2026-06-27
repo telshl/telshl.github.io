@@ -1165,3 +1165,22 @@ a:hover { border-bottom-color: var(--accent); }
     gap: 0.15rem;
   }
 }
+
+
+/* Version 4.4：Phase 3 SEO、社群分享與英文入口。 */
+
+.english-entry-block p {
+  font-family: var(--sans);
+}
+
+.prose .english-entry-block h1 {
+  margin-bottom: 0.55rem;
+}
+
+@media (max-width: 1120px) {
+  .site-nav a {
+    padding-left: 0.55rem;
+    padding-right: 0.55rem;
+    font-size: 0.73rem;
+  }
+}

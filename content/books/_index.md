@@ -1,6 +1,6 @@
 ---
 title: "著作"
-description: "羅世宏教授的代表著作、譯著、編著與出版計畫。"
+description: "羅世宏教授代表著作、譯著、編著與出版計畫，涵蓋傳播理論、文化研究、新聞業危機與平台批判。"
 ---
 
 <div class="page-intro-block">

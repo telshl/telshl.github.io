@@ -1,6 +1,6 @@
 ---
 title: "關於我"
-description: "羅世宏教授簡介，包括學術經歷、研究領域、媒體改革、事實查核與公共傳播實踐。"
+description: "羅世宏教授中英文簡介，包括學術經歷、研究領域、媒體改革、事實查核與公共傳播實踐。"
 ---
 
 羅世宏在研究媒體的同時，也持續試圖改變它。
@@ -10,6 +10,16 @@ description: "羅世宏教授簡介，包括學術經歷、研究領域、媒體
 他的研究核心：當數位平台重組傳播生態、民主政治陷入資訊危機，新聞業能否存續？公共政策應當如何回應？這個問題在他的期刊論文、政策諮詢與公共評論中反覆出現，以不同形式尋找答案。
 
 近年研究聚焦於和平新聞學、氣候新聞學、事實查核機制在民主選舉中的角色、平台問責的跨國政策比較，以及人工智慧對傳播生態的結構性影響。
+
+---
+
+## English Profile
+
+Shih-Hung Lo is Professor of Communication at National Chung Cheng University, Taiwan. His research focuses on media institutions, journalism crisis, platform governance, fact-checking, media reform, and the transformation of public communication in the age of AI.
+
+Alongside his academic work, he has long been involved in public media reform and civic communication initiatives in Taiwan. He co-founded the Media Reform Coalition and the weReport investigative journalism platform, and served as Board Chair of the Taiwan FactCheck Center from 2022 to 2026.
+
+His current work examines how democratic societies can rebuild public knowledge and social trust under the pressures of platformization, information disorder, and generative AI.
 
 ---
 
