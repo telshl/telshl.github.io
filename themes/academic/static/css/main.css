@@ -566,3 +566,147 @@ a:hover { border-bottom-color: var(--accent); }
 @media (max-width: 768px) {
   .themes-grid { grid-template-columns: 1fr; gap: 1rem; }
 }
+
+/* ── 書籍說明文字 ── */
+.book-desc {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  color: var(--ink-mid);
+  line-height: 1.65;
+  margin-top: 0.5rem;
+}
+
+/* ── Publications 頁專用樣式 ── */
+
+.pub-section-title {
+  font-family: var(--serif);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--ink);
+  padding-bottom: 0.6rem;
+  border-bottom: 2px solid var(--ink);
+  margin-bottom: 1.5rem;
+  margin-top: 0;
+}
+
+/* 專書卡片 */
+.pub-books-section { margin-bottom: 1rem; }
+
+.pub-books-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.pub-book-card {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 1.2rem;
+  align-items: start;
+  padding: 1.2rem;
+  border: 1px solid var(--rule);
+  background: var(--paper-dark);
+  transition: border-color 0.2s;
+}
+.pub-book-card:hover { border-color: var(--accent); }
+
+.pub-book-cover {
+  width: 100px;
+  aspect-ratio: 2/3;
+  object-fit: cover;
+  display: block;
+  border: 1px solid var(--rule);
+}
+
+.pub-book-title {
+  font-family: var(--serif);
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 0.3rem;
+  line-height: 1.5;
+}
+
+.pub-book-meta {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  color: var(--ink-light);
+  margin-bottom: 0.6rem;
+}
+
+.pub-book-desc {
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  color: var(--ink-mid);
+  line-height: 1.65;
+  margin-bottom: 0.8rem;
+}
+
+.pub-book-link {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  color: var(--accent);
+  border: none;
+  font-weight: 500;
+}
+.pub-book-link:hover { border-bottom: 1px solid var(--accent); }
+
+/* 論文條目 */
+.pub-section { margin-bottom: 1rem; }
+
+.pub-entry {
+  display: grid;
+  grid-template-columns: 3.2rem 1fr;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--rule);
+  align-items: start;
+}
+
+.pub-entry-year {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--ink-light);
+  padding-top: 0.15rem;
+  letter-spacing: 0.03em;
+}
+
+.pub-entry-title {
+  font-family: var(--serif);
+  font-size: 0.92rem;
+  color: var(--ink);
+  line-height: 1.65;
+  margin-bottom: 0.3rem;
+}
+
+.pub-entry-meta {
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  color: var(--ink-mid);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.pub-doi {
+  display: inline-block;
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  color: var(--paper);
+  background: var(--accent);
+  padding: 0.15rem 0.5rem;
+  border-radius: 2px;
+  margin-left: 0.4rem;
+  border: none;
+  vertical-align: middle;
+  letter-spacing: 0.04em;
+}
+.pub-doi:hover { background: #4060a8; border: none; }
+
+/* RWD */
+@media (max-width: 768px) {
+  .pub-books-grid { grid-template-columns: 1fr; }
+  .pub-book-card { grid-template-columns: 80px 1fr; }
+  .pub-book-cover { width: 80px; }
+}
