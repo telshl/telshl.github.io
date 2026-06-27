@@ -54,31 +54,6 @@
   </div>
 </section>
 
-<section class="latest-section">
-  <div class="section-heading">
-    <p class="section-label">Latest Updates</p>
-    <h2 class="section-title">最新更新</h2>
-    <p class="section-intro">
-      收錄近期新增的研究、著作、公共評論與媒體報導。
-    </p>
-  </div>
-
-  <div class="latest-list">
-    {{ range first 5 (sort .Site.Data.updates "date" "desc") }}
-    <article class="latest-item">
-      <p class="latest-meta">{{ .date }}｜{{ .type }}</p>
-      <h3>
-        {{ if .url }}
-        <a href="{{ .url | relURL }}">{{ .title }}</a>
-        {{ else }}
-        {{ .title }}
-        {{ end }}
-      </h3>
-    </article>
-    {{ end }}
-  </div>
-</section>
-
 <section class="page-container latest-updates-section">
   <div class="section-heading-row">
     <div>

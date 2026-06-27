@@ -1044,3 +1044,457 @@ a:hover { border-bottom-color: var(--accent); }
     font-size: 0.76rem;
   }
 }
+
+/* Version 4.3：Phase 2 知識檔案館深化。 */
+
+.research-topic-card h3 {
+  margin-top: 1rem;
+  margin-bottom: 0.35rem;
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
+.research-topic-card ul,
+.topic-index-block ul {
+  margin: 0.25rem 0 0 1.05rem;
+  padding: 0;
+  font-family: var(--sans);
+  font-size: 0.83rem;
+  line-height: 1.72;
+  color: var(--ink-mid);
+}
+
+.research-topic-card li,
+.topic-index-block li {
+  margin-bottom: 0.35rem;
+}
+
+.book-meta-list {
+  display: grid;
+  gap: 0.35rem;
+  margin: 0.55rem 0 0.85rem;
+  font-family: var(--sans);
+  font-size: 0.84rem;
+}
+
+.book-meta-list div {
+  display: grid;
+  grid-template-columns: 82px 1fr;
+  gap: 0.7rem;
+  border-top: 1px solid rgba(200,195,184,0.75);
+  padding-top: 0.35rem;
+}
+
+.book-meta-list dt {
+  color: var(--ink-light);
+  font-weight: 700;
+}
+
+.book-meta-list dd {
+  margin: 0;
+  color: var(--ink-mid);
+}
+
+.publication-list {
+  display: grid;
+  gap: 0.75rem;
+  margin: 1rem 0 2.2rem;
+}
+
+.compact-publication-list {
+  gap: 0.6rem;
+}
+
+.publication-item {
+  padding: 0.9rem 1rem;
+  border-left: 3px solid var(--rule);
+  background: rgba(237,234,227,0.36);
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  line-height: 1.75;
+  color: var(--ink-mid);
+}
+
+.publication-item strong {
+  color: var(--ink);
+}
+
+.topic-index-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.2rem 0 2.6rem;
+}
+
+.topic-index-block {
+  padding: 1.15rem;
+  border: 1px solid rgba(200,195,184,0.9);
+  background: rgba(255,255,255,0.24);
+}
+
+.topic-index-block h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.55rem;
+}
+
+.media-note-block {
+  padding: 1rem 1.1rem;
+  border-left: 3px solid var(--accent);
+  background: rgba(237,234,227,0.54);
+  margin: 1rem 0 2rem;
+}
+
+.media-note-block p {
+  margin: 0;
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  color: var(--ink-mid);
+  line-height: 1.75;
+}
+
+@media (max-width: 768px) {
+  .topic-index-list {
+    grid-template-columns: 1fr;
+  }
+
+  .book-meta-list div {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+  }
+}
+
+
+/* Version 4.4：Phase 3 SEO、社群分享與英文入口。 */
+
+.english-entry-block p {
+  font-family: var(--sans);
+}
+
+.prose .english-entry-block h1 {
+  margin-bottom: 0.55rem;
+}
+
+@media (max-width: 1120px) {
+  .site-nav a {
+    padding-left: 0.55rem;
+    padding-right: 0.55rem;
+    font-size: 0.73rem;
+  }
+}
+
+/* ============================================
+   Version 4.5：Phase 4 視覺與閱讀體驗升級
+   ============================================ */
+
+/* 首頁：最新更新 */
+.latest-updates-section {
+  padding-top: 3.2rem;
+  padding-bottom: 2rem;
+}
+
+.updates-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.update-card {
+  display: block;
+  min-height: 175px;
+  padding: 1.25rem;
+  color: var(--ink);
+  border: 1px solid rgba(200,195,184,0.92);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.42), rgba(237,234,227,0.58));
+  box-shadow: 0 12px 35px rgba(26,31,46,0.055);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.update-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(46,74,140,0.55);
+  box-shadow: 0 18px 45px rgba(26,31,46,0.08);
+}
+
+.update-date {
+  display: inline-block;
+  margin-bottom: 0.7rem;
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-light);
+}
+
+.update-card h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.08rem;
+}
+
+.update-card p {
+  margin: 0;
+  font-family: var(--sans);
+  font-size: 0.84rem;
+  line-height: 1.68;
+  color: var(--ink-mid);
+}
+
+/* 本地化書封：讓自製圖片更接近實體書視覺 */
+.book-cover,
+.book-feature-cover {
+  border-radius: 2px;
+  box-shadow: 0 16px 38px rgba(26,31,46,0.14);
+}
+
+.book-card-v2 {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.book-card-v2:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 45px rgba(26,31,46,0.08);
+}
+
+/* Commentary 年份頁：日期、標題、來源分離 */
+.article-archive-list,
+.media-archive-list {
+  display: grid;
+  gap: 0.72rem;
+  margin: 1.35rem 0 2.5rem;
+}
+
+.article-archive-item,
+.media-archive-item {
+  display: grid;
+  grid-template-columns: 116px minmax(0, 1fr);
+  gap: 1rem;
+  padding: 1rem 1.05rem;
+  border: 1px solid rgba(200,195,184,0.78);
+  border-left: 4px solid rgba(46,74,140,0.48);
+  background: rgba(255,255,255,0.30);
+}
+
+.article-date {
+  padding-top: 0.15rem;
+  font-family: var(--sans);
+  font-size: 0.76rem;
+  line-height: 1.45;
+  color: var(--ink-light);
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.article-title {
+  margin: 0 0 0.28rem;
+  font-size: 1rem;
+  line-height: 1.52;
+}
+
+.media-archive-item .article-title {
+  font-size: 0.98rem;
+}
+
+.article-title a {
+  color: var(--ink);
+  border: none;
+}
+
+.article-title a:hover {
+  color: var(--accent);
+}
+
+.article-meta {
+  margin: 0;
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  color: var(--ink-light);
+  line-height: 1.5;
+}
+
+.article-source {
+  display: inline-block;
+  padding: 0.12rem 0.5rem;
+  border: 1px solid rgba(200,195,184,0.82);
+  border-radius: 999px;
+  background: rgba(237,234,227,0.58);
+}
+
+.media-year-block {
+  margin: 1.6rem 0 2.2rem;
+}
+
+.media-year-block h3 {
+  margin-bottom: 0.7rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid var(--rule);
+  font-family: var(--garamond);
+  font-size: 1.35rem;
+  color: var(--ink);
+}
+
+/* Publications 頁：輕量分段與卡片感 */
+.page-section-publications > h2 {
+  margin-top: 3rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid rgba(200,195,184,0.82);
+  border-left: 4px solid var(--accent);
+  background: rgba(237,234,227,0.42);
+  font-size: 1.32rem;
+}
+
+.page-section-publications .publication-list {
+  gap: 0.82rem;
+}
+
+.page-section-publications .publication-item {
+  border-left-color: rgba(46,74,140,0.38);
+  background: rgba(255,255,255,0.34);
+  box-shadow: 0 10px 30px rgba(26,31,46,0.035);
+}
+
+.page-section-publications .publication-item a {
+  margin-left: 0.4rem;
+  font-family: var(--sans);
+  font-size: 0.78rem;
+}
+
+/* About 頁：正式照片但不搶主文 */
+.about-profile-card {
+  display: grid;
+  grid-template-columns: 128px minmax(0, 1fr);
+  gap: 1.25rem;
+  align-items: center;
+  padding: 1.2rem;
+  margin-bottom: 2rem;
+  border: 1px solid rgba(200,195,184,0.84);
+  background: rgba(255,255,255,0.30);
+}
+
+.about-profile-photo {
+  width: 128px;
+  height: 128px;
+  object-fit: cover;
+  border-radius: 100%;
+  border: 3px solid rgba(46,74,140,0.22);
+  box-shadow: 0 14px 34px rgba(26,31,46,0.14);
+}
+
+.about-profile-card p:last-child {
+  margin-bottom: 0;
+  font-family: var(--sans);
+  color: var(--ink-mid);
+  line-height: 1.75;
+}
+
+/* 頁尾：公開平台入口更清楚 */
+.footer-inner-v2 {
+  align-items: flex-start;
+}
+
+.footer-main {
+  max-width: 520px;
+}
+
+.footer-desc {
+  margin: 0.35rem 0 0;
+  font-family: var(--garamond);
+  font-size: 0.95rem;
+  font-style: italic;
+  color: rgba(247,245,240,0.38);
+}
+
+.footer-links-v2 {
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.footer-links-v2 a {
+  padding: 0.35rem 0.65rem;
+  border: 1px solid rgba(247,245,240,0.12);
+  border-radius: 999px;
+}
+
+.footer-links-v2 a:hover {
+  border-color: rgba(247,245,240,0.32);
+}
+
+/* 導覽：桌機壓縮，行動版改為雙欄，避免 9 個項目過長 */
+@media (max-width: 1180px) {
+  .header-inner { max-width: 1180px; }
+  .site-nav a {
+    padding-left: 0.48rem;
+    padding-right: 0.48rem;
+    font-size: 0.70rem;
+    letter-spacing: 0.01em;
+  }
+}
+
+@media (max-width: 860px) {
+  .site-nav {
+    max-height: calc(100vh - 60px);
+    overflow-y: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .site-nav.open {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0;
+    padding: 0.55rem;
+  }
+
+  .site-nav a {
+    justify-content: center;
+    margin: 0.22rem;
+    padding: 0.82rem 0.5rem;
+    border: 1px solid rgba(247,245,240,0.08);
+    background: rgba(255,255,255,0.035);
+    font-size: 0.84rem;
+    text-align: center;
+  }
+
+  .site-nav a.active {
+    border-color: rgba(125,164,232,0.45);
+    border-bottom-color: rgba(125,164,232,0.45);
+    background: rgba(125,164,232,0.10);
+  }
+
+  .updates-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .article-archive-item,
+  .media-archive-item {
+    grid-template-columns: 1fr;
+    gap: 0.4rem;
+  }
+
+  .article-date {
+    white-space: normal;
+  }
+
+  .about-profile-card {
+    grid-template-columns: 88px minmax(0, 1fr);
+    gap: 0.9rem;
+    padding: 1rem;
+  }
+
+  .about-profile-photo {
+    width: 88px;
+    height: 88px;
+  }
+
+  .footer-inner-v2 {
+    display: block;
+  }
+
+  .footer-links-v2 {
+    justify-content: flex-start;
+    margin-top: 1rem;
+  }
+}
