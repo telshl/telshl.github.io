@@ -58,7 +58,7 @@ His current work examines how democratic societies can rebuild public knowledge 
 
 ## 社會參與
 
-- 台灣事實查核中心董事、董事長
+- 台灣事實查核中心董事（2020-）、董事長（2022-）
 - 台灣媒體觀察教育基金會董事長（2019–2024）
 - 媒體改造學社（媒改社）創始成員，曾任召集人、理事長
 - weReport|調查報導公眾委製平台共同創辦人

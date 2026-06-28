@@ -22,7 +22,7 @@ description: "羅世宏教授正式學術出版清單，包括專書譯著、編
 </div>
 
 <div class="publication-item">
-<strong>羅世宏（譯）（2016）。</strong>《社群媒體批判理論》。台北。<a href="http://www.books.com.tw/products/0010748726" target="_blank" rel="noopener">購書</a>
+<strong>羅世宏（譯）（2016）。</strong>《社群媒體批判理論》。台北。<a href="https://www.sanmin.com.tw/product/index/006245692" target="_blank" rel="noopener">購書</a>
 </div>
 
 </div>
