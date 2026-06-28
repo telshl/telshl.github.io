@@ -14,22 +14,34 @@
     <loc>http://localhost:1313/commentary/2019-2023/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/topics/</loc>
+    <lastmod>2026-06-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/topics/%E4%B8%B2%E6%B5%81%E5%B9%B3%E5%8F%B0/</loc>
+    <lastmod>2026-06-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/topics/%E7%8D%A8%E7%AB%8B%E9%9B%BB%E5%BD%B1/</loc>
+    <lastmod>2026-06-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/commentary/</loc>
+    <lastmod>2026-06-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-06-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/topics/%E5%8D%97%E9%9F%93/</loc>
+    <lastmod>2026-06-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/commentary/articles/2026-06-25-sk-independentfilm/</loc>
+    <lastmod>2026-06-25T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/topics/ai/</loc>
     <lastmod>2026-06-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/commentary/articles/2026-06-17-ai-journalism/</loc>
     <lastmod>2026-06-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/topics/</loc>
-    <lastmod>2026-06-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/commentary/</loc>
-    <lastmod>2026-06-17T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/topics/%E5%85%AC%E5%85%B1%E4%BF%A1%E4%BB%BB/</loc>
-    <lastmod>2026-06-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2026-06-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/topics/%E6%96%B0%E8%81%9E%E6%A5%AD/</loc>
