@@ -1,0 +1,43 @@
+{{ define "main" }}
+<main class="page-main">
+  <section class="page-hero">
+    <p class="section-label">Commentary</p>
+    <h1>{{ .Title }}</h1>
+    <p class="page-description">{{ .Description }}</p>
+  </section>
+
+  <section class="topic-index">
+    <h2>主題分類</h2>
+    <div class="topic-tags">
+      {{ range $name, $taxonomy := .Site.Taxonomies.topics }}
+      <a href="{{ "/topics/" | relURL }}{{ $name | urlize }}/">
+        {{ $name }}
+      </a>
+      {{ end }}
+    </div>
+  </section>
+
+  <section class="archive-section">
+    <h2>最新評論</h2>
+
+    {{ range .Pages.ByDate.Reverse }}
+    <article class="archive-card">
+      <p class="archive-meta">
+        {{ .Date.Format "2006-01-02" }}
+        {{ with .Params.source }}｜{{ . }}{{ end }}
+      </p>
+      <h3>
+      {{ if .Params.external_url }}
+<a href="{{ .Params.external_url }}" target="_blank" rel="noopener">{{ .Title }}</a>
+{{ else }}
+<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+{{ end }}
+      </h3>
+      {{ with .Params.summary }}
+      <p>{{ . }}</p>
+      {{ end }}
+    </article>
+    {{ end }}
+  </section>
+</main>
+{{ end }}

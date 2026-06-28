@@ -7,20 +7,36 @@
   
   
   
+  
+  
+  
   <title>關於我 | 羅世宏</title>
-  <meta name="description" content="羅世宏教授簡介，包括學術經歷、研究領域、媒體改革、事實查核與公共傳播實踐。">
+  <meta name="description" content="羅世宏教授中英文簡介，包括學術經歷、研究領域、媒體改革、事實查核與公共傳播實踐。">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="zh-TW">
   <link rel="canonical" href="http://localhost:1313/about/">
+  
+  <link rel="alternate" hreflang="zh-TW" href="http://localhost:1313/about/">
+  <link rel="alternate" hreflang="en" href="http://localhost:1313/en/">
+  
+  <link rel="alternate" hreflang="x-default" href="http://localhost:1313/">
   <meta property="og:locale" content="zh_TW">
   <meta property="og:site_name" content="羅世宏 | Shih-Hung Lo">
+  <meta property="og:locale:alternate" content="en_US">
   <meta property="og:title" content="關於我 | 羅世宏">
-  <meta property="og:description" content="羅世宏教授簡介，包括學術經歷、研究領域、媒體改革、事實查核與公共傳播實踐。">
-  <meta property="og:type" content="article">
+  <meta property="og:description" content="羅世宏教授中英文簡介，包括學術經歷、研究領域、媒體改革、事實查核與公共傳播實踐。">
+  <meta property="og:type" content="profile">
   <meta property="og:url" content="http://localhost:1313/about/">
-  <meta property="og:image" content="http://localhost:1313/img/profile.jpg">
+  <meta property="og:image" content="http://localhost:1313/img/og-image.png">
+  <meta property="og:image:secure_url" content="http://localhost:1313/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="羅世宏教授｜Media, Democracy, Platforms &amp; Public Knowledge">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="關於我 | 羅世宏">
-  <meta name="twitter:description" content="羅世宏教授簡介，包括學術經歷、研究領域、媒體改革、事實查核與公共傳播實踐。">
-  <meta name="twitter:image" content="http://localhost:1313/img/profile.jpg">
+  <meta name="twitter:description" content="羅世宏教授中英文簡介，包括學術經歷、研究領域、媒體改革、事實查核與公共傳播實踐。">
+  <meta name="twitter:image" content="http://localhost:1313/img/og-image.png">
+  <meta name="twitter:image:alt" content="羅世宏教授｜Media, Democracy, Platforms &amp; Public Knowledge">
   
   <link rel="stylesheet" href="/css/main.css">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>羅</text></svg>">
@@ -40,9 +56,9 @@
       
       <a href="/about/" class="active">關於</a>
       
-      <a href="/books/" >著作</a>
-      
       <a href="/research/" >研究</a>
+      
+      <a href="/books/" >代表著作</a>
       
       <a href="/publications/" >學術出版</a>
       
@@ -52,19 +68,32 @@
       
       <a href="/contact/" >聯絡</a>
       
+      <a href="/en/" >EN</a>
+      
     </nav>
-    <button class="nav-toggle" id="nav-toggle" aria-label="開啟選單">
+    <button class="nav-toggle" id="nav-toggle" aria-label="開啟選單" aria-expanded="false" aria-controls="site-nav">
       <span></span><span></span><span></span>
     </button>
   </div>
 </header>
 <script>
-  document.getElementById('nav-toggle').addEventListener('click', function() {
+  (function() {
     var nav = document.getElementById('site-nav');
     var btn = document.getElementById('nav-toggle');
-    nav.classList.toggle('open');
-    btn.classList.toggle('open');
-  });
+    if (!nav || !btn) return;
+    btn.addEventListener('click', function() {
+      var isOpen = nav.classList.toggle('open');
+      btn.classList.toggle('open', isOpen);
+      btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+    nav.querySelectorAll('a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        nav.classList.remove('open');
+        btn.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+      });
+    });
+  })();
 </script>
 
 <main>
@@ -74,14 +103,26 @@
   <header class="page-header">
     <p class="section-label">page</p>
     <h1 class="page-title">關於我</h1>
-    <p class="page-description">羅世宏教授簡介，包括學術經歷、研究領域、媒體改革、事實查核與公共傳播實踐。</p>
+    <p class="page-description">羅世宏教授中英文簡介，包括學術經歷、研究領域、媒體改革、事實查核與公共傳播實踐。</p>
   </header>
   
-  <div class="prose">
-    <p>羅世宏在研究媒體的同時，也持續試圖改變它。</p>
+  <div class="prose page-content page-section- page-file-about">
+    <div class="about-profile-card">
+  <img src="/img/profile.jpg" alt="羅世宏教授正式照片" class="about-profile-photo">
+  <div>
+    <p class="intro-kicker">About</p>
+    <p>羅世宏是國立中正大學傳播系教授，長期研究媒體制度、新聞業危機、平台治理、事實查核與民主公共知識。</p>
+  </div>
+</div>
+<p>羅世宏在研究媒體的同時，也持續試圖改變它。</p>
 <p>過去二十年，他在國立中正大學傳播系任教，研究新聞業如何在數位平台的衝擊下求存，曾與馮建三等人共同創辦媒體改造學社（媒改社），與胡元輝等人共同創辦 weReport|調查報導公眾委製平台。此外，他曾擔任台灣媒體觀察教育基金會董事長（2019–2024）、台灣事實查核中心董事（2020-2026）及董事長（2022-2026）。學者與行動者的雙重身份，貫穿他迄今的學術生涯。</p>
 <p>他的研究核心：當數位平台重組傳播生態、民主政治陷入資訊危機，新聞業能否存續？公共政策應當如何回應？這個問題在他的期刊論文、政策諮詢與公共評論中反覆出現，以不同形式尋找答案。</p>
 <p>近年研究聚焦於和平新聞學、氣候新聞學、事實查核機制在民主選舉中的角色、平台問責的跨國政策比較，以及人工智慧對傳播生態的結構性影響。</p>
+<hr>
+<h2 id="english-profile">English Profile</h2>
+<p>Shih-Hung Lo is Professor of Communication at National Chung Cheng University, Taiwan. His research focuses on media institutions, journalism crisis, platform governance, fact-checking, media reform, and the transformation of public communication in the age of AI.</p>
+<p>Alongside his academic work, he has long been involved in public media reform and civic communication initiatives in Taiwan. He co-founded the Media Reform Coalition and the weReport investigative journalism platform, and served as Board Chair of the Taiwan FactCheck Center from 2022 to 2026.</p>
+<p>His current work examines how democratic societies can rebuild public knowledge and social trust under the pressures of platformization, information disorder, and generative AI.</p>
 <hr>
 <h2 id="學術經歷">學術經歷</h2>
 <ul>
@@ -119,14 +160,18 @@
 </main>
 
 <footer class="site-footer">
-  <div class="footer-inner">
-    <div class="footer-name">羅世宏｜國立中正大學傳播系教授</div>
-    <div class="footer-links">
+  <div class="footer-inner footer-inner-v2">
+    <div class="footer-main">
+      <div class="footer-name">羅世宏｜國立中正大學傳播系教授</div>
+      <p class="footer-desc">Media, Democracy, Platforms &amp; Public Knowledge</p>
+    </div>
+    <div class="footer-links footer-links-v2" aria-label="公開連結">
       <a href="https://substack.com/@telshl" target="_blank" rel="noopener">Substack</a>
+      <a href="/en/">English</a>
       <a href="mailto:shihhung.lo@gmail.com">Email</a>
     </div>
     <div class="footer-copy">
-      © 2026 Shih-Hung Lo. 國立中正大學傳播系.
+      © 2026 Shih-Hung Lo. 國立中正大學傳播系. Built as a public academic archive.
     </div>
   </div>
 </footer>

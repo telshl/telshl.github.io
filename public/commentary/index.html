@@ -7,20 +7,36 @@
   
   
   
+  
+  
+  
   <title>公共評論 | 羅世宏</title>
-  <meta name="description" content="羅世宏教授關於媒體、民主、平台、AI、新聞業、公共政策與資訊治理的公共寫作。">
+  <meta name="description" content="羅世宏教授公共評論主題索引，聚焦媒體、民主、平台治理、AI、新聞業、事實查核、公共政策與資訊治理。">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="zh-TW">
   <link rel="canonical" href="http://localhost:1313/commentary/">
+  
+  <link rel="alternate" hreflang="zh-TW" href="http://localhost:1313/commentary/">
+  <link rel="alternate" hreflang="en" href="http://localhost:1313/en/">
+  
+  <link rel="alternate" hreflang="x-default" href="http://localhost:1313/">
   <meta property="og:locale" content="zh_TW">
   <meta property="og:site_name" content="羅世宏 | Shih-Hung Lo">
+  <meta property="og:locale:alternate" content="en_US">
   <meta property="og:title" content="公共評論 | 羅世宏">
-  <meta property="og:description" content="羅世宏教授關於媒體、民主、平台、AI、新聞業、公共政策與資訊治理的公共寫作。">
+  <meta property="og:description" content="羅世宏教授公共評論主題索引，聚焦媒體、民主、平台治理、AI、新聞業、事實查核、公共政策與資訊治理。">
   <meta property="og:type" content="article">
   <meta property="og:url" content="http://localhost:1313/commentary/">
-  <meta property="og:image" content="http://localhost:1313/img/profile.jpg">
+  <meta property="og:image" content="http://localhost:1313/img/og-image.png">
+  <meta property="og:image:secure_url" content="http://localhost:1313/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="羅世宏教授｜Media, Democracy, Platforms &amp; Public Knowledge">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="公共評論 | 羅世宏">
-  <meta name="twitter:description" content="羅世宏教授關於媒體、民主、平台、AI、新聞業、公共政策與資訊治理的公共寫作。">
-  <meta name="twitter:image" content="http://localhost:1313/img/profile.jpg">
+  <meta name="twitter:description" content="羅世宏教授公共評論主題索引，聚焦媒體、民主、平台治理、AI、新聞業、事實查核、公共政策與資訊治理。">
+  <meta name="twitter:image" content="http://localhost:1313/img/og-image.png">
+  <meta name="twitter:image:alt" content="羅世宏教授｜Media, Democracy, Platforms &amp; Public Knowledge">
   
   <link rel="stylesheet" href="/css/main.css">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>羅</text></svg>">
@@ -40,9 +56,9 @@
       
       <a href="/about/" >關於</a>
       
-      <a href="/books/" >著作</a>
-      
       <a href="/research/" >研究</a>
+      
+      <a href="/books/" >代表著作</a>
       
       <a href="/publications/" >學術出版</a>
       
@@ -52,101 +68,151 @@
       
       <a href="/contact/" >聯絡</a>
       
+      <a href="/en/" >EN</a>
+      
     </nav>
-    <button class="nav-toggle" id="nav-toggle" aria-label="開啟選單">
+    <button class="nav-toggle" id="nav-toggle" aria-label="開啟選單" aria-expanded="false" aria-controls="site-nav">
       <span></span><span></span><span></span>
     </button>
   </div>
 </header>
 <script>
-  document.getElementById('nav-toggle').addEventListener('click', function() {
+  (function() {
     var nav = document.getElementById('site-nav');
     var btn = document.getElementById('nav-toggle');
-    nav.classList.toggle('open');
-    btn.classList.toggle('open');
-  });
+    if (!nav || !btn) return;
+    btn.addEventListener('click', function() {
+      var isOpen = nav.classList.toggle('open');
+      btn.classList.toggle('open', isOpen);
+      btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+    nav.querySelectorAll('a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        nav.classList.remove('open');
+        btn.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+      });
+    });
+  })();
 </script>
 
 <main>
   
-<div class="page-container">
-  
+<main class="page-main">
+  <section class="page-hero">
+    <p class="section-label">Commentary</p>
+    <h1>公共評論</h1>
+    <p class="page-description">羅世宏教授公共評論主題索引，聚焦媒體、民主、平台治理、AI、新聞業、事實查核、公共政策與資訊治理。</p>
+  </section>
 
-  <div class="prose"><div class="page-intro-block">
-  <p class="intro-kicker">Public Writings</p>
-  <h1>公共評論</h1>
-  <p>
-    本頁整理羅世宏教授長期發表的公共評論與知識寫作，主題涵蓋媒體制度、新聞業危機、平台治理、人工智慧、事實查核、民主政治、中國傳播與公共政策。
-  </p>
-</div>
-<h2 id="主題地圖">主題地圖</h2>
-<div class="hub-grid">
-  <div class="hub-card">
-    <h2>新聞業與民主</h2>
-    <p>新聞業危機、新聞信任、媒體政策、公共媒體與民主基礎設施。</p>
-  </div>
-  <div class="hub-card">
-    <h2>AI、平台與公共領域</h2>
-    <p>平台治理、生成式 AI、演算法權力、資料政治與數位公共生活。</p>
-  </div>
-  <div class="hub-card">
-    <h2>事實查核與資訊治理</h2>
-    <p>錯假資訊、資訊環境韌性、選舉查核、平台問責與公民判讀。</p>
-  </div>
-  <div class="hub-card">
-    <h2>中國、威權與傳播</h2>
-    <p>中國媒體制度、資訊控制、威權傳播、國際宣傳與台灣民主防衛。</p>
-  </div>
-  <div class="hub-card">
-    <h2>媒體改革與公共政策</h2>
-    <p>媒體改造、NCC、公共預算、新聞補助、制度設計與治理責任。</p>
-  </div>
-  <div class="hub-card">
-    <h2>文化、書寫與公共思想</h2>
-    <p>書評、思想評論、文化觀察、知識分子角色與公共生活。</p>
-  </div>
-</div>
-<hr>
-<p>長期於《上報》、《信傳媒》、《鏡報新聞網》、《客新聞》、《人間福報》、《思想坦克》、《獨立評論@天下》、台灣事實查核中心等平台發表評論。</p>
-<p>其他書寫作品，請見：個人部落格 <a href="https://substack.com/@telshl">Substack</a>。</p>
-<hr>
-<h2 id="年份索引">年份索引</h2>
-</div>
+  <section class="topic-index">
+    <h2>主題分類</h2>
+    <div class="topic-tags">
+      
+      <a href="/topics/ai/">
+        ai
+      </a>
+      
+      <a href="/topics/%E5%85%AC%E5%85%B1%E4%BF%A1%E4%BB%BB/">
+        公共信任
+      </a>
+      
+      <a href="/topics/%E6%96%B0%E8%81%9E%E6%A5%AD/">
+        新聞業
+      </a>
+      
+    </div>
+  </section>
 
-  
-  <ul class="year-list">
+  <section class="archive-section">
+    <h2>最新評論</h2>
+
     
-    <li class="year-item">
-      <a href="http://localhost:1313/commentary/2026/" class="year-link">2026 年評論</a>
-    </li>
+    <article class="archive-card">
+      <p class="archive-meta">
+        2026-06-17
+        ｜公共評論
+      </p>
+      <h3>
+      
+<a href="https://example.com/article" target="_blank" rel="noopener">AI 時代的新聞業與公共信任</a>
+
+      </h3>
+      
+      <p>本文討論生成式 AI 對新聞業、資訊可信度與民主公共生活的影響。</p>
+      
+    </article>
     
-    <li class="year-item">
-      <a href="http://localhost:1313/commentary/2025/" class="year-link">2025 年評論</a>
-    </li>
+    <article class="archive-card">
+      <p class="archive-meta">
+        2026-01-01
+        
+      </p>
+      <h3>
+      
+<a href="/commentary/2026/">2026 年評論</a>
+
+      </h3>
+      
+    </article>
     
-    <li class="year-item">
-      <a href="http://localhost:1313/commentary/2024/" class="year-link">2024 年評論</a>
-    </li>
+    <article class="archive-card">
+      <p class="archive-meta">
+        2025-01-01
+        
+      </p>
+      <h3>
+      
+<a href="/commentary/2025/">2025 年評論</a>
+
+      </h3>
+      
+    </article>
     
-    <li class="year-item">
-      <a href="http://localhost:1313/commentary/2019-2023/" class="year-link">2019–2023 年評論</a>
-    </li>
+    <article class="archive-card">
+      <p class="archive-meta">
+        2024-01-01
+        
+      </p>
+      <h3>
+      
+<a href="/commentary/2024/">2024 年評論</a>
+
+      </h3>
+      
+    </article>
     
-  </ul>
-  
-</div>
+    <article class="archive-card">
+      <p class="archive-meta">
+        2023-01-01
+        
+      </p>
+      <h3>
+      
+<a href="/commentary/2019-2023/">2019–2023 年評論</a>
+
+      </h3>
+      
+    </article>
+    
+  </section>
+</main>
 
 </main>
 
 <footer class="site-footer">
-  <div class="footer-inner">
-    <div class="footer-name">羅世宏｜國立中正大學傳播系教授</div>
-    <div class="footer-links">
+  <div class="footer-inner footer-inner-v2">
+    <div class="footer-main">
+      <div class="footer-name">羅世宏｜國立中正大學傳播系教授</div>
+      <p class="footer-desc">Media, Democracy, Platforms &amp; Public Knowledge</p>
+    </div>
+    <div class="footer-links footer-links-v2" aria-label="公開連結">
       <a href="https://substack.com/@telshl" target="_blank" rel="noopener">Substack</a>
+      <a href="/en/">English</a>
       <a href="mailto:shihhung.lo@gmail.com">Email</a>
     </div>
     <div class="footer-copy">
-      © 2026 Shih-Hung Lo. 國立中正大學傳播系.
+      © 2026 Shih-Hung Lo. 國立中正大學傳播系. Built as a public academic archive.
     </div>
   </div>
 </footer>

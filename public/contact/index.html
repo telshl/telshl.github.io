@@ -7,20 +7,36 @@
   
   
   
+  
+  
+  
   <title>聯絡方式 | 羅世宏</title>
-  <meta name="description" content="羅世宏教授聯絡方式，供學術合作、媒體採訪、演講邀約與相關公共事務聯繫。">
+  <meta name="description" content="羅世宏教授聯絡方式，供學術合作、媒體採訪、演講邀約與公共傳播相關事務聯繫。">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="zh-TW">
   <link rel="canonical" href="http://localhost:1313/contact/">
+  
+  <link rel="alternate" hreflang="zh-TW" href="http://localhost:1313/contact/">
+  <link rel="alternate" hreflang="en" href="http://localhost:1313/en/">
+  
+  <link rel="alternate" hreflang="x-default" href="http://localhost:1313/">
   <meta property="og:locale" content="zh_TW">
   <meta property="og:site_name" content="羅世宏 | Shih-Hung Lo">
+  <meta property="og:locale:alternate" content="en_US">
   <meta property="og:title" content="聯絡方式 | 羅世宏">
-  <meta property="og:description" content="羅世宏教授聯絡方式，供學術合作、媒體採訪、演講邀約與相關公共事務聯繫。">
+  <meta property="og:description" content="羅世宏教授聯絡方式，供學術合作、媒體採訪、演講邀約與公共傳播相關事務聯繫。">
   <meta property="og:type" content="article">
   <meta property="og:url" content="http://localhost:1313/contact/">
-  <meta property="og:image" content="http://localhost:1313/img/profile.jpg">
+  <meta property="og:image" content="http://localhost:1313/img/og-image.png">
+  <meta property="og:image:secure_url" content="http://localhost:1313/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="羅世宏教授｜Media, Democracy, Platforms &amp; Public Knowledge">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="聯絡方式 | 羅世宏">
-  <meta name="twitter:description" content="羅世宏教授聯絡方式，供學術合作、媒體採訪、演講邀約與相關公共事務聯繫。">
-  <meta name="twitter:image" content="http://localhost:1313/img/profile.jpg">
+  <meta name="twitter:description" content="羅世宏教授聯絡方式，供學術合作、媒體採訪、演講邀約與公共傳播相關事務聯繫。">
+  <meta name="twitter:image" content="http://localhost:1313/img/og-image.png">
+  <meta name="twitter:image:alt" content="羅世宏教授｜Media, Democracy, Platforms &amp; Public Knowledge">
   
   <link rel="stylesheet" href="/css/main.css">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>羅</text></svg>">
@@ -40,9 +56,9 @@
       
       <a href="/about/" >關於</a>
       
-      <a href="/books/" >著作</a>
-      
       <a href="/research/" >研究</a>
+      
+      <a href="/books/" >代表著作</a>
       
       <a href="/publications/" >學術出版</a>
       
@@ -52,19 +68,32 @@
       
       <a href="/contact/" class="active">聯絡</a>
       
+      <a href="/en/" >EN</a>
+      
     </nav>
-    <button class="nav-toggle" id="nav-toggle" aria-label="開啟選單">
+    <button class="nav-toggle" id="nav-toggle" aria-label="開啟選單" aria-expanded="false" aria-controls="site-nav">
       <span></span><span></span><span></span>
     </button>
   </div>
 </header>
 <script>
-  document.getElementById('nav-toggle').addEventListener('click', function() {
+  (function() {
     var nav = document.getElementById('site-nav');
     var btn = document.getElementById('nav-toggle');
-    nav.classList.toggle('open');
-    btn.classList.toggle('open');
-  });
+    if (!nav || !btn) return;
+    btn.addEventListener('click', function() {
+      var isOpen = nav.classList.toggle('open');
+      btn.classList.toggle('open', isOpen);
+      btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+    nav.querySelectorAll('a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        nav.classList.remove('open');
+        btn.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+      });
+    });
+  })();
 </script>
 
 <main>
@@ -74,10 +103,10 @@
   <header class="page-header">
     <p class="section-label">page</p>
     <h1 class="page-title">聯絡方式</h1>
-    <p class="page-description">羅世宏教授聯絡方式，供學術合作、媒體採訪、演講邀約與相關公共事務聯繫。</p>
+    <p class="page-description">羅世宏教授聯絡方式，供學術合作、媒體採訪、演講邀約與公共傳播相關事務聯繫。</p>
   </header>
   
-  <div class="prose">
+  <div class="prose page-content page-section- page-file-contact">
     <h2 id="聯絡資訊">聯絡資訊</h2>
 <p><strong>電子郵件</strong>：telshl [at] ccu.edu.tw</p>
 <p><strong>服務單位</strong>：國立中正大學傳播系<br>
@@ -92,14 +121,18 @@
 </main>
 
 <footer class="site-footer">
-  <div class="footer-inner">
-    <div class="footer-name">羅世宏｜國立中正大學傳播系教授</div>
-    <div class="footer-links">
+  <div class="footer-inner footer-inner-v2">
+    <div class="footer-main">
+      <div class="footer-name">羅世宏｜國立中正大學傳播系教授</div>
+      <p class="footer-desc">Media, Democracy, Platforms &amp; Public Knowledge</p>
+    </div>
+    <div class="footer-links footer-links-v2" aria-label="公開連結">
       <a href="https://substack.com/@telshl" target="_blank" rel="noopener">Substack</a>
+      <a href="/en/">English</a>
       <a href="mailto:shihhung.lo@gmail.com">Email</a>
     </div>
     <div class="footer-copy">
-      © 2026 Shih-Hung Lo. 國立中正大學傳播系.
+      © 2026 Shih-Hung Lo. 國立中正大學傳播系. Built as a public academic archive.
     </div>
   </div>
 </footer>

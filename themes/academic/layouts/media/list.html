@@ -1,0 +1,38 @@
+{{ define "main" }}
+<main class="page-main">
+  <section class="page-hero">
+    <p class="section-label">Media & Talks</p>
+    <h1>{{ .Title }}</h1>
+    <p class="page-description">{{ .Description }}</p>
+  </section>
+
+  {{ $types := slice "媒體引用" "訪談" "演講" "論壇" }}
+
+  {{ range $types }}
+    {{ $type := . }}
+    {{ $items := where site.Data.media "type" $type }}
+
+    {{ if $items }}
+    <section class="archive-section">
+      <h2>{{ $type }}</h2>
+
+      {{ range sort $items "date" "desc" }}
+      <article class="archive-card">
+        <p class="archive-meta">{{ .date }}｜{{ .source }}</p>
+        <h3>
+          {{ if .url }}
+          <a href="{{ .url }}" target="_blank" rel="noopener">{{ .title }}</a>
+          {{ else }}
+          {{ .title }}
+          {{ end }}
+        </h3>
+        {{ if .topic }}
+        <p class="archive-topic">{{ .topic }}</p>
+        {{ end }}
+      </article>
+      {{ end }}
+    </section>
+    {{ end }}
+  {{ end }}
+</main>
+{{ end }}

@@ -1,0 +1,33 @@
+{{ define "main" }}
+<main class="page-main">
+  <section class="page-hero">
+    <p class="section-label">Books</p>
+    <h1>{{ .Title }}</h1>
+    <p class="page-description">{{ .Description }}</p>
+  </section>
+
+  <section class="books-grid">
+    {{ range sort .Site.Data.books "year" "desc" }}
+    <article class="book-card">
+      {{ if .cover }}
+      <div class="book-cover-wrap">
+        <img src="{{ .cover | relURL }}" alt="{{ .title }}" class="book-cover">
+      </div>
+      {{ end }}
+
+      <div class="book-info">
+        <p class="book-meta">{{ .year }}｜{{ .type }}｜{{ .role }}</p>
+        <h2>{{ .title }}</h2>
+        <p class="book-publisher">{{ .publisher }}</p>
+        <p class="book-topic">{{ .topic }}</p>
+        <p>{{ .description }}</p>
+
+        {{ if .url }}
+        <a href="{{ .url }}" target="_blank" rel="noopener">相關連結</a>
+        {{ end }}
+      </div>
+    </article>
+    {{ end }}
+  </section>
+</main>
+{{ end }}

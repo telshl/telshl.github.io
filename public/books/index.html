@@ -7,20 +7,36 @@
   
   
   
+  
+  
+  
   <title>著作 | 羅世宏</title>
-  <meta name="description" content="羅世宏教授的代表著作、譯著、編著與出版計畫。">
+  <meta name="description" content="羅世宏教授代表著作、譯著、編著與出版計畫，涵蓋傳播理論、文化研究、新聞業危機與平台批判。">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="zh-TW">
   <link rel="canonical" href="http://localhost:1313/books/">
+  
+  <link rel="alternate" hreflang="zh-TW" href="http://localhost:1313/books/">
+  <link rel="alternate" hreflang="en" href="http://localhost:1313/en/">
+  
+  <link rel="alternate" hreflang="x-default" href="http://localhost:1313/">
   <meta property="og:locale" content="zh_TW">
   <meta property="og:site_name" content="羅世宏 | Shih-Hung Lo">
+  <meta property="og:locale:alternate" content="en_US">
   <meta property="og:title" content="著作 | 羅世宏">
-  <meta property="og:description" content="羅世宏教授的代表著作、譯著、編著與出版計畫。">
+  <meta property="og:description" content="羅世宏教授代表著作、譯著、編著與出版計畫，涵蓋傳播理論、文化研究、新聞業危機與平台批判。">
   <meta property="og:type" content="article">
   <meta property="og:url" content="http://localhost:1313/books/">
-  <meta property="og:image" content="http://localhost:1313/img/profile.jpg">
+  <meta property="og:image" content="http://localhost:1313/img/og-image.png">
+  <meta property="og:image:secure_url" content="http://localhost:1313/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="羅世宏教授｜Media, Democracy, Platforms &amp; Public Knowledge">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="著作 | 羅世宏">
-  <meta name="twitter:description" content="羅世宏教授的代表著作、譯著、編著與出版計畫。">
-  <meta name="twitter:image" content="http://localhost:1313/img/profile.jpg">
+  <meta name="twitter:description" content="羅世宏教授代表著作、譯著、編著與出版計畫，涵蓋傳播理論、文化研究、新聞業危機與平台批判。">
+  <meta name="twitter:image" content="http://localhost:1313/img/og-image.png">
+  <meta name="twitter:image:alt" content="羅世宏教授｜Media, Democracy, Platforms &amp; Public Knowledge">
   
   <link rel="stylesheet" href="/css/main.css">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>羅</text></svg>">
@@ -40,9 +56,9 @@
       
       <a href="/about/" >關於</a>
       
-      <a href="/books/" class="active">著作</a>
-      
       <a href="/research/" >研究</a>
+      
+      <a href="/books/" class="active">代表著作</a>
       
       <a href="/publications/" >學術出版</a>
       
@@ -52,112 +68,99 @@
       
       <a href="/contact/" >聯絡</a>
       
+      <a href="/en/" >EN</a>
+      
     </nav>
-    <button class="nav-toggle" id="nav-toggle" aria-label="開啟選單">
+    <button class="nav-toggle" id="nav-toggle" aria-label="開啟選單" aria-expanded="false" aria-controls="site-nav">
       <span></span><span></span><span></span>
     </button>
   </div>
 </header>
 <script>
-  document.getElementById('nav-toggle').addEventListener('click', function() {
+  (function() {
     var nav = document.getElementById('site-nav');
     var btn = document.getElementById('nav-toggle');
-    nav.classList.toggle('open');
-    btn.classList.toggle('open');
-  });
+    if (!nav || !btn) return;
+    btn.addEventListener('click', function() {
+      var isOpen = nav.classList.toggle('open');
+      btn.classList.toggle('open', isOpen);
+      btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+    nav.querySelectorAll('a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        nav.classList.remove('open');
+        btn.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+      });
+    });
+  })();
 </script>
 
 <main>
   
-<div class="page-container">
-  
+<main class="page-main">
+  <section class="page-hero">
+    <p class="section-label">Books</p>
+    <h1>著作</h1>
+    <p class="page-description">羅世宏教授代表著作、譯著、編著與出版計畫，涵蓋傳播理論、文化研究、新聞業危機與平台批判。</p>
+  </section>
 
-  <div class="prose"><div class="page-intro-block">
-  <p class="intro-kicker">Books</p>
-  <h1>著作</h1>
-  <p>
-    本頁整理羅世宏教授的代表著作、譯著、編著與長期出版計畫。這些作品圍繞媒體制度、新聞業危機、傳播理論、社群媒體、文化研究與民主公共領域等核心問題。
-  </p>
-</div>
-<h2 id="代表著作與譯著">代表著作與譯著</h2>
-<div class="book-feature-list">
-  <div class="book-feature-card">
-    <a href="https://www.books.com.tw/products/0010984921" target="_blank" rel="noopener">
-      <img class="book-feature-cover" src="https://static.wixstatic.com/media/697c5b_f092e48f9411487b941f738b70d4fa75~mv2.png" alt="媒體與大眾傳播理論">
-    </a>
-    <div>
-      <h2>《媒體與大眾傳播理論》</h2>
-      <p><strong>2023｜譯著</strong></p>
-      <p>
-        傳播理論的重要入門與進階讀物，涵蓋媒體制度、閱聽人、文化、權力、科技與公共生活等核心議題。
-      </p>
-      <p><a href="https://www.books.com.tw/products/0010984921" target="_blank" rel="noopener">購書連結 →</a></p>
-    </div>
-  </div>
-  <div class="book-feature-card">
-    <a href="https://www.books.com.tw/products/0010909273" target="_blank" rel="noopener">
-      <img class="book-feature-cover" src="https://static.wixstatic.com/media/697c5b_9a3116d7370f4f4980fda4fcc41c9ad0~mv2.gif" alt="新聞崩壞 何以民主？">
-    </a>
-    <div>
-      <h2>《新聞崩壞 何以民主？》</h2>
-      <p><strong>2021｜譯著</strong></p>
-      <p>
-        從新聞業危機出發，思考民主社會為何仍需要新聞制度，以及公共政策應如何回應新聞基礎設施的衰退。
-      </p>
-      <p><a href="https://www.books.com.tw/products/0010909273" target="_blank" rel="noopener">購書連結 →</a></p>
-    </div>
-  </div>
-  <div class="book-feature-card">
-    <a href="http://www.books.com.tw/products/0010748726" target="_blank" rel="noopener">
-      <img class="book-feature-cover" src="https://static.wixstatic.com/media/697c5b_a26553a7f9da46069bde8ed6b75e94ed~mv2.jpg" alt="社群媒體批判理論">
-    </a>
-    <div>
-      <h2>《社群媒體批判理論》</h2>
-      <p><strong>2016｜譯著</strong></p>
-      <p>
-        以批判理論與政治經濟學視角分析社群媒體、平台資本主義、數位勞動與網路公共領域。
-      </p>
-      <p><a href="http://www.books.com.tw/products/0010748726" target="_blank" rel="noopener">購書連結 →</a></p>
-    </div>
-  </div>
-  <div class="book-feature-card">
-    <a href="https://www.books.com.tw/products/0010937968" target="_blank" rel="noopener">
-      <img class="book-feature-cover" src="https://static.wixstatic.com/media/697c5b_b1ad142043924b40b2b2e4e4ef7b943b~mv2.gif" alt="文化研究：理論與實踐">
-    </a>
-    <div>
-      <h2>《文化研究：理論與實踐》</h2>
-      <p><strong>2022｜譯著，第五版</strong></p>
-      <p>
-        文化研究的重要理論讀本，連結權力、再現、身份、意識形態、媒體文化與日常生活實踐。
-      </p>
-      <p><a href="https://www.books.com.tw/products/0010937968" target="_blank" rel="noopener">購書連結 →</a></p>
-    </div>
-  </div>
-</div>
-<hr>
-<h2 id="編著">編著</h2>
-<p><strong>Tong, J., &amp; Lo, S.-H. (Eds.). (2017).</strong> <em>Digital Technology and Journalism: An International Comparative Perspective.</em> UK: Palgrave Macmillan.</p>
-<p><strong>羅世宏、童靜蓉（編）（2014）。</strong>《社交媒體與新聞業》。台北：優質新聞發展協會。</p>
-<p><strong>羅世宏（主編）（2013）。</strong>《公民數位典藏：理論Ｘ實踐Ｘ反思》。台北：數位典藏與學習之學術與社會應用推廣計畫。</p>
-<p><strong>羅世宏、胡元輝（編）（2010）。</strong>《新聞業的危機與重建：全球經驗與台灣省思》。台北：先驅媒體社會企業。</p>
-<hr>
-<p>完整學術出版請見：<a href="/publications/">學術出版</a>。</p>
-</div>
+  <section class="books-grid">
+    
+    <article class="book-card">
+      
+      <div class="book-cover-wrap">
+        <img src="/img/books/media-mass-communication-theory.png" alt="大眾傳播理論" class="book-cover">
+      </div>
+      
 
-  
-</div>
+      <div class="book-info">
+        <p class="book-meta">2024｜譯著｜譯者</p>
+        <h2>大眾傳播理論</h2>
+        <p class="book-publisher">五南</p>
+        <p class="book-topic">傳播理論、媒體研究、批判傳播</p>
+        <p>本書整理大眾傳播理論的主要傳統與核心概念，適合作為傳播理論與媒體研究課程的基礎讀本。</p>
+
+        
+      </div>
+    </article>
+    
+    <article class="book-card">
+      
+      <div class="book-cover-wrap">
+        <img src="/img/books/news-crisis-democracy.png" alt="新聞崩壞 何以民主？" class="book-cover">
+      </div>
+      
+
+      <div class="book-info">
+        <p class="book-meta">2021｜譯著｜譯者</p>
+        <h2>新聞崩壞 何以民主？</h2>
+        <p class="book-publisher">巨流</p>
+        <p class="book-topic">新聞業危機、民主、媒體政策</p>
+        <p>本書討論新聞業危機與民主公共生活之間的關係，是理解新聞業補助、平台問責與媒體政策的重要讀本。</p>
+
+        
+      </div>
+    </article>
+    
+  </section>
+</main>
 
 </main>
 
 <footer class="site-footer">
-  <div class="footer-inner">
-    <div class="footer-name">羅世宏｜國立中正大學傳播系教授</div>
-    <div class="footer-links">
+  <div class="footer-inner footer-inner-v2">
+    <div class="footer-main">
+      <div class="footer-name">羅世宏｜國立中正大學傳播系教授</div>
+      <p class="footer-desc">Media, Democracy, Platforms &amp; Public Knowledge</p>
+    </div>
+    <div class="footer-links footer-links-v2" aria-label="公開連結">
       <a href="https://substack.com/@telshl" target="_blank" rel="noopener">Substack</a>
+      <a href="/en/">English</a>
       <a href="mailto:shihhung.lo@gmail.com">Email</a>
     </div>
     <div class="footer-copy">
-      © 2026 Shih-Hung Lo. 國立中正大學傳播系.
+      © 2026 Shih-Hung Lo. 國立中正大學傳播系. Built as a public academic archive.
     </div>
   </div>
 </footer>

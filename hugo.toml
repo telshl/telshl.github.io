@@ -66,3 +66,7 @@ enableRobotsTXT = true
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+[taxonomies]
+  topic = "topics"
+  tag = "tags"
