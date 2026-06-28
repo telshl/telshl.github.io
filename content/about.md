@@ -47,18 +47,18 @@ His current work examines how democratic societies can rebuild public knowledge 
 
 ## 研究領域
 
-- 傳播政治經濟學（Political Economy of Communication）
-- 媒體改革與媒體政策
-- 社群媒體批判理論
-- 新聞業危機與民主政治
-- 事實查核與資訊治理
-- 中國傳媒研究
+- 傳播政治經濟學（critical political economy of communication）
+- 媒體改革與媒體政策（media reform and media policy）
+- 社群媒體批判理論（social media: a critical approach ）
+- 新聞業危機與民主政治（jouralism and democracy）
+- 事實查核與資訊生態（fact-checking and information eco-system ）
+- 中國傳媒研究（Chinese media）
 
 ---
 
 ## 社會參與
 
-- 台灣事實查核中心董事（2020-）、董事長（2022-）
+- 台灣事實查核中心諮議委員（2018-2020）、董事（2020-）、董事長（2022-）
 - 台灣媒體觀察教育基金會董事長（2019–2024）
-- 媒體改造學社（媒改社）創始成員，曾任召集人、理事長
-- weReport|調查報導公眾委製平台共同創辦人
+- 媒體改造學社（媒改社）創始成員（2003），曾任召集人、理事長| 退出媒改社（since 2024）
+- weReport|調查報導公眾委製平台共同創辦人（2011-2018）
