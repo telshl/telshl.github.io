@@ -1520,3 +1520,36 @@ a:hover { border-bottom-color: var(--accent); }
         height: 400px; /* 行動裝置略微縮小 */
     }
 }
+/* 議題策展總覽頁專用美學 */
+.container-topics-hub {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.topic-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #ffffff;
+    border-radius: 12px !important;
+    border: 1px solid #f2f4f4 !important;
+}
+
+.topic-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.08) !important;
+}
+
+.topic-icon {
+    font-size: 2rem;
+    background: #f4f6f7;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.topic-card .card-title a:hover {
+    color: #007bff !important; /* 主題亮色交互 */
+}

@@ -68,5 +68,6 @@ enableRobotsTXT = true
       unsafe = true
 
 [taxonomies]
-  topic = "topics"
+  category = "categories"
   tag = "tags"
+  topic = "topics"
