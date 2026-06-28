@@ -51,7 +51,7 @@ description: "羅世宏教授代表著作、譯著、編著與出版計畫，涵
 
   <div class="book-feature-card book-meta-card">
     <a href="http://www.books.com.tw/products/0010748726" target="_blank" rel="noopener">
-      <img class="book-feature-cover" src="/img/books/critical-theory-social-media.png" alt="社群媒體批判理論">
+      <img class="book-feature-cover" src="/img/books/critical-theory-social-media.jpeg" alt="社群媒體批判理論">
     </a>
     <div>
       <h2>《社群媒體批判理論》</h2>
@@ -62,7 +62,7 @@ description: "羅世宏教授代表著作、譯著、編著與出版計畫，涵
         <div><dt>主題</dt><dd>平台資本主義、數位勞動、社群媒體、批判理論與政治經濟學</dd></div>
       </dl>
       <p>以批判理論與政治經濟學視角分析社群媒體、平台資本主義、數位勞動與網路公共領域。</p>
-      <p><a href="http://www.books.com.tw/products/0010748726" target="_blank" rel="noopener">購書連結 →</a></p>
+      <p><a href="https://www.sanmin.com.tw/product/index/006245692" target="_blank" rel="noopener">購書連結 →</a></p>
     </div>
   </div>
 
