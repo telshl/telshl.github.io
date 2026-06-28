@@ -17,7 +17,7 @@ description: "羅世宏教授代表著作、譯著、編著與出版計畫，涵
 
   <div class="book-feature-card book-meta-card">
     <a href="https://www.books.com.tw/products/0010984921" target="_blank" rel="noopener">
-      <img class="book-feature-cover" src="/img/books/media-mass-communication-theory.png" alt="媒體與大眾傳播理論">
+      <img class="book-feature-cover" src="/img/books/media-mass-communication-theory.jpeg" alt="媒體與大眾傳播理論">
     </a>
     <div>
       <h2>《媒體與大眾傳播理論》</h2>
