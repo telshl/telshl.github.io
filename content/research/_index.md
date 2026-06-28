@@ -1,16 +1,6 @@
 ---
-title: "Research Matrix"
-layout: "research_map"
+title: "Research"
 ---
-
-## 核心研究領域 / Research Matrix
-
-<div class="knowledge-map-container">
-    <div id="knowledge-map"></div>
-</div>
-
-*請將滑鼠懸停於各節點上，查看研究主題間的結構性聯結。*
-
 <div class="page-intro-block">
   <p class="intro-kicker">Research</p>
   <h1>研究</h1>
