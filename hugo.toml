@@ -1,5 +1,4 @@
 baseURL = "https://telshl.github.io/"
-languageCode = "zh-TW"
 title = "羅世宏 | Shih-Hung Lo"
 theme = "academic"
 defaultContentLanguage = "zh"
