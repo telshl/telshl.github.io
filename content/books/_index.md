@@ -11,7 +11,7 @@ description: "羅世宏教授代表著作、譯著、編著與出版計畫，涵
   </p>
 </div>
 
-## 代表著作與譯著
+## 譯著
 
 <div class="book-feature-list">
 
