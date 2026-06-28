@@ -42,7 +42,7 @@ description: "羅世宏教授媒體引用、採訪、演講、論壇與公共討
   <article class="media-archive-item">
       <div class="article-date">2026-04-04</div>
       <div class="article-main">
-        <h4 class="article-title"><a href="https://www.storm.mg/article/11117798" target="_blank" rel="noopener">A協商與審議之爭　羅世宏：公視換屆僵局源於制度與政治落差</a></h4>
+        <h4 class="article-title"><a href="https://www.storm.mg/article/11117798" target="_blank" rel="noopener">協商與審議之爭　羅世宏：公視換屆僵局源於制度與政治落差</a></h4>
         <p class="article-meta"><span class="article-source">風傳媒</span></p>
       </div>
     </article>
