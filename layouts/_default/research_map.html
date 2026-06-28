@@ -1,0 +1,67 @@
+{{ define "main" }}
+<div class="container container-research">
+  <header class="article-header">
+    <h1>{{ .Title }}</h1>
+  </header>
+  
+  <!-- 引入現有的文章內容 -->
+  <div class="article-style">
+    {{ .Content }}
+  </div>
+</div>
+
+<!-- 引入 Vis.js 聯結圖套件 -->
+<script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+
+<script type="text/javascript">
+  // 1. 定義地圖節點 (Nodes) - 對應羅教授的核心研究領域
+  var nodes = new vis.DataSet([
+    { id: 1, label: '平台治理\nPlatform Governance', group: 'tech', shape: 'dot', size: 30 },
+    { id: 2, label: '生成式 AI 衝擊\nGenerative AI', group: 'tech', shape: 'dot', size: 25 },
+    { id: 3, label: '媒體改革與制度\nMedia Reform', group: 'media', shape: 'dot', size: 30 },
+    { id: 4, label: '公共媒體與民主\nPublic Media & Democracy', group: 'media', shape: 'dot', size: 25 },
+    { id: 5, label: '事實查核與信任\nFact-Checking & Trust', group: 'trust', shape: 'dot', size: 25 },
+    { id: 6, label: '傳播政治經濟學\nPolitical Economy', group: 'theory', shape: 'dot', size: 20 }
+  ]);
+
+  // 2. 定義核心議題之間的「結構性聯結」 (Edges)
+  var edges = new vis.DataSet([
+    { from: 1, to: 2, label: '平台演算法衝擊', arrows: 'to;from', color: '#848484' },
+    { from: 1, to: 3, label: '政策規制', color: '#848484' },
+    { from: 2, to: 5, label: 'AI 生成假訊息', color: '#e06666', width: 2 },
+    { from: 3, to: 4, label: '制度保障', color: '#848484' },
+    { from: 4, to: 5, label: '重建公共知識信任', color: '#4a86e8', width: 2 },
+    { from: 6, to: 1, label: '資本與權力分析', color: '#ccd1d1' },
+    { from: 6, to: 3, label: '結構性批判', color: '#ccd1d1' }
+  ]);
+
+  // 3. 網絡地圖參數設定
+  var container = document.getElementById('knowledge-map');
+  var data = { nodes: nodes, edges: edges };
+  var options = {
+    nodes: {
+      font: { face: 'Helvetica, Arial, Microsoft JhengHei', size: 14, color: '#333333' },
+      borderWidth: 2,
+      shadow: true
+    },
+    edges: {
+      width: 1,
+      font: { size: 11, align: 'middle' },
+      smooth: { type: 'continuous' }
+    },
+    groups: {
+      tech: { color: { background: '#D5F5E3', border: '#2ECC71' } },
+      media: { color: { background: '#EBF5FB', border: '#3498DB' } },
+      trust: { color: { background: '#FCF3CF', border: '#F1C40F' } },
+      theory: { color: { background: '#EBDEF0', border: '#9B59B6' } }
+    },
+    physics: {
+      enabled: true,
+      barnesHut: { gravitationalConstant: -2000, centralGravity: 0.3, springLength: 150 }
+    }
+  };
+
+  // 4. 初始化地圖
+  var network = new vis.Network(container, data, options);
+</script>
+{{ end }}

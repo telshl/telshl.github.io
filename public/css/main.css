@@ -1498,3 +1498,25 @@ a:hover { border-bottom-color: var(--accent); }
     margin-top: 1rem;
   }
 }
+/* 知識地圖容器與動態範圍設定 */
+.knowledge-map-container {
+    width: 100%;
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+#knowledge-map {
+    width: 100%;
+    height: 500px; /* 固定高度提供寬敞的拖拽與滑動空間 */
+    border: 1px solid #e5e8e8;
+    border-radius: 8px;
+    background-color: #fbfcfc;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.02);
+}
+
+@media (max-width: 768px) {
+    #knowledge-map {
+        height: 400px; /* 行動裝置略微縮小 */
+    }
+}

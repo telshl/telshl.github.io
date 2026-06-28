@@ -2,6 +2,18 @@
 title: "研究"
 description: "羅世宏教授研究主題索引，整理傳播政治經濟學、媒體改革、新聞業危機、平台治理、AI、事實查核與中國傳媒研究。"
 ---
+---
+title: "Research Matrix"
+layout: "research_map"
+---
+
+## 核心研究領域 / Research Matrix
+
+<div class="knowledge-map-container">
+    <div id="knowledge-map"></div>
+</div>
+
+*請將滑鼠懸停於各節點上，查看研究主題間的結構性聯結。*
 
 <div class="page-intro-block">
   <p class="intro-kicker">Research</p>
