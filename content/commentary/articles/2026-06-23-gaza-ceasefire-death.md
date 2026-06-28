@@ -1,5 +1,5 @@
 ---
-title: "「停火」之後，他們仍然死去"
+title: "「停火」之後，他們仍然死去 (《人間福報》)"
 date: 2026-06-23
 source: "公共評論"
 external_url: "https://www.merit-times.com/news/518179"

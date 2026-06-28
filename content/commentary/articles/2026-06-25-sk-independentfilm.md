@@ -1,5 +1,5 @@
 ---
-title: "南韓「慢電影運動」在守護什麼？"
+title: "南韓「慢電影運動」在守護什麼？（《客新聞》）"
 date: 2026-06-25
 source: "公共評論"
 external_url: "https://hakkanews.tw/2026/06/25/285773/"

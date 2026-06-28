@@ -1,8 +1,8 @@
 ---
-title: "「停火」之後，他們仍然死去"
+title: "「良十四世的首份通諭與AI時代的人性座標（《信傳媒》）"
 date: 2026-06-24
 source: "公共評論"
-external_url: "https://www.merit-times.com/news/518179"
+external_url: "https://www.cmmedia.com.tw/home/articles/61496"
 topics:
   - "戰爭"
   - "人道災難"
