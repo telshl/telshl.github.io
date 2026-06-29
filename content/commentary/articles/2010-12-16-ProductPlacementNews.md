@@ -8,7 +8,7 @@ topics:
 - media-reform
 tags:
 - 媒體改革
-summary: "關於「除了撤照NCC還該做什麼」的公共評論，刊於《蘋果日報》。"
+summary: "關於新聞置入性行銷。"
 article: true
 draft: false
 origin_archive: 2008-2018.md
