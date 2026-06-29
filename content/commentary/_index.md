@@ -1,13 +1,13 @@
 ---
 title: "公共評論"
-description: "羅世宏教授公共評論主題索引，聚焦媒體、民主、平台治理、AI、新聞業、事實查核、公共政策與資訊治理。"
+description: "羅世宏教授公共寫作與專欄評論文章，聚焦媒體、民主、平台治理、AI、新聞業、事實查核、公共政策與資訊治理。"
 ---
-
 <div class="page-intro-block">
-  <p class="intro-kicker">Public Writings</p>
-  <h1>公共評論</h1>
+  <p class="intro-kicker">Public Commentary</p>
+  <h1>學術出版</h1>
   <p>
     本頁整理羅世宏教授長期發表的公共評論與知識寫作，並依主題建立索引，方便讀者從「新聞業與民主」、「平台與 AI」、「事實查核」、「中國與威權傳播」、「媒體政策」及「文化公共思想」進入文章脈絡。
+  </p>
   </p>
 </div>
 
