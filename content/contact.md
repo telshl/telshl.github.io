@@ -1,7 +1,13 @@
 ---
 title: "聯絡方式"
-description: "羅世宏教授聯絡方式，供學術合作、媒體採訪、演講邀約與公共傳播相關事務聯繫。"
 ---
+<div class="page-intro-block">
+  <p class="intro-kicker">Contact</p>
+  <h1>聯絡方式</h1>
+  <p>
+   羅世宏教授聯絡方式，供學術合作、媒體採訪、演講邀約與公共傳播相關事務聯繫。。
+  </p>
+</div>
 
 ## 聯絡資訊
 
