@@ -27,7 +27,7 @@ description: "羅世宏教授正式學術出版清單，包括專書譯著、編
 </div>
 
 <div class="publication-item">
-<strong>羅世宏（譯）（2016）。</strong>《社群媒體批判理論》。台北。<a href="https://www.sanmin.com.tw/product/index/006245692" target="_blank" rel="noopener">購書</a>
+<strong>羅世宏、徐福德（譯）（2016）。</strong>《社群媒體批判理論》。台北。<a href="https://www.sanmin.com.tw/product/index/006245692" target="_blank" rel="noopener">購書</a>
 </div>
 
 </div>
@@ -58,9 +58,6 @@ description: "羅世宏教授正式學術出版清單，包括專書譯著、編
 
 <div class="publication-list">
 
-<div class="publication-item">
-<strong>羅世宏（2024）。</strong>〈不只是批判的傳播政治經濟學：一個實踐典範〉，《傳播、文化與政治》，19，頁121–127。DOI: <a href="https://doi.org/10.53106/172635812022060041010" target="_blank" rel="noopener">10.53106/172635812022060041010</a>
-</div>
 
 <div class="publication-item">
 <strong>羅世宏（2023）。</strong>〈以公共政策介入手段扶持新聞業存續與發展：平台問責途徑與公共預算途徑的跨國比較〉，《中華傳播學刊》，43，頁93–151。DOI: <a href="https://doi.org/10.53106/172635812023060043003" target="_blank" rel="noopener">10.53106/172635812023060043003</a>
@@ -157,6 +154,10 @@ description: "羅世宏教授正式學術出版清單，包括專書譯著、編
 ## 書評與評論型學術文章
 
 <div class="publication-list">
+
+<div class="publication-item">
+<strong>羅世宏（2024）。</strong>〈不只是批判的傳播政治經濟學：一個實踐典範〉，《傳播、文化與政治》，19，頁121–127。DOI: <a href="https://doi.org/10.53106/172635812022060041010" target="_blank" rel="noopener">10.53106/172635812022060041010</a>
+</div>
 
 <div class="publication-item">
 <strong>羅世宏（2015）。</strong>〈新聞業是討人厭，但民主需要它——評介《為什麼民主需要不可愛的新聞業》一書〉，《傳播研究與實踐》，5(1)，頁199–205。
