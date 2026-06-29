@@ -3,7 +3,7 @@ title: "Research"
 ---
 <div class="page-intro-block">
   <p class="intro-kicker">Research</p>
-  <h1>研究</h1>
+  <h1>研究主題</h1>
   <p>
     羅世宏教授的研究圍繞媒體制度、技術權力與民主公共領域。核心問題是：當新聞業、平台、國家與資本共同重組資訊環境時，民主社會如何維持可信任的公共溝通基礎？
   </p>

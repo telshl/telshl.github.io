@@ -27,7 +27,7 @@ enableRobotsTXT = true
     weight = 2
 
   [[menu.main]]
-    name = "研究"
+    name = "研究主題"
     url = "/research/"
     weight = 3
 
