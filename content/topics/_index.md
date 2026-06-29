@@ -1,5 +1,6 @@
 ---
-title: "議題策展主題包 / Thematic Issuing"
-summary: "將長期的公共評論，轉譯為三大台灣與全球傳播秩序的核心倡議專題。"
-layout: "topics_hub"   # 指定我們在步驟四建立的頂級策展布局
+title: "議題策展主題包 / Thematic Dossiers"
+description: "羅世宏教授公共評論的議題策展入口，將長期公共寫作整理為 AI、平台治理、媒體改革、新聞業危機與資訊治理、中國傳媒、全球民主、和平與氣候新聞學，以及文化公共思想等主題包。"
+summary: "將長期公共評論轉譯為可瀏覽、可追蹤、可延伸閱讀的公共知識主題包。"
+layout: "topics_hub"
 ---

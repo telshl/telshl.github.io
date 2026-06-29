@@ -1,6 +1,7 @@
 ---
 title: "English"
 description: "English profile of Professor Shih-Hung Lo, including research themes, public communication work, books, publications, media engagement and contact information."
+lang: "en"
 ---
 
 <div class="page-intro-block english-entry-block">
@@ -34,5 +35,5 @@ His research and public engagement examine how democratic societies can sustain 
 
 ## Contact
 
-Email: telshl [at] ccu.edu.tw  
+Email: shihhung.lo [at] gmail.com  
 Substack: [substack.com/@telshl](https://substack.com/@telshl)

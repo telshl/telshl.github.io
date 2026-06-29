@@ -1,0 +1,80 @@
+{{ define "main" }}
+{{ $articlePages := where .Site.RegularPages "Params.article" true }}
+<div class="page-container commentary-archive-page">
+  <section class="page-intro-block commentary-intro-block">
+    <p class="intro-kicker">Public Commentary Archive</p>
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p>{{ . }}</p>{{ end }}
+    {{ with .Params.summary }}<p class="archive-summary">{{ . }}</p>{{ end }}
+  </section>
+
+  {{ if or .Params.archive_year .Params.archive_from }}
+    {{ with .Content }}
+    <div class="prose page-content archive-note-content">{{ . }}</div>
+    {{ end }}
+    {{ $pages := slice }}
+    {{ if .Params.archive_year }}
+      {{ $pages = where $articlePages "Date.Year" (int .Params.archive_year) }}
+    {{ else }}
+      {{ $from := int .Params.archive_from }}
+      {{ $to := int .Params.archive_to }}
+      {{ $scratch := newScratch }}
+      {{ $scratch.Set "pages" (slice) }}
+      {{ range $articlePages }}
+        {{ $y := int (.Date.Format "2006") }}
+        {{ if and (ge $y $from) (le $y $to) }}
+          {{ $scratch.Add "pages" (slice .) }}
+        {{ end }}
+      {{ end }}
+      {{ $pages = $scratch.Get "pages" }}
+    {{ end }}
+
+    <section class="commentary-section" aria-labelledby="commentary-archive-list">
+      <div class="section-heading-compact">
+        <p class="section-label">Archive</p>
+        <h2 id="commentary-archive-list">文章索引</h2>
+        <p>本頁由 <code>content/commentary/articles/</code> 內的獨立文章資料自動生成。</p>
+      </div>
+      {{ if $pages }}
+      <div class="article-archive-list">
+        {{ range sort $pages "Date" "desc" }}
+        <article class="article-archive-item">
+          <div class="article-date">{{ with .Params.display_date }}{{ . }}{{ else }}{{ .Date.Format "2006-01-02" }}{{ end }}</div>
+          <div class="article-main">
+            <h3 class="article-title">
+              {{ if .Params.external_url }}
+              <a href="{{ .Params.external_url }}" target="_blank" rel="noopener">{{ .Title }}</a>
+              {{ else }}
+              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+              {{ end }}
+            </h3>
+            <p class="article-meta">
+              {{ with .Params.source }}<span class="article-source">{{ . }}</span>{{ end }}
+              {{ with .Params.tags }}<span class="article-tags">{{ delimit . "、" }}</span>{{ end }}
+            </p>
+          </div>
+        </article>
+        {{ end }}
+      </div>
+      {{ else }}
+      <div class="media-note-block archive-empty-note">
+        <p>目前尚無此期間的文章資料檔。資料匯入後，本區會自動顯示文章索引。</p>
+      </div>
+      {{ end }}
+    </section>
+  {{ else }}
+    <article class="commentary-single-article">
+      <p class="article-meta single-article-meta">
+        {{ with .Params.display_date }}{{ . }}{{ else }}{{ .Date.Format "2006-01-02" }}{{ end }}
+        {{ with .Params.source }}｜{{ . }}{{ end }}
+      </p>
+      {{ with .Params.external_url }}
+      <p><a class="btn-primary" href="{{ . }}" target="_blank" rel="noopener">閱讀外部原文</a></p>
+      {{ end }}
+      <div class="prose page-content">{{ .Content }}</div>
+    </article>
+  {{ end }}
+
+  <p class="back-link"><a href="/commentary/">← 回到公共評論總覽</a></p>
+</div>
+{{ end }}

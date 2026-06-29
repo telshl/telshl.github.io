@@ -1,0 +1,50 @@
+{{ define "main" }}
+{{ $slug := .Params.topic_slug | default .Data.Term }}
+{{ $articlePages := where .Site.RegularPages "Params.article" true }}
+{{ $topicArticles := where $articlePages "Params.topics" "intersect" (slice $slug) }}
+<div class="page-container topic-dossier-page">
+  <section class="page-intro-block topic-dossier-intro">
+    {{ with .Params.label }}<p class="intro-kicker">{{ . }}｜Thematic Dossier</p>{{ else }}<p class="intro-kicker">Thematic Dossier</p>{{ end }}
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.title_en }}<p class="topic-dossier-en">{{ . }}</p>{{ end }}
+    {{ with .Params.summary }}<p>{{ . }}</p>{{ end }}
+  </section>
+
+  <div class="prose page-content topic-dossier-content">
+    {{ .Content }}
+  </div>
+
+  {{ if $topicArticles }}
+  <section class="commentary-section topic-featured-section" aria-labelledby="topic-featured">
+    <div class="section-heading-compact">
+      <p class="section-label">Selected</p>
+      <h2 id="topic-featured">精選評論</h2>
+      <p>依時間排序顯示本主題包的最新文章。</p>
+    </div>
+    <div class="article-archive-list">
+      {{ range first 12 (sort $topicArticles "Date" "desc") }}
+      <article class="article-archive-item">
+        <div class="article-date">{{ with .Params.display_date }}{{ . }}{{ else }}{{ .Date.Format "2006-01-02" }}{{ end }}</div>
+        <div class="article-main">
+          <h3 class="article-title">
+            {{ if .Params.external_url }}
+            <a href="{{ .Params.external_url }}" target="_blank" rel="noopener">{{ .Title }}</a>
+            {{ else }}
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            {{ end }}
+          </h3>
+          <p class="article-meta">
+            {{ with .Params.source }}<span class="article-source">{{ . }}</span>{{ end }}
+            {{ with .Params.tags }}<span class="article-tags">{{ delimit . "、" }}</span>{{ end }}
+          </p>
+          {{ with .Params.summary }}<p class="article-summary">{{ . }}</p>{{ end }}
+        </div>
+      </article>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+  <p class="back-link"><a href="/topics/">← 回到議題策展主題包</a></p>
+</div>
+{{ end }}

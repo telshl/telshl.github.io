@@ -1,4 +1,32 @@
-- date: "2026-06-25"
-  type: "公共評論"
-  title: "新增公共評論"
-  url: "/commentary/"
+- date: '2026-06-25'
+  type: 公共評論
+  title: 南韓「慢電影運動」在守護什麼？
+  url: https://hakkanews.tw/2026/06/25/285773/
+- date: '2026-06-24'
+  type: 公共評論
+  title: 良十四世的首份通諭與AI 時代的人性座標
+  url: https://www.cmmedia.com.tw/home/articles/61496
+- date: '2026-06-23'
+  type: 公共評論
+  title: 「停火」之後，他們仍然死去
+  url: https://www.merit-times.com/news/518179
+- date: '2026-06-18'
+  type: 公共評論
+  title: 主權算力之後，誰來建立信任？
+  url: https://www.mirrordaily.news/story/67143
+- date: '2026-06-18'
+  type: 公共評論
+  title: 「共同反對仇恨」 向北愛爾蘭的市民行動致敬
+  url: https://hakkanews.tw/2026/06/18/284108/
+- date: '2026-06-12'
+  type: 公共評論
+  title: 被抹去的身影 美國華人移民史
+  url: https://hakkanews.tw/2026/06/12/283776/
+- date: '2026-06-12'
+  type: 公共評論
+  title: 消失的巨木，沉默的警報
+  url: https://www.merit-times.com/news/516838
+- date: '2026-06-10'
+  type: 公共評論
+  title: 誰有資格喊暫停？談談Anthropic的AI治理主張
+  url: https://www.cmmedia.com.tw/home/articles/61293

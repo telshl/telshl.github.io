@@ -1,0 +1,48 @@
+- slug: ai-trust
+  label: 專題 A
+  title: AI 時代的信任重建
+  title_en: AI, Trust & Public Knowledge
+  summary: 追蹤生成式 AI、主權算力、聊天機器人、AI 產業政策與公共知識秩序之間的張力。
+  question: 當 AI 重新分配知識生產、勞動與權力，民主社會如何重建可信賴的公共判斷？
+- slug: platform-governance
+  label: 專題 B
+  title: 平台治理與數位權力
+  title_en: Platform Governance & Digital Power
+  summary: 整理大型平台、演算法、資料政治、跨境監管與數位公共領域的制度問題。
+  question: 當公共討論被平台基礎設施重組，國家、市民社會與新聞業該如何要求平台負責？
+- slug: media-reform
+  label: 專題 C
+  title: 公共媒體與媒體改革
+  title_en: Public Media & Media Reform
+  summary: 聚焦公共廣電、NCC、媒體政策、新聞補助、公共預算與台灣傳播制度改革。
+  question: 民主社會如何把新聞與公共媒體視為基礎設施，而不是只交給市場流量競爭？
+- slug: journalism-crisis
+  label: 專題 D
+  title: 新聞業危機、事實查核與資訊治理
+  title_en: Journalism Crisis, Fact-Checking & Information Governance
+  summary: 整合新聞信任、新聞產業危機、平台分潤、錯假資訊、深偽、資訊戰與資訊環境韌性的公共評論。
+  question: 當新聞業危機與資訊失序彼此強化，民主社會該如何重建可信賴的新聞與資訊基礎設施？
+- slug: china-authoritarian
+  label: 專題 E
+  title: 中國傳媒、威權資訊秩序與台灣
+  title_en: Chinese Media, Authoritarian Information Order & Taiwan
+  summary: 從中國傳媒控制、統戰資訊、抖音、香港與威權傳播，思考台灣民主防衛。
+  question: 面對威權資訊秩序的外溢，台灣如何維持開放社會而不失去防衛能力？
+- slug: global-democracy
+  label: 專題 F
+  title: 全球民主與公共生活
+  title_en: Global Democracy & Public Life
+  summary: 整理民主倒退、極右政治、言論自由、人權法治、文化戰爭與公共生活的評論。
+  question: 在民主倒退與公共生活極化的時代，傳播、文化與制度如何維持自由、平等與責任？
+- slug: peace-climate-journalism
+  label: 專題 G
+  title: 和平新聞學與氣候新聞學
+  title_en: Peace Journalism & Climate Journalism
+  summary: 聚焦和平新聞學、戰爭與人道危機報導、核風險、氣候變遷、環境正義與氣候新聞學。
+  question: 新聞如何避免複製戰爭與災難的支配敘事，改以和平、人道與氣候正義作為公共報導尺度？
+- slug: culture-public-thought
+  label: 專題 H
+  title: 文化、書寫與公共思想
+  title_en: Culture, Writing & Public Thought
+  summary: 收錄書評、文化評論、電影、歷史記憶、族群、語言、書寫倫理與公共思想相關寫作。
+  question: 公共知識不只存在於政策與新聞，也存在於文化記憶、書寫倫理與思想傳承之中。

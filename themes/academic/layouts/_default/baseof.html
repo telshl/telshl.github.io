@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  {{ $pageLang := .Params.lang | default .Site.LanguageCode }}
+  {{ $pageLang := .Params.lang | default "zh-TW" }}
   {{ $ogLocale := cond (eq $pageLang "en") "en_US" "zh_TW" }}
   {{ $title := cond .IsHome .Site.Title (printf "%s | %s" .Title .Site.Params.name) }}
   {{ $description := (cond (ne .Description "") .Description .Site.Params.description) | plainify }}
@@ -79,6 +79,27 @@
       "事實查核",
       "人工智慧與公共傳播"
     ]
+  }
+  </script>
+  {{ end }}
+  {{ if .Params.article }}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": {{ .Title | jsonify }},
+    "datePublished": "{{ .Date.Format "2006-01-02" }}",
+    "author": {
+      "@type": "Person",
+      "name": "{{ .Site.Params.name }}",
+      "alternateName": "{{ .Site.Params.nameEn }}"
+    },
+    "publisher": {
+      "@type": "Person",
+      "name": "{{ .Site.Params.name }}"
+    },
+    "mainEntityOfPage": "{{ .Permalink }}"{{ with .Params.external_url }},
+    "isBasedOn": "{{ . }}"{{ end }}
   }
   </script>
   {{ end }}

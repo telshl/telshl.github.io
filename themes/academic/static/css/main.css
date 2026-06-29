@@ -10,6 +10,7 @@
   --ink:        #1a1f2e;       /* 深墨藍，主文字色 */
   --ink-mid:    #3d4460;       /* 中階藍，次要文字 */
   --ink-light:  #8890a8;       /* 淺藍灰，輔助元素 */
+  --muted:      #8890a8;       /* 舊版輔助文字變數，保留向後相容 */
   --paper:      #f7f5f0;       /* 暖白紙色，底色 */
   --paper-dark: #edeae3;       /* 稍深紙色，區塊分隔 */
   --accent:     #2e4a8c;       /* 學術深藍，強調色 */
@@ -1696,6 +1697,148 @@ a:hover { border-bottom-color: var(--accent); }
 .article-note {
   display: inline-block;
   margin-left: 0.55rem;
-  color: var(--muted);
+  color: var(--ink-light);
   font-size: 0.92em;
+}
+
+
+/* ============================================
+   Version 4.6：公共評論資料化與策展系統整理
+   ============================================ */
+.topics-hub-page,
+.topic-dossier-page,
+.commentary-archive-page {
+  max-width: 1100px;
+}
+
+.topics-hub-intro,
+.topic-dossier-intro {
+  margin-bottom: 2.4rem;
+}
+
+.dossier-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.2rem 0 3rem;
+}
+
+.dossier-card {
+  min-height: 245px;
+  border: 1px solid rgba(200,195,184,0.86);
+  border-top: 3px solid rgba(46,74,140,0.72);
+  background: linear-gradient(180deg, rgba(255,255,255,0.38), rgba(237,234,227,0.58));
+  box-shadow: 0 12px 34px rgba(26,31,46,0.045);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.dossier-card:hover {
+  transform: translateY(-2px);
+  border-top-color: var(--accent);
+  box-shadow: 0 18px 44px rgba(26,31,46,0.075);
+}
+
+.dossier-card-link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 1.25rem;
+  color: var(--ink);
+  border: none;
+}
+
+.dossier-label,
+.inline-label {
+  display: inline-block;
+  width: fit-content;
+  margin-bottom: 0.65rem;
+  padding: 0.14rem 0.55rem;
+  border: 1px solid rgba(46,74,140,0.24);
+  border-radius: 999px;
+  font-family: var(--sans);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  background: rgba(255,255,255,0.34);
+}
+
+.dossier-card h2 {
+  margin-bottom: 0.2rem;
+  font-size: 1.22rem;
+}
+
+.dossier-title-en,
+.topic-dossier-en {
+  margin-bottom: 0.85rem;
+  font-family: var(--garamond);
+  font-size: 0.95rem;
+  font-style: italic;
+  color: var(--ink-light);
+}
+
+.dossier-card p:not(.dossier-title-en) {
+  font-family: var(--sans);
+  font-size: 0.86rem;
+  line-height: 1.75;
+  color: var(--ink-mid);
+}
+
+.dossier-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.8rem;
+  margin-top: auto;
+  padding-top: 0.9rem;
+  border-top: 1px solid rgba(200,195,184,0.74);
+  font-family: var(--sans);
+  font-size: 0.76rem;
+  color: var(--accent);
+}
+
+.topic-dossier-content {
+  margin-bottom: 2rem;
+}
+
+.topic-featured-section {
+  margin-top: 1.8rem;
+}
+
+.archive-summary {
+  font-family: var(--sans);
+  font-size: 0.92rem;
+  color: var(--ink-mid);
+}
+
+.back-link {
+  margin-top: 2.2rem;
+  font-family: var(--sans);
+  font-size: 0.85rem;
+}
+
+.commentary-topic-card h2 a {
+  color: var(--ink);
+  border: none;
+}
+
+.commentary-topic-card h2 a:hover {
+  color: var(--accent);
+}
+
+.single-article-meta {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 820px) {
+  .dossier-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dossier-card {
+    min-height: auto;
+  }
+
+  .dossier-meta {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
 }

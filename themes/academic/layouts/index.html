@@ -54,49 +54,24 @@
   </div>
 </section>
 
-<section class="latest-section">
-  <div class="section-heading">
-    <p class="section-label">Latest Updates</p>
-    <h2 class="section-title">最新更新</h2>
-  </div>
-
-  <div class="latest-list">
-    {{ range first 5 (sort .Site.Data.updates "date" "desc") }}
-    <article class="latest-item">
-      <p class="latest-meta">{{ .date }}｜{{ .type }}</p>
-      <h3>
-        <a href="{{ .url | relURL }}">{{ .title }}</a>
-      </h3>
-    </article>
-    {{ end }}
-  </div>
-</section>
-
 <section class="page-container latest-updates-section">
+  {{ $articlePages := where .Site.RegularPages "Params.article" true }}
   <div class="section-heading-row">
     <div>
       <p class="section-label">Recent Updates</p>
       <h2 class="section-title">近期更新</h2>
     </div>
-    <p class="section-note">近期公共評論、媒體引用與網站知識檔案更新。</p>
+    <p class="section-note">由公共評論資料自動生成，顯示最近新增的公共寫作。</p>
   </div>
 
   <div class="updates-grid">
-    <a class="update-card" href="/commentary/2026/">
-      <span class="update-date">2026-06-18</span>
-      <h3>主權算力之後，誰來建立信任？</h3>
-      <p>公共評論｜AI、平台治理與公共知識信任</p>
+    {{ range first 3 (sort $articlePages "Date" "desc") }}
+    <a class="update-card" href="{{ if .Params.external_url }}{{ .Params.external_url }}{{ else }}{{ .RelPermalink }}{{ end }}" {{ if .Params.external_url }}target="_blank" rel="noopener"{{ end }}>
+      <span class="update-date">{{ with .Params.display_date }}{{ . }}{{ else }}{{ .Date.Format "2006-01-02" }}{{ end }}</span>
+      <h3>{{ .Title }}</h3>
+      <p>{{ with .Params.source }}{{ . }}｜{{ end }}{{ with .Params.tags }}{{ delimit . "、" }}{{ else }}公共評論{{ end }}</p>
     </a>
-    <a class="update-card" href="/media/">
-      <span class="update-date">2026-06-22</span>
-      <h3>全球新聞信任度近十年最低</h3>
-      <p>媒體引用｜新聞信任、社群平台與查核困境</p>
-    </a>
-    <a class="update-card" href="/publications/">
-      <span class="update-date">Website</span>
-      <h3>學術出版/活動</h3>
-      <p>知識檔案｜專書、譯著、期刊論文與學術活動、公共論壇參與</p>
-    </a>
+    {{ end }}
   </div>
 </section>
 
