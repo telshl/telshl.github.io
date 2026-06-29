@@ -8,6 +8,40 @@
     {{ end }}
   </section>
 
+  {{ $articlePages := where (where .Site.RegularPages "Section" "commentary") "File.Dir" "commentary/articles/" }}
+  {{ if $articlePages }}
+  <section class="commentary-section commentary-latest-section" aria-labelledby="commentary-latest">
+    <div class="section-heading-compact">
+      <p class="section-label">Latest</p>
+      <h2 id="commentary-latest">最新評論</h2>
+      <p>近期新增的公共評論與知識寫作。</p>
+    </div>
+
+    <div class="article-archive-list commentary-latest-list">
+      {{ range first 8 (sort $articlePages "Date" "desc") }}
+      <article class="article-archive-item commentary-latest-item">
+        <div class="article-date">{{ .Date.Format "2006-01-02" }}</div>
+        <div class="article-main">
+          <h3 class="article-title">
+            {{ if .Params.external_url }}
+            <a href="{{ .Params.external_url }}" target="_blank" rel="noopener">{{ .Title }}</a>
+            {{ else }}
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            {{ end }}
+          </h3>
+          <p class="article-meta">
+            {{ with .Params.source }}<span class="article-source">{{ . }}</span>{{ end }}
+            {{ with .Params.tags }}<span class="article-tags">{{ delimit . "、" }}</span>{{ end }}
+          </p>
+          {{ with .Params.summary }}<p class="article-summary">{{ . }}</p>{{ end }}
+        </div>
+      </article>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+
   <section class="commentary-section commentary-topic-section" aria-labelledby="commentary-topic-map">
     <div class="section-heading-compact">
       <p class="section-label">Themes</p>
@@ -81,37 +115,5 @@
     </div>
   </section>
 
-  {{ $articlePages := where (where .Site.RegularPages "Section" "commentary") "File.Dir" "commentary/articles/" }}
-  {{ if $articlePages }}
-  <section class="commentary-section commentary-latest-section" aria-labelledby="commentary-latest">
-    <div class="section-heading-compact">
-      <p class="section-label">Latest</p>
-      <h2 id="commentary-latest">最新評論</h2>
-      <p>近期新增的公共評論與知識寫作。</p>
-    </div>
-
-    <div class="article-archive-list commentary-latest-list">
-      {{ range first 8 (sort $articlePages "Date" "desc") }}
-      <article class="article-archive-item commentary-latest-item">
-        <div class="article-date">{{ .Date.Format "2006-01-02" }}</div>
-        <div class="article-main">
-          <h3 class="article-title">
-            {{ if .Params.external_url }}
-            <a href="{{ .Params.external_url }}" target="_blank" rel="noopener">{{ .Title }}</a>
-            {{ else }}
-            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-            {{ end }}
-          </h3>
-          <p class="article-meta">
-            {{ with .Params.source }}<span class="article-source">{{ . }}</span>{{ end }}
-            {{ with .Params.tags }}<span class="article-tags">{{ delimit . "、" }}</span>{{ end }}
-          </p>
-          {{ with .Params.summary }}<p class="article-summary">{{ . }}</p>{{ end }}
-        </div>
-      </article>
-      {{ end }}
-    </div>
-  </section>
-  {{ end }}
 </div>
 {{ end }}
