@@ -1,13 +1,19 @@
 ---
 title: "關於我"
-description: "羅世宏教授中英文簡介，包括學術經歷、研究領域、媒體改革、事實查核與公共傳播實踐。"
 ---
+<div class="page-intro-block">
+  <p class="intro-kicker">About Me</p>
+  <h1>關於我</h1>
+  <p>
+    羅世宏是台灣國立中正大學傳播系教授，長期研究媒體制度、新聞業危機、平台治理，長期投入媒體改革、事實查核與民主公共傳播實踐。
+  </p>
+</div>
 
 <div class="about-profile-card">
   <img src="/img/profile.jpg" alt="羅世宏教授正式照片" class="about-profile-photo">
   <div>
     <p class="intro-kicker">About</p>
-    <p>羅世宏是國立中正大學傳播系教授，長期研究媒體制度、新聞業危機、平台治理、事實查核與民主公共知識。</p>
+    <p>羅世宏是國立中正大學傳播系教授，長期研究媒體制度、新聞業危機、平台治理，長期投入媒體改革、事實查核與民主公共傳播實踐。</p>
   </div>
 </div>
 
