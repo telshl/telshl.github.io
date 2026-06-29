@@ -3,7 +3,7 @@ title: "政府置入 記者走路"
 date: '2010-12-16'
 display_date: "2010-12-16"
 source: "自由時報"
-external_url: "http://www.libertytimes.com.tw/2010/new/dec/16/today-o7.htm#"
+external_url: "https://www.mediawatch.org.tw/work/1498"
 topics:
 - media-reform
 tags:
@@ -13,7 +13,8 @@ article: true
 draft: false
 origin_archive: 2008-2018.md
 ---
-請閱讀原文：http://www.libertytimes.com.tw/2010/new/dec/16/today-o7.htm#
+原文網址已無存：http://www.libertytimes.com.tw/2010/new/dec/16/today-o7.htm#
+請見台灣媒體觀察教育基金會網站轉載全文：https://www.mediawatch.org.tw/work/1498
 
 政府置入 記者走路
 
