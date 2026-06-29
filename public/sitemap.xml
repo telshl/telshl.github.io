@@ -6,7 +6,6 @@
     <lastmod>2026-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/commentary/2025/</loc>
-    <lastmod>2026-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/commentary/2024/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
@@ -35,6 +34,9 @@
     <loc>http://localhost:1313/topics/</loc>
     <lastmod>2026-06-25T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/commentary/articles/2026-06-24-popeleo-ai/</loc>
+    <lastmod>2026-06-24T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/</loc>
     <lastmod>2026-06-24T00:00:00+00:00</lastmod>
   </url><url>
@@ -42,9 +44,6 @@
     <lastmod>2026-06-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/%E7%94%9F%E6%88%90%E5%BC%8F-ai/</loc>
-    <lastmod>2026-06-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/commentary/articles/2026-06-24-popeleo-ai/</loc>
     <lastmod>2026-06-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/topics/ai-trust/</loc>
@@ -65,20 +64,7 @@
     <loc>http://localhost:1313/topics/%E6%88%B0%E7%88%AD/</loc>
     <lastmod>2026-06-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%E5%85%AC%E5%85%B1%E9%9B%BB%E8%A6%96/</loc>
-    <lastmod>2026-01-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/%E5%B9%B3%E5%8F%B0%E6%B2%BB%E7%90%86/</loc>
-    <lastmod>2026-01-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/%E4%BA%8B%E5%AF%A6%E6%9F%A5%E6%A0%B8/</loc>
-    <lastmod>2026-01-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/topics/media-reform/</loc>
-    <lastmod>2026-01-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/topics/journalism-crisis/</loc>
-    <lastmod>2026-01-01T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/publications/</loc>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
@@ -86,14 +72,22 @@
   </url><url>
     <loc>http://localhost:1313/research/</loc>
   </url><url>
+    <loc>http://localhost:1313/tags/%E5%85%AC%E5%85%B1%E9%9B%BB%E8%A6%96/</loc>
+  </url><url>
     <loc>http://localhost:1313/about/</loc>
   </url><url>
     <loc>http://localhost:1313/contact/</loc>
   </url><url>
     <loc>http://localhost:1313/media/</loc>
   </url><url>
-    <loc>http://localhost:1313/publications/</loc>
+    <loc>http://localhost:1313/tags/%E5%B9%B3%E5%8F%B0%E6%B2%BB%E7%90%86/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/%E4%BA%8B%E5%AF%A6%E6%9F%A5%E6%A0%B8/</loc>
   </url><url>
     <loc>http://localhost:1313/books/</loc>
+  </url><url>
+    <loc>http://localhost:1313/topics/media-reform/</loc>
+  </url><url>
+    <loc>http://localhost:1313/topics/journalism-crisis/</loc>
   </url>
 </urlset>

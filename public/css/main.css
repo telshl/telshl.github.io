@@ -1498,28 +1498,6 @@ a:hover { border-bottom-color: var(--accent); }
     margin-top: 1rem;
   }
 }
-/* 知識地圖容器與動態範圍設定 */
-.knowledge-map-container {
-    width: 100%;
-    margin: 2rem 0;
-    display: flex;
-    justify-content: center;
-}
-
-#knowledge-map {
-    width: 100%;
-    height: 500px; /* 固定高度提供寬敞的拖拽與滑動空間 */
-    border: 1px solid #e5e8e8;
-    border-radius: 8px;
-    background-color: #fbfcfc;
-    box-shadow: inset 0 0 10px rgba(0,0,0,0.02);
-}
-
-@media (max-width: 768px) {
-    #knowledge-map {
-        height: 400px; /* 行動裝置略微縮小 */
-    }
-}
 /* 議題策展總覽頁專用美學 */
 .container-topics-hub {
     max-width: 1140px;
@@ -1552,4 +1530,158 @@ a:hover { border-bottom-color: var(--accent); }
 
 .topic-card .card-title a:hover {
     color: #007bff !important; /* 主題亮色交互 */
+}
+/* ============================================
+   Version 4.5.4：公共評論頁視覺統一
+   ============================================ */
+.commentary-page {
+  max-width: 1100px;
+}
+
+.commentary-intro-block {
+  margin-bottom: 3rem;
+}
+
+.section-heading-compact {
+  max-width: 760px;
+  margin: 0 0 1.35rem;
+}
+
+.section-heading-compact .section-label {
+  margin-bottom: 0.75rem;
+}
+
+.section-heading-compact h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.45rem;
+}
+
+.section-heading-compact p:not(.section-label) {
+  margin: 0;
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  line-height: 1.75;
+  color: var(--ink-mid);
+}
+
+.commentary-section {
+  margin: 0 0 3.2rem;
+}
+
+.commentary-topic-grid {
+  margin-bottom: 0;
+}
+
+.commentary-topic-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 205px;
+  border-top-color: rgba(46,74,140,0.72);
+  background: linear-gradient(180deg, rgba(255,255,255,0.36), rgba(237,234,227,0.58));
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.commentary-topic-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 42px rgba(26,31,46,0.07);
+  border-top-color: var(--accent);
+}
+
+.commentary-topic-card h2 {
+  font-size: 1.12rem;
+}
+
+.commentary-topic-card a {
+  display: inline-block;
+  align-self: flex-start;
+  margin-top: auto;
+  padding-top: 0.9rem;
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  color: var(--accent);
+  border-bottom-color: rgba(46,74,140,0.22);
+}
+
+.commentary-year-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.85rem;
+}
+
+.commentary-year-card {
+  display: block;
+  min-height: 128px;
+  padding: 1rem;
+  border: 1px solid rgba(200,195,184,0.86);
+  background: rgba(255,255,255,0.32);
+  color: var(--ink);
+  box-shadow: 0 10px 28px rgba(26,31,46,0.035);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.commentary-year-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(46,74,140,0.52);
+  box-shadow: 0 16px 40px rgba(26,31,46,0.065);
+}
+
+.commentary-year-label {
+  display: block;
+  margin-bottom: 0.45rem;
+  font-family: var(--serif);
+  font-size: 1.12rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.commentary-year-desc {
+  display: block;
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  line-height: 1.62;
+  color: var(--ink-mid);
+}
+
+.commentary-latest-list {
+  margin-bottom: 0;
+}
+
+.commentary-latest-item {
+  background: rgba(255,255,255,0.34);
+  box-shadow: 0 10px 30px rgba(26,31,46,0.035);
+}
+
+.article-tags {
+  display: inline-block;
+  margin-left: 0.45rem;
+  color: var(--ink-light);
+}
+
+.article-summary {
+  margin: 0.55rem 0 0;
+  font-family: var(--sans);
+  font-size: 0.84rem;
+  line-height: 1.75;
+  color: var(--ink-mid);
+}
+
+@media (max-width: 960px) {
+  .commentary-year-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .commentary-year-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .commentary-topic-card {
+    min-height: auto;
+  }
+
+  .article-tags {
+    display: block;
+    margin: 0.35rem 0 0;
+  }
 }
