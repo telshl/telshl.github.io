@@ -53,6 +53,19 @@
 {{ else }}
 {{ $slug := .Params.topic_slug | default .Data.Term }}
 {{ $articlePages := where .Site.RegularPages "Params.article" true }}
+{{/* 用兩種方式配對：intersect 處理陣列，或直接比對字串 */}}
+{{ $scratch := newScratch }}
+{{ $scratch.Set "matched" (slice) }}
+{{ range $articlePages }}
+  {{ $topics := .Params.topics }}
+  {{ if $topics }}
+    {{ range $topics }}
+      {{ if eq . $slug }}
+        {{ $scratch.Add "matched" (slice .) }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
 {{ $topicArticles := where $articlePages "Params.topics" "intersect" (slice $slug) }}
 <div class="page-container topic-dossier-page">
   <section class="page-intro-block topic-dossier-intro">
@@ -101,6 +114,35 @@
       <p class="section-label">Selected</p>
       <h2 id="topic-featured">精選評論</h2>
       <p>此主題包尚未連結到文章；可在公共評論文章 front matter 的 <code>topics</code> 欄位加入 <code>{{ $slug }}</code>。</p>
+    </div>
+  </section>
+  {{ end }}
+
+  {{ if $topicArticles }}
+  <section class="commentary-section topic-all-section" aria-labelledby="topic-all-articles">
+    <div class="section-heading-compact">
+      <p class="section-label">Archive</p>
+      <h2 id="topic-all-articles">完整文章索引</h2>
+      <p>本主題包共 {{ len $topicArticles }} 篇文章，依時間倒序排列。</p>
+    </div>
+    <div class="article-archive-list">
+      {{ range sort $topicArticles "Date" "desc" }}
+      <article class="article-archive-item">
+        <div class="article-date">{{ with .Params.display_date }}{{ . }}{{ else }}{{ .Date.Format "2006-01-02" }}{{ end }}</div>
+        <div class="article-main">
+          <h3 class="article-title">
+            {{ if .Params.external_url }}
+            <a href="{{ .Params.external_url }}" target="_blank" rel="noopener">{{ .Title }}</a>
+            {{ else }}
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            {{ end }}
+          </h3>
+          <p class="article-meta">
+            {{ with .Params.source }}<span class="article-source">{{ . }}</span>{{ end }}
+          </p>
+        </div>
+      </article>
+      {{ end }}
     </div>
   </section>
   {{ end }}
