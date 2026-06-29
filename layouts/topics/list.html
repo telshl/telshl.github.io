@@ -1,9 +1,8 @@
 {{ define "main" }}
 {{/*
   The /topics/ URL is reserved for curated Thematic Dossiers.
-  Do not rely only on .RelPermalink because Hugo may render a taxonomy/list
-  page differently depending on build context. The root dossier hub is marked
-  in content/topics/_index.md with layout: "topics_hub".
+  Root layouts/ always override themes/ — keep this file in sync with
+  themes/academic/layouts/topics/list.html.
 */}}
 {{ $isHub := or (eq .Params.layout "topics_hub") (and .File (eq .File.Path "topics/_index.md")) (eq .RelPermalink "/topics/") }}
 {{ if $isHub }}
@@ -52,8 +51,11 @@
 </div>
 {{ else }}
 {{ $slug := .Params.topic_slug | default .Data.Term }}
-{{ $articlePages := where site.Pages "Params.article" true }}
-{{ $topicArticles := where $articlePages "Params.topics" "intersect" (slice $slug) }}
+{{ $allPages := where site.Pages "Params.article" true }}
+{{ $topicArticles := where $allPages "Params.topics" "intersect" (slice $slug) }}
+{{ if not $topicArticles }}
+{{ $topicArticles = where $allPages "Params.topics" $slug }}
+{{ end }}
 <div class="page-container topic-dossier-page">
   <section class="page-intro-block topic-dossier-intro">
     {{ with .Params.label }}<p class="intro-kicker">{{ . }}｜Thematic Dossier</p>{{ else }}<p class="intro-kicker">Thematic Dossier</p>{{ end }}
@@ -67,14 +69,14 @@
   </div>
 
   {{ if $topicArticles }}
-  <section class="commentary-section topic-featured-section" aria-labelledby="topic-featured">
+  <section class="commentary-section topic-all-section" aria-labelledby="topic-all-articles">
     <div class="section-heading-compact">
-      <p class="section-label">Selected</p>
-      <h2 id="topic-featured">精選評論</h2>
-      <p>依時間排序顯示本主題包的最新文章。</p>
+      <p class="section-label">Archive</p>
+      <h2 id="topic-all-articles">完整文章索引</h2>
+      <p>本主題包共 {{ len $topicArticles }} 篇文章，依時間倒序排列。</p>
     </div>
     <div class="article-archive-list">
-      {{ range first 12 (sort $topicArticles "Date" "desc") }}
+      {{ range sort $topicArticles "Date" "desc" }}
       <article class="article-archive-item">
         <div class="article-date">{{ with .Params.display_date }}{{ . }}{{ else }}{{ .Date.Format "2006-01-02" }}{{ end }}</div>
         <div class="article-main">
@@ -89,7 +91,6 @@
             {{ with .Params.source }}<span class="article-source">{{ . }}</span>{{ end }}
             {{ with .Params.tags }}<span class="article-tags">{{ delimit . "、" }}</span>{{ end }}
           </p>
-          {{ with .Params.summary }}<p class="article-summary">{{ . }}</p>{{ end }}
         </div>
       </article>
       {{ end }}
@@ -98,8 +99,8 @@
   {{ else }}
   <section class="commentary-section topic-featured-section" aria-labelledby="topic-featured">
     <div class="section-heading-compact">
-      <p class="section-label">Selected</p>
-      <h2 id="topic-featured">精選評論</h2>
+      <p class="section-label">Archive</p>
+      <h2 id="topic-featured">文章索引</h2>
       <p>此主題包尚未連結到文章；可在公共評論文章 front matter 的 <code>topics</code> 欄位加入 <code>{{ $slug }}</code>。</p>
     </div>
   </section>

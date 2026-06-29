@@ -16,7 +16,7 @@
     </div>
 
     <div class="article-archive-list commentary-latest-list">
-      {{ range first 10 (sort $articlePages "Date" "desc") }}
+      {{ range first 6 (sort $articlePages "Date" "desc") }}
       <article class="article-archive-item commentary-latest-item">
         <div class="article-date">{{ with .Params.display_date }}{{ . }}{{ else }}{{ .Date.Format "2006-01-02" }}{{ end }}</div>
         <div class="article-main">

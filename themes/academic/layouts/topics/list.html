@@ -1,13 +1,12 @@
 {{ define "main" }}
 {{/*
   The /topics/ URL is reserved for curated Thematic Dossiers.
-  Do not rely only on .RelPermalink because Hugo may render a taxonomy/list
-  page differently depending on build context. The root dossier hub is marked
-  in content/topics/_index.md with layout: "topics_hub".
+  Root layouts/ always override themes/ — keep this file in sync with
+  themes/academic/layouts/topics/list.html.
 */}}
 {{ $isHub := or (eq .Params.layout "topics_hub") (and .File (eq .File.Path "topics/_index.md")) (eq .RelPermalink "/topics/") }}
 {{ if $isHub }}
-{{ $articlePages := where .Site.RegularPages "Params.article" true }}
+{{ $articlePages := where site.Pages "Params.article" true }}
 <div class="page-container topics-hub-page">
   <section class="page-intro-block topics-hub-intro">
     <p class="intro-kicker">Thematic Dossiers</p>
