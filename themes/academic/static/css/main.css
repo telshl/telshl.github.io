@@ -1686,15 +1686,9 @@ a:hover { border-bottom-color: var(--accent); }
   }
 }
 
-/* Version 4.5.6：公共評論年份頁寬度與卡片排版修復 */
-.page-content.page-section-commentary {
-  max-width: 900px;
-}
-
-.page-content.page-section-commentary .article-archive-list {
-  margin-top: 1.5rem;
-}
-
-.page-content.page-section-commentary .article-archive-item {
-  align-items: start;
+.article-note {
+  display: inline-block;
+  margin-left: 0.55rem;
+  color: var(--muted);
+  font-size: 0.92em;
 }
