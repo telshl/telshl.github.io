@@ -1591,13 +1591,20 @@ a:hover { border-bottom-color: var(--accent); }
   font-size: 1.12rem;
 }
 
-.commentary-topic-card a {
-  display: inline-block;
-  align-self: flex-start;
+.commentary-topic-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.35rem;
   margin-top: auto;
   padding-top: 0.9rem;
+}
+
+.commentary-topic-card a {
+  display: inline-block;
   font-family: var(--sans);
   font-size: 0.78rem;
+  line-height: 1.55;
   color: var(--accent);
   border-bottom-color: rgba(46,74,140,0.22);
 }
