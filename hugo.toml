@@ -69,4 +69,5 @@ enableRobotsTXT = true
 [taxonomies]
   category = "categories"
   tag = "tags"
-  topic = "topics"
+  # Reserve /topics/ for curated thematic dossiers; avoid taxonomy/section URL collision.
+  topic = "topic-tags"
