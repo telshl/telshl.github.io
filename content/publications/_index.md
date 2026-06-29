@@ -152,7 +152,7 @@ description: "羅世宏教授正式學術出版清單，包括專書譯著、編
 <div class="publication-list">
 
 <div class="publication-item">
-<strong>羅世宏（2024）。</strong>〈不只是批判的傳播政治經濟學：一個實踐典範〉，《傳播、文化與政治》，19，頁121–127。<a href="https://www.airitilibrary.com/Article/Detail/P20150616002-N202407120018-00005" target="_blank" rel="noopener"></a>
+<strong>羅世宏（2024）。</strong><a href="https://www.airitilibrary.com/Article/Detail/P20150616002-N202407120018-00005" target="_blank" rel="noopener">〈不只是批判的傳播政治經濟學：一個實踐典範〉</a>，《傳播、文化與政治》，19，頁121–127。
 </div>
 
 <div class="publication-item">
