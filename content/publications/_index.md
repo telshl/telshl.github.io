@@ -3,7 +3,7 @@ title: "Academic Publications and Activities"
 description: "羅世宏教授正式學術出版清單，包括專書譯著、編著、期刊論文、專書論文、研究報告與受邀演講。"
 ---
 <div class="page-intro-block">
-  <p class="intro-kicker"></p>
+  <p class="intro-kicker">Academic Publications and Activities</p>
   <h1>學術出版</h1>
   <p>
     本頁彙整羅世宏教授的學術出版紀錄及學術活動，區分為專書與譯著、編著、期刊論文、專書論文、書評與專業論文、受邀演講與公共論壇。若需引用，建議以各出版品原始頁面與 DOI 資訊為準。
