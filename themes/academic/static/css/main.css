@@ -1842,3 +1842,25 @@ a:hover { border-bottom-color: var(--accent); }
     gap: 0.25rem;
   }
 }
+
+/* ============================================
+   Version 4.6.4：一般導覽頁版心統一
+   目標：讓 About／Books／Research／Publications／Media／Contact 等頁面
+   與公共評論頁使用一致的 1100px 版心。
+   ============================================ */
+.page-content {
+  max-width: 1100px;
+  width: 100%;
+}
+
+/* 純文字段落維持較適合閱讀的行長；卡片、清單、格狀內容則使用完整版心。 */
+.page-content > p,
+.page-content > ul,
+.page-content > ol,
+.page-content > blockquote {
+  max-width: 760px;
+}
+
+.page-content > hr {
+  max-width: 1100px;
+}
