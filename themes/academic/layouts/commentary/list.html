@@ -1,5 +1,5 @@
 {{ define "main" }}
-{{ $articlePages := where .Site.RegularPages "Params.article" true }}
+{{ $articlePages := where site.Pages "Params.article" true }}
 <div class="page-container commentary-page">
   <section class="page-intro-block commentary-intro-block">
     <p class="intro-kicker">Public Commentary</p>

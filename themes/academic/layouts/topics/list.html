@@ -52,10 +52,10 @@
 </div>
 {{ else }}
 {{ $slug := .Params.topic_slug | default .Data.Term }}
-{{ $articlePages := where .Site.RegularPages "Params.article" true }}
-{{ $topicArticles := where $articlePages "Params.topics" "intersect" (slice $slug) }}
+{{ $allPages := where site.Pages "Params.article" true }}
+{{ $topicArticles := where $allPages "Params.topics" "intersect" (slice $slug) }}
 {{ if not $topicArticles }}
-{{ $topicArticles = where $articlePages "Params.topics" $slug }}
+{{ $topicArticles = where $allPages "Params.topics" $slug }}
 {{ end }}
 <div class="page-container topic-dossier-page">
   <section class="page-intro-block topic-dossier-intro">

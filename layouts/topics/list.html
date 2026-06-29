@@ -7,7 +7,7 @@
 */}}
 {{ $isHub := or (eq .Params.layout "topics_hub") (and .File (eq .File.Path "topics/_index.md")) (eq .RelPermalink "/topics/") }}
 {{ if $isHub }}
-{{ $articlePages := where .Site.RegularPages "Params.article" true }}
+{{ $articlePages := where site.Pages "Params.article" true }}
 <div class="page-container topics-hub-page">
   <section class="page-intro-block topics-hub-intro">
     <p class="intro-kicker">Thematic Dossiers</p>
@@ -52,7 +52,7 @@
 </div>
 {{ else }}
 {{ $slug := .Params.topic_slug | default .Data.Term }}
-{{ $articlePages := where .Site.RegularPages "Params.article" true }}
+{{ $articlePages := where site.Pages "Params.article" true }}
 {{ $topicArticles := where $articlePages "Params.topics" "intersect" (slice $slug) }}
 <div class="page-container topic-dossier-page">
   <section class="page-intro-block topic-dossier-intro">
