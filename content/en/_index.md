@@ -1,7 +1,6 @@
 ---
 title: "English"
 description: "English profile of Professor Shih-Hung Lo, including research themes, public communication work, books, publications, media engagement and contact information."
-lang: "en"
 ---
 
 <div class="page-intro-block english-entry-block">
