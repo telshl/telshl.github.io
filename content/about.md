@@ -12,7 +12,6 @@ title: "關於我"
 <div class="about-profile-card">
   <img src="/img/profile.jpg" alt="羅世宏教授正式照片" class="about-profile-photo">
   <div>
-    <p class="intro-kicker">About</p>
     <p>羅世宏是國立中正大學傳播系教授，長期研究媒體制度、新聞業危機、平台治理，長期投入媒體改革、事實查核與民主公共傳播實踐。</p>
   </div>
 </div>
@@ -48,6 +47,8 @@ His current work examines how democratic societies can rebuild public knowledge 
 ## 學術背景
 
 - 博士，媒體與傳播學，London School of Economics and Political Science（倫敦政治經濟學院，2001）
+- 碩士，新聞學，台灣國立政治大學（1994）
+- 學士，新聞學，台灣國立政治大學（1990）
 
 ---
 

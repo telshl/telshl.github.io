@@ -47,7 +47,7 @@ enableRobotsTXT = true
     weight = 6
 
   [[menu.main]]
-    name = "媒體與演講"
+    name = "媒體採訪"
     url = "/media/"
     weight = 7
 
