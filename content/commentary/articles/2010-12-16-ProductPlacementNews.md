@@ -3,7 +3,7 @@ title: "政府置入 記者走路"
 date: '2010-12-16'
 display_date: "2010-12-16"
 source: "自由時報"
-external_url: "https://www.mediawatch.org.tw/work/1498"
+external_url: ""
 topics:
 - media-reform
 tags:
@@ -13,10 +13,10 @@ article: true
 draft: false
 origin_archive: 2008-2018.md
 ---
-原文網址已無存：http://www.libertytimes.com.tw/2010/new/dec/16/today-o7.htm#
-請見台灣媒體觀察教育基金會網站轉載全文：https://www.mediawatch.org.tw/work/1498
+原文網址已無法看到文章：http://www.libertytimes.com.tw/2010/new/dec/16/today-o7.htm#
 
-政府置入 記者走路
+煩請見台灣媒體觀察教育基金會網站轉載之全文:(https://www.mediawatch.org.tw/work/1498)
+
 
 ◎羅世宏、胡元輝
 2010-12-16 自由時報
