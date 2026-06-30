@@ -42,8 +42,22 @@ title: "媒體與訪談"
         <p class="article-meta"><span class="article-source">人間福報</span></p>
       </div>
     </article>
-  </div>
-  <article class="media-archive-item">
+    </div>
+    <article class="media-archive-item">
+      <div class="article-date">2026-04-09</div>
+      <div class="article-main"> 
+        <h4 class="article-title"><a href="https://news.pts.org.tw/article/802980" target="_blank" rel="noopener">公視8審查委員集體請辭 控李遠違反提名慣例</a></h4>
+        <p class="article-meta"><span class="article-source">公視新聞網</span></p>
+      </div>
+    </article>
+    <article class="media-archive-item">
+      <div class="article-date">2026-04-08</div>
+      <div class="article-main">
+        <h4 class="article-title"><a href="https://more-news.tw/578359/" target="_blank" rel="noopener">公視董監事換屆卡關 羅世宏：李遠對抗姿態加劇僵局 放下身段才能解套</a></h4>
+        <p class="article-meta"><span class="article-source">墨新聞</span></p>
+      </div>
+    </article>
+    <article class="media-archive-item">
       <div class="article-date">2026-04-04</div>
       <div class="article-main">
         <h4 class="article-title"><a href="https://www.storm.mg/article/11117798" target="_blank" rel="noopener">協商與審議之爭　羅世宏：公視換屆僵局源於制度與政治落差</a></h4>
@@ -51,7 +65,14 @@ title: "媒體與訪談"
       </div>
     </article>
   </div>
-</div>
+  <article class="media-archive-item">
+      <div class="article-date">2026-04-04</div>
+      <div class="article-main">
+        <h4 class="article-title"><a href="https://www.storm.mg/article/11119106" target="_blank" rel="noopener">不協商難破局！羅世宏籲李遠主動溝通在野黨解公視僵局</a></h4>
+        <p class="article-meta"><span class="article-source">風傳媒</span></p>
+      </div>
+    </article>
+  </div>
 
 <div class="media-year-block">
   <h3>2025</h3>
@@ -71,7 +92,6 @@ title: "媒體與訪談"
       </div>
     </article>
   </div>
-</div>
 
 ---
 
