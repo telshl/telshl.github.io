@@ -12,11 +12,11 @@ description: "English profile of Professor Shih-Hung Lo, including research them
 
 Shih-Hung Lo is Professor of Communication at National Chung Cheng University, Taiwan. His work focuses on media institutions, journalism crisis, platform governance, fact-checking, and the changing public communication order in the age of AI.
 
-His research and public engagement examine how democratic societies can sustain journalism, rebuild public knowledge, and respond to information disorder under platformization and generative AI. He has long participated in media reform initiatives in Taiwan, including the Media Reform Coalition, the weReport investigative journalism platform, and the Taiwan FactCheck Center.
+His research and public engagement examine how democratic societies can sustain journalism, rebuild public knowledge, and respond to information disorder under platformization and generative AI. He has long participated in media reform initiatives in Taiwan, including the Campaign for Media Reform, the weReport investigative journalism platform, the Taiwan Media Watch Foundation, and the Taiwan FactCheck Center.
 
 ## Research Areas
 
-- Political Economy of Communication
+- Critical Political Economy of Communication
 - Media Reform and Media Policy
 - Journalism Crisis and Democracy
 - Platform Governance and AI
