@@ -15,12 +15,6 @@ title: "媒體與訪談"
   <h3>2026</h3>
   <div class="media-archive-list">
     <article class="media-archive-item">
-      <div class="article-date">2026-08-20</div>
-      <div class="article-main">
-        <h4 class="article-title"><a href="https://blink.tw/perspectives/taiwan-pts-budget-cuts-public-media/?fbclid=IwY2xjawT_vYVwZG9mBWV4dG4DYWVtAjExAHNydGMGYXBwX2lkEDIyMjAzOTE3ODgyMDA4OTIAAR5U0DpPRceDAQtEIsNoOR8Ear5UkJ7YyUN9LBHRXmSEbDEpdqAsgAO7wBDsXg_aem_dPq6fKhsa243Oe-qbDpPzw" target="_blank" rel="noopener">公視真的很綠嗎？預算刪凍之外，臺灣公共媒體出了什麼問題</a></h4>
-        <p class="article-meta"><span class="article-source">《b.l!nk》</span></p>
-      </div>
-    <article class="media-archive-item">
       <div class="article-date">2026-06-22</div>
       <div class="article-main">
         <h4 class="article-title"><a href="https://tcnn.org.tw/archives/278007" target="_blank" rel="noopener">全球新聞信任度近十年最低 社群片段傳播不利查核</a></h4>
@@ -102,6 +96,11 @@ title: "媒體與訪談"
 ---
 
 ## 訪談
-
+ <article class="media-archive-item">
+      <div class="article-date">2026-08-20</div>
+      <div class="article-main">
+        <h4 class="article-title"><a href="https://blink.tw/perspectives/taiwan-pts-budget-cuts-public-media/?fbclid=IwY2xjawT_vYVwZG9mBWV4dG4DYWVtAjExAHNydGMGYXBwX2lkEDIyMjAzOTE3ODgyMDA4OTIAAR5U0DpPRceDAQtEIsNoOR8Ear5UkJ7YyUN9LBHRXmSEbDEpdqAsgAO7wBDsXg_aem_dPq6fKhsa243Oe-qbDpPzw" target="_blank" rel="noopener">公視真的很綠嗎？預算刪凍之外，臺灣公共媒體出了什麼問題</a></h4>
+        <p class="article-meta"><span class="article-source">《b.l!nk》</span></p>
+      </div>
 <div class="media-note-block">
 </div>
