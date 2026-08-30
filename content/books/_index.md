@@ -27,7 +27,7 @@ description: "羅世宏教授代表著作、譯著、編著與出版計畫，涵
         <div><dt>出版資訊</dt><dd>台北：五南圖書</dd></div>
         <div><dt>主題</dt><dd>通訊傳播政策與法規、平台監理政策、媒體政策、數位治理、民主韌性、第四條路</dd></div>
       </dl>
-      <p>通訊禪播政策教科書</p>
+      <p>通訊傳播政策教科書</p>
       <p><a href="https://www.books.com.tw/products/0010984921" target="_blank" rel="noopener">購書連結 →</a></p>
     </div>
   </div>
