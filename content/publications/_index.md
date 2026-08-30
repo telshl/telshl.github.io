@@ -10,7 +10,25 @@ description: "羅世宏教授正式學術出版清單，包括專書譯著、編
   </p>
 </div>
 
-## 專書與譯著
+## 專書
+
+<div class="publication-list">
+
+<div class="publication-item">
+<strong>羅世宏（2026）。</strong>《在巨人之間：在巨人之間：台灣的數位突圍----平台權力、民主韌性與第四條治理之路》。台北：五南圖書。<a href="https://www.books.com.tw/products/0010984921" target="_blank" rel="noopener">購書</a>
+</div>
+
+<div class="publication-item">
+<strong>羅世宏（譯）（2022）。</strong>《文化研究：理論與實踐》（第五版）。台北。<a href="https://www.books.com.tw/products/0010937968" target="_blank" rel="noopener">購書</a>
+</div>
+
+<div class="publication-item">
+<strong>羅世宏（譯）（2021）。</strong>《新聞崩壞 何以民主？》。台北。<a href="https://www.books.com.tw/products/0010909273" target="_blank" rel="noopener">購書</a>
+</div>
+
+</div>
+
+## 譯著
 
 <div class="publication-list">
 
