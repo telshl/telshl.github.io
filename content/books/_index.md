@@ -22,12 +22,12 @@ description: "羅世宏教授代表著作、譯著、編著與出版計畫，涵
     <div>
       <h2>《在巨人之間：台灣的數位突圍--平台權力、民主韌性與第四條治理之路》</h2>
       <dl class="book-meta-list">
-        <div><dt>年份</dt><dd>2023</dd></div>
-        <div><dt>類型</dt><dd>譯著</dd></div>
+        <div><dt>年份</dt><dd>2026</dd></div>
+        <div><dt>類型</dt><dd>專書</dd></div>
         <div><dt>出版資訊</dt><dd>台北：五南圖書</dd></div>
-        <div><dt>主題</dt><dd>傳播理論、媒體制度、閱聽人、文化、科技與公共生活</dd></div>
+        <div><dt>主題</dt><dd>通訊傳播政策與法規、平台監理政策、媒體政策、數位治理、民主韌性、第四條路</dd></div>
       </dl>
-      <p>傳播理論的重要入門與進階讀物，適合作為理解媒體制度、文化權力與數位傳播變遷的基礎文本。</p>
+      <p>通訊禪播政策教科書</p>
       <p><a href="https://www.books.com.tw/products/0010984921" target="_blank" rel="noopener">購書連結 →</a></p>
     </div>
   </div>
