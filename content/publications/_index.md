@@ -15,15 +15,15 @@ description: "羅世宏教授正式學術出版清單，包括專書譯著、編
 <div class="publication-list">
 
 <div class="publication-item">
-<strong>羅世宏（2026）。</strong>《在巨人之間：在巨人之間：台灣的數位突圍----平台權力、民主韌性與第四條治理之路》。台北：五南圖書。<a href="https://www.books.com.tw/products/0010984921" target="_blank" rel="noopener">購書</a>
+<strong>羅世宏（2027）。</strong>《黨管一切：從潛轉型到逆轉型----當代中國傳媒、公民社會與數位控制》。台北。<a href="https://www.books.com.tw/products/0010909273" target="_blank" rel="noopener">購書</a>
 </div>
 
 <div class="publication-item">
-<strong>羅世宏（譯）（2022）。</strong>《文化研究：理論與實踐》（第五版）。台北。<a href="https://www.books.com.tw/products/0010937968" target="_blank" rel="noopener">購書</a>
+<strong>羅世宏（2026）。</strong>《在巨人之間：台灣的數位突圍----平台權力、民主韌性與第四條治理之路》。台北：五南圖書。<a href="https://www.books.com.tw/products/0010984921" target="_blank" rel="noopener">購書</a>
 </div>
 
 <div class="publication-item">
-<strong>羅世宏（譯）（2021）。</strong>《新聞崩壞 何以民主？》。台北。<a href="https://www.books.com.tw/products/0010909273" target="_blank" rel="noopener">購書</a>
+<strong>羅世宏（2026）。</strong>《理論，從傷口長出來：十二位思想家，如何在戰爭、流亡與挫敗中重新理解媒體、權力與民主》。台北。<a href="https://www.books.com.tw/products/0010937968" target="_blank" rel="noopener">購書</a>
 </div>
 
 </div>
