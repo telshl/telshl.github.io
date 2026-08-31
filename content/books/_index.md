@@ -20,7 +20,7 @@ description: "羅世宏教授代表著作、譯著、編著與出版計畫，涵
       <img class="book-feature-cover" src="/img/books/bw-the-giants.png" alt="在巨人之間：台灣的數位突圍">
     </a>
     <div>
-      <h2>《檔管一切：從潛轉型到逆轉型——當代中國傳媒、公民社會與數位控制》</h2>
+      <h2>《黨管一切：從潛轉型到逆轉型——當代中國傳媒、公民社會與數位控制》</h2>
       <dl class="book-meta-list">
         <div><dt>年份</dt><dd>即將出版</dd></div>
         <div><dt>類型</dt><dd>專書</dd></div>
