@@ -17,17 +17,17 @@ description: "羅世宏教授代表著作、譯著、編著與出版計畫，涵
 
   <div class="book-feature-card book-meta-card">
     <a href="https://www.books.com.tw/products/0010984921" target="_blank" rel="noopener">
-      <img class="book-feature-cover" src="/img/books/bw-the-giants.png" alt="在巨人之間：台灣的數位突圍">
+      <img class="book-feature-cover" src="/img/books/PartyControlsEverything.png" alt="被縛的公共空間：從潛轉型到逆轉型">
     </a>
     <div>
-      <h2>《黨管一切：從潛轉型到逆轉型——當代中國傳媒、公民社會與數位控制》</h2>
+      <h2>《被縛的公共空間：從潛轉型到逆轉型——當代中國傳媒、公民社會與數位控制》</h2>
       <dl class="book-meta-list">
         <div><dt>年份</dt><dd>即將出版</dd></div>
         <div><dt>類型</dt><dd>專書</dd></div>
         <div><dt>出版資訊</dt><dd>台北：TBA</dd></div>
         <div><dt>主題</dt><dd>中國、中國傳媒、公民社會、數位控制</dd></div>
       </dl>
-      <p>通訊傳播政策教科書</p>
+      <p>可作為中國傳媒研究/當代中國或相關課程教科書</p>
       <p><a href="https://www.books.com.tw/products/0010984921" target="_blank" rel="noopener">購書連結 →</a></p>
     </div>
   </div>
@@ -44,7 +44,7 @@ description: "羅世宏教授代表著作、譯著、編著與出版計畫，涵
         <div><dt>出版資訊</dt><dd>台北：五南圖書</dd></div>
         <div><dt>主題</dt><dd>通訊傳播政策與法規、平台監理政策、媒體政策、數位治理、民主韌性、第四條路</dd></div>
       </dl>
-      <p>通訊傳播政策教科書</p>
+      <p>可作為通訊傳播政策教科書</p>
       <p><a href="https://www.books.com.tw/products/0010984921" target="_blank" rel="noopener">購書連結 →</a></p>
     </div>
   </div>
@@ -61,7 +61,7 @@ description: "羅世宏教授代表著作、譯著、編著與出版計畫，涵
         <div><dt>出版資訊</dt><dd>台北：五南圖書</dd></div>
         <div><dt>主題</dt><dd>通訊傳播政策與法規、平台監理政策、媒體政策、數位治理、民主韌性、第四條路</dd></div>
       </dl>
-      <p>通訊傳播政策教科書</p>
+      <p>可作為傳播理論教科書</p>
       <p><a href="https://www.books.com.tw/products/0010984921" target="_blank" rel="noopener">購書連結 →</a></p>
     </div>
   </div>
