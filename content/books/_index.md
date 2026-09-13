@@ -51,7 +51,7 @@ description: "羅世宏教授代表著作、譯著、編著與出版計畫，涵
 
    <div class="book-feature-card book-meta-card">
     <a href="https://www.books.com.tw/products/0010984921" target="_blank" rel="noopener">
-      <img class="book-feature-cover" src="/img/books/bw-the-giants.png" alt="在巨人之間：台灣的數位突圍">
+      <img class="book-feature-cover" src="/img/books/IdeasfromRuins.png" alt="理論，從傷口長出來">
     </a>
     <div>
       <h2>《理論，從傷口長出來：十二位思想家，如何在戰爭、流亡和挫敗中重新理解媒體、權力與民主》</h2>
