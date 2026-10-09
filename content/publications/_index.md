@@ -15,7 +15,7 @@ description: "羅世宏教授正式學術出版清單，包括專書譯著、編
 <div class="publication-list">
 
 <div class="publication-item">
-<strong>羅世宏（forthcoming）。</strong>《黨管一切：從潛轉型到逆轉型——當代中國傳媒、公民社會與數位控制》。台北：TBA。<a href="https://www.books.com.tw/products/0010909273" target="_blank" rel="noopener">購書</a>
+<strong>羅世宏（forthcoming）。</strong>《被縛的公共空間：從潛轉型到逆轉型——當代中國傳媒、公民社會與數位控制》。台北：TBA。<a href="https://www.books.com.tw/products/0010909273" target="_blank" rel="noopener">購書</a>
 </div>
 
 <div class="publication-item">
