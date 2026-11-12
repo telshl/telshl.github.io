@@ -16,9 +16,7 @@ description: "羅世宏教授代表著作、譯著、編著與出版計畫，涵
 <div class="book-feature-list">
 
   <div class="book-feature-card book-meta-card">
-    <a href="https://www.books.com.tw/products/0010984921" target="_blank" rel="noopener">
-      <img class="book-feature-cover" src="/img/books/PartyControlsEverything.png" alt="被縛的公共空間：從潛轉型到逆轉型">
-    </a>
+    <img class="book-feature-cover" src="/img/books/PartyControlsEverything.png" alt="被縛的公共空間：從潛轉型到逆轉型">
     <div>
       <h2>《被縛的公共空間：從潛轉型到逆轉型——當代中國傳媒、公民社會與數位控制》</h2>
       <dl class="book-meta-list">
@@ -28,14 +26,11 @@ description: "羅世宏教授代表著作、譯著、編著與出版計畫，涵
         <div><dt>主題</dt><dd>中國、中國傳媒、公民社會、數位控制</dd></div>
       </dl>
       <p>可作為中國傳媒研究/當代中國或相關課程教科書</p>
-      <p><a href="https://www.books.com.tw/products/0010984921" target="_blank" rel="noopener">購書連結 →</a></p>
     </div>
   </div>
 
   <div class="book-feature-card book-meta-card">
-    <a href="https://www.books.com.tw/products/0010984921" target="_blank" rel="noopener">
-      <img class="book-feature-cover" src="/img/books/bw-the-giants.png" alt="在巨人之間：台灣的數位突圍">
-    </a>
+    <img class="book-feature-cover" src="/img/books/bw-the-giants.png" alt="在巨人之間：台灣的數位突圍">
     <div>
       <h2>《在巨人之間：台灣的數位突圍——平台權力、民主韌性與第四條治理之路》</h2>
       <dl class="book-meta-list">
@@ -45,14 +40,11 @@ description: "羅世宏教授代表著作、譯著、編著與出版計畫，涵
         <div><dt>主題</dt><dd>通訊傳播政策與法規、平台監理政策、媒體政策、數位治理、民主韌性、第四條路</dd></div>
       </dl>
       <p>可作為通訊傳播政策教科書</p>
-      <p><a href="https://www.books.com.tw/products/0010984921" target="_blank" rel="noopener">購書連結 →</a></p>
     </div>
   </div>
 
    <div class="book-feature-card book-meta-card">
-    <a href="https://www.books.com.tw/products/0010984921" target="_blank" rel="noopener">
-      <img class="book-feature-cover" src="/img/books/IdeasfromRuins.png" alt="理論，從傷口長出來">
-    </a>
+    <img class="book-feature-cover" src="/img/books/IdeasfromRuins.png" alt="理論，從傷口長出來">
     <div>
       <h2>《理論，從傷口長出來：十二位思想家，如何在戰爭、流亡和挫敗中重新理解媒體、權力與民主》</h2>
       <dl class="book-meta-list">
@@ -62,7 +54,6 @@ description: "羅世宏教授代表著作、譯著、編著與出版計畫，涵
         <div><dt>主題</dt><dd>通訊傳播政策與法規、平台監理政策、媒體政策、數位治理、民主韌性、第四條路</dd></div>
       </dl>
       <p>可作為傳播理論教科書</p>
-      <p><a href="https://www.books.com.tw/products/0010984921" target="_blank" rel="noopener">購書連結 →</a></p>
     </div>
   </div>
 
@@ -81,7 +72,7 @@ description: "羅世宏教授代表著作、譯著、編著與出版計畫，涵
     <div>
       <h2>《媒體與大眾傳播理論》</h2>
       <dl class="book-meta-list">
-        <div><dt>年份</dt><dd>2023</dd></div>
+        <div><dt>年份</dt><dd>2024</dd></div>
         <div><dt>類型</dt><dd>譯著</dd></div>
         <div><dt>出版資訊</dt><dd>台北：五南圖書</dd></div>
         <div><dt>主題</dt><dd>傳播理論、媒體制度、閱聽人、文化、科技與公共生活</dd></div>
@@ -133,7 +124,7 @@ description: "羅世宏教授代表著作、譯著、編著與出版計畫，涵
       <h2>《文化研究：理論與實踐》</h2>
       <dl class="book-meta-list">
         <div><dt>年份</dt><dd>2022</dd></div>
-        <div><dt>類型</dt><dd>譯著，第五版</dd></div>
+        <div><dt>類型</dt><dd>譯著，中文第4版</dd></div>
         <div><dt>出版資訊</dt><dd>台北；詳細出版資訊請見購書頁</dd></div>
         <div><dt>主題</dt><dd>文化研究、權力、再現、身份、意識形態與媒體文化</dd></div>
       </dl>

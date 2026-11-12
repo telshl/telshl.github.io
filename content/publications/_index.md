@@ -15,15 +15,15 @@ description: "羅世宏教授正式學術出版清單，包括專書譯著、編
 <div class="publication-list">
 
 <div class="publication-item">
-<strong>羅世宏（forthcoming）。</strong>《被縛的公共空間：從潛轉型到逆轉型——當代中國傳媒、公民社會與數位控制》。台北：TBA。<a href="https://www.books.com.tw/products/0010909273" target="_blank" rel="noopener">購書</a>
+<strong>羅世宏（forthcoming）。</strong>《被縛的公共空間：從潛轉型到逆轉型——當代中國傳媒、公民社會與數位控制》。台北：TBA。
 </div>
 
 <div class="publication-item">
-<strong>羅世宏（forthcoming）。</strong>《在巨人之間：台灣的數位突圍——平台權力、民主韌性與第四條治理之路》。台北：五南圖書。<a href="https://www.books.com.tw/products/0010984921" target="_blank" rel="noopener">購書</a>
+<strong>羅世宏（forthcoming）。</strong>《在巨人之間：台灣的數位突圍——平台權力、民主韌性與第四條治理之路》。台北：五南圖書。
 </div>
 
 <div class="publication-item">
-<strong>羅世宏（forthcoming）。</strong>《理論，從傷口長出來：十二位思想家，如何在戰爭、流亡與挫敗中重新理解媒體、權力與民主》。台北：五南圖書。<a href="https://www.books.com.tw/products/0010937968" target="_blank" rel="noopener">購書</a>
+<strong>羅世宏（forthcoming）。</strong>《理論，從傷口長出來：十二位思想家，如何在戰爭、流亡與挫敗中重新理解媒體、權力與民主》。台北：五南圖書。
 </div>
 
 </div>
@@ -33,11 +33,11 @@ description: "羅世宏教授正式學術出版清單，包括專書譯著、編
 <div class="publication-list">
 
 <div class="publication-item">
-<strong>羅世宏（譯）（2023）。</strong>《媒體與大眾傳播理論》。台北：五南圖書。<a href="https://www.books.com.tw/products/0010984921" target="_blank" rel="noopener">購書</a>
+<strong>羅世宏（譯）（2024）。</strong>《媒體與大眾傳播理論》。台北：五南圖書。<a href="https://www.books.com.tw/products/0010984921" target="_blank" rel="noopener">購書</a>
 </div>
 
 <div class="publication-item">
-<strong>羅世宏（譯）（2022）。</strong>《文化研究：理論與實踐》（第五版）。台北。<a href="https://www.books.com.tw/products/0010937968" target="_blank" rel="noopener">購書</a>
+<strong>羅世宏（譯）（2022）。</strong>《文化研究：理論與實踐》（中文第4版）。台北。<a href="https://www.books.com.tw/products/0010937968" target="_blank" rel="noopener">購書</a>
 </div>
 
 <div class="publication-item">
@@ -193,10 +193,6 @@ description: "羅世宏教授正式學術出版清單，包括專書譯著、編
 
 <div class="publication-item">
 <strong>2025。</strong>擔任會議主講人。「媒體分潤與網路中立國際近期發展與未來因應研討會」（主題：網路中立性的回顧與現況）。台灣通訊學會主辦，2025年10月30日。
-</div>
-
-<div class="publication-item">
-<strong>2025。</strong>會議主講人。「媒體分潤與網路中立國際近期發展與未來因應研討會」（主題：網路中立性的回顧與現況）。台灣通訊學會主辦，2025年10月30日。
 </div>
 
 <div class="publication-item">
