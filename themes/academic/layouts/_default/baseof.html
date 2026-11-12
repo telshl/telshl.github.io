@@ -1,3 +1,4 @@
+{{ $isEnglish := eq .Params.lang "en" }}
 <!DOCTYPE html>
 <html lang="{{ .Params.lang | default (.Site.LanguageCode | default "zh-TW") }}">
 <head>
@@ -5,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   {{ $pageLang := .Params.lang | default "zh-TW" }}
   {{ $ogLocale := cond (eq $pageLang "en") "en_US" "zh_TW" }}
-  {{ $title := cond .IsHome .Site.Title (printf "%s | %s" .Title .Site.Params.name) }}
+  {{ $displayName := cond $isEnglish .Site.Params.nameEn .Site.Params.name }}
+  {{ $title := cond .IsHome .Site.Title (printf "%s | %s" .Title $displayName) }}
   {{ $description := (cond (ne .Description "") .Description .Site.Params.description) | plainify }}
   {{ $canonical := .Permalink }}
   {{ $image := .Site.Params.image | default "img/og-image.png" | absURL }}
@@ -15,14 +17,11 @@
   <meta name="robots" content="index, follow">
   <meta name="language" content="{{ $pageLang }}">
   <link rel="canonical" href="{{ $canonical }}">
-  {{ if eq $pageLang "en" }}
-  <link rel="alternate" hreflang="en" href="{{ $canonical }}">
-  <link rel="alternate" hreflang="zh-TW" href="{{ .Site.BaseURL }}">
-  {{ else }}
-  <link rel="alternate" hreflang="zh-TW" href="{{ $canonical }}">
+  {{ if or $isEnglish (eq .RelPermalink "/about/") }}
   <link rel="alternate" hreflang="en" href="{{ "en/" | absURL }}">
+  <link rel="alternate" hreflang="zh-TW" href="{{ "about/" | absURL }}">
+  <link rel="alternate" hreflang="x-default" href="{{ "en/" | absURL }}">
   {{ end }}
-  <link rel="alternate" hreflang="x-default" href="{{ .Site.BaseURL }}">
   <meta property="og:locale" content="{{ $ogLocale }}">
   <meta property="og:site_name" content="{{ .Site.Title }}">
   <meta property="og:locale:alternate" content="{{ if eq $pageLang "en" }}zh_TW{{ else }}en_US{{ end }}">
@@ -108,25 +107,35 @@
   <link rel="stylesheet" href="{{ $searchCSS.RelPermalink }}" integrity="{{ $searchCSS.Data.Integrity }}">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>羅</text></svg>">
 </head>
-<body>
+<body{{ if $isEnglish }} class="english-page"{{ end }}>
+{{ if $isEnglish }}<a class="english-skip-link" href="#main-content">Skip to content</a>{{ end }}
 
 <header class="site-header">
   <div class="header-inner">
-    <a href="/" class="site-logo" aria-label="羅世宏 首頁">
-      <span class="logo-zh">羅世宏</span>
+    <a href="{{ if $isEnglish }}/en/{{ else }}/{{ end }}" class="site-logo" aria-label="{{ if $isEnglish }}Shih-Hung Lo, English profile{{ else }}羅世宏 首頁{{ end }}">
+      <span class="logo-zh" lang="zh-TW">羅世宏</span>
       <span class="logo-divider"></span>
       <span class="logo-en">Shih-Hung Lo</span>
     </a>
-    <nav class="site-nav" id="site-nav">
+    <nav class="site-nav" id="site-nav" aria-label="{{ if $isEnglish }}Main navigation{{ else }}主要導覽{{ end }}">
+      {{ if $isEnglish }}
+      <a href="/en/#profile">Profile</a>
+      <a href="/en/#research">Research</a>
+      <a href="/en/#publications">Publications</a>
+      <a href="/en/#contact">Contact</a>
+      <a href="/en/#archive">Archive</a>
+      <a href="/about/" lang="zh-TW">中文</a>
+      {{ else }}
       {{ range .Site.Menus.main }}
       <a href="{{ .URL }}" {{ if eq $.RelPermalink .URL }}class="active"{{ end }}>{{ .Name }}</a>
       {{ end }}
+      {{ end }}
     </nav>
-    <a class="site-search-link" href="{{ "search/" | relURL }}" aria-label="全站搜尋 / Search"{{ if eq .Type "search" }} aria-current="page"{{ end }}>
+    <a class="site-search-link" href="{{ "search/" | relURL }}" aria-label="{{ if $isEnglish }}Search (Chinese interface){{ else }}全站搜尋 / Search{{ end }}"{{ if eq .Type "search" }} aria-current="page"{{ end }}>
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="m16 16 5 5"></path></svg>
-      <span>搜尋</span>
+      <span>{{ if $isEnglish }}Search{{ else }}搜尋{{ end }}</span>
     </a>
-    <button class="nav-toggle" id="nav-toggle" aria-label="開啟選單" aria-expanded="false" aria-controls="site-nav">
+    <button class="nav-toggle" id="nav-toggle" aria-label="{{ if $isEnglish }}Toggle menu{{ else }}開啟選單{{ end }}" aria-expanded="false" aria-controls="site-nav">
       <span></span><span></span><span></span>
     </button>
   </div>
@@ -151,24 +160,24 @@
   })();
 </script>
 
-<main>
+<main id="main-content">
   {{ block "main" . }}{{ end }}
 </main>
 
 <footer class="site-footer">
   <div class="footer-inner footer-inner-v2">
     <div class="footer-main">
-      <div class="footer-name">{{ .Site.Params.name }}｜{{ .Site.Params.position }}</div>
+      <div class="footer-name">{{ if $isEnglish }}Shih-Hung Lo | Department of Communication{{ else }}{{ .Site.Params.name }}｜{{ .Site.Params.position }}{{ end }}</div>
       <p class="footer-desc">Media, Democracy, Platforms &amp; Public Knowledge</p>
     </div>
-    <div class="footer-links footer-links-v2" aria-label="公開連結">
-      <a href="{{ "search/" | relURL }}">全站搜尋</a>
+    <div class="footer-links footer-links-v2" aria-label="{{ if $isEnglish }}Public links{{ else }}公開連結{{ end }}">
+      <a href="{{ "search/" | relURL }}">{{ if $isEnglish }}Search (Chinese interface){{ else }}全站搜尋{{ end }}</a>
       <a href="{{ .Site.Params.substack }}" target="_blank" rel="noopener">Substack</a>
-      <a href="/en/">English</a>
+      {{ if $isEnglish }}<a href="/about/" lang="zh-TW">中文簡介</a>{{ else }}<a href="/en/">English</a>{{ end }}
       <a href="mailto:{{ .Site.Params.email }}">Email</a>
     </div>
     <div class="footer-copy">
-      © {{ now.Year }} {{ .Site.Params.nameEn }}. 國立中正大學傳播系. Built as a public academic archive.
+      © {{ now.Year }} {{ .Site.Params.nameEn }}. {{ if $isEnglish }}National Chung Cheng University, Taiwan.{{ else }}國立中正大學傳播系.{{ end }} Built as a public academic archive.
     </div>
   </div>
 </footer>
