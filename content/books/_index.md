@@ -16,7 +16,7 @@ description: "羅世宏教授代表著作、譯著、編著與出版計畫，涵
 <div class="book-feature-list">
 
   <div class="book-feature-card book-meta-card">
-    <img class="book-feature-cover" src="/img/books/PartyControlsEverything.png" alt="被縛的公共空間：從潛轉型到逆轉型">
+    <img class="book-feature-cover" src="/img/books/PartyControlsEverything-480.webp" srcset="/img/books/PartyControlsEverything-240.webp 240w, /img/books/PartyControlsEverything-480.webp 480w" sizes="(max-width: 768px) 88px, 120px" alt="被縛的公共空間：從潛轉型到逆轉型" width="480" height="320" loading="eager" decoding="async">
     <div>
       <h2>《被縛的公共空間：從潛轉型到逆轉型——當代中國傳媒、公民社會與數位控制》</h2>
       <dl class="book-meta-list">
@@ -30,7 +30,7 @@ description: "羅世宏教授代表著作、譯著、編著與出版計畫，涵
   </div>
 
   <div class="book-feature-card book-meta-card">
-    <img class="book-feature-cover" src="/img/books/bw-the-giants.png" alt="在巨人之間：台灣的數位突圍">
+    <img class="book-feature-cover" src="/img/books/bw-the-giants-480.webp" srcset="/img/books/bw-the-giants-240.webp 240w, /img/books/bw-the-giants-480.webp 480w" sizes="(max-width: 768px) 88px, 120px" alt="在巨人之間：台灣的數位突圍" width="480" height="318" loading="lazy" decoding="async">
     <div>
       <h2>《在巨人之間：台灣的數位突圍——平台權力、民主韌性與第四條治理之路》</h2>
       <dl class="book-meta-list">
@@ -44,7 +44,7 @@ description: "羅世宏教授代表著作、譯著、編著與出版計畫，涵
   </div>
 
    <div class="book-feature-card book-meta-card">
-    <img class="book-feature-cover" src="/img/books/IdeasfromRuins.png" alt="理論，從傷口長出來">
+    <img class="book-feature-cover" src="/img/books/IdeasfromRuins-480.webp" srcset="/img/books/IdeasfromRuins-240.webp 240w, /img/books/IdeasfromRuins-480.webp 480w" sizes="(max-width: 768px) 88px, 120px" alt="理論，從傷口長出來" width="480" height="317" loading="lazy" decoding="async">
     <div>
       <h2>《理論，從傷口長出來：十二位思想家，如何在戰爭、流亡和挫敗中重新理解媒體、權力與民主》</h2>
       <dl class="book-meta-list">
@@ -67,7 +67,7 @@ description: "羅世宏教授代表著作、譯著、編著與出版計畫，涵
 
   <div class="book-feature-card book-meta-card">
     <a href="https://www.books.com.tw/products/0010984921" target="_blank" rel="noopener">
-      <img class="book-feature-cover" src="/img/books/media-mass-communication-theory.png" alt="媒體與大眾傳播理論">
+      <img class="book-feature-cover" src="/img/books/media-mass-communication-theory.png" alt="媒體與大眾傳播理論" width="375" height="375" loading="lazy" decoding="async">
     </a>
     <div>
       <h2>《媒體與大眾傳播理論》</h2>
@@ -84,7 +84,7 @@ description: "羅世宏教授代表著作、譯著、編著與出版計畫，涵
 
   <div class="book-feature-card book-meta-card">
     <a href="https://www.books.com.tw/products/0010909273" target="_blank" rel="noopener">
-      <img class="book-feature-cover" src="/img/books/journalism-crisis-democracy.png" alt="新聞崩壞 何以民主？">
+      <img class="book-feature-cover" src="/img/books/journalism-crisis-democracy.png" alt="新聞崩壞 何以民主？" width="375" height="375" loading="lazy" decoding="async">
     </a>
     <div>
       <h2>《新聞崩壞 何以民主？》</h2>
@@ -101,7 +101,7 @@ description: "羅世宏教授代表著作、譯著、編著與出版計畫，涵
 
   <div class="book-feature-card book-meta-card">
     <a href="http://www.books.com.tw/products/0010748726" target="_blank" rel="noopener">
-      <img class="book-feature-cover" src="/img/books/critical-theory-social-media.jpeg" alt="社群媒體批判理論">
+      <img class="book-feature-cover" src="/img/books/critical-theory-social-media.jpeg" alt="社群媒體批判理論" width="200" height="270" loading="lazy" decoding="async">
     </a>
     <div>
       <h2>《社群媒體批判理論》</h2>
@@ -118,7 +118,7 @@ description: "羅世宏教授代表著作、譯著、編著與出版計畫，涵
 
   <div class="book-feature-card book-meta-card">
     <a href="https://www.books.com.tw/products/0010937968" target="_blank" rel="noopener">
-      <img class="book-feature-cover" src="/img/books/cultural-studies-theory-practice.jpeg" alt="文化研究：理論與實踐">
+      <img class="book-feature-cover" src="/img/books/cultural-studies-theory-practice.jpeg" alt="文化研究：理論與實踐" width="300" height="404" loading="lazy" decoding="async">
     </a>
     <div>
       <h2>《文化研究：理論與實踐》</h2>

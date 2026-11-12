@@ -915,6 +915,7 @@ a:hover { border-bottom-color: var(--accent); }
 
 .book-feature-cover {
   width: 120px;
+  height: auto;
   max-height: 170px;
   object-fit: contain;
   background: var(--paper-dark);

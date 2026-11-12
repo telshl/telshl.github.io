@@ -1,24 +1,25 @@
 ---
 title: "關於我"
+description: "羅世宏，國立中正大學傳播學系教授兼系主任。研究媒體制度、新聞業危機、平台治理與事實查核，持續參與媒體改革及民主公共傳播。"
 ---
 <div class="page-intro-block">
   <p class="intro-kicker">About Me</p>
   <h1>關於我</h1>
   <p>
-    羅世宏是台灣國立中正大學傳播系教授，長期研究媒體制度、新聞業危機、平台治理，長期投入媒體改革、事實查核與民主公共傳播實踐。
+    從新聞業與平台治理研究，到媒體改革與民主公共傳播實踐。
   </p>
 </div>
 
 <div class="about-profile-card">
   <img src="/img/profile.jpg" alt="羅世宏教授正式照片" class="about-profile-photo">
   <div>
-    <p>羅世宏是國立中正大學傳播系教授，長期研究媒體制度、新聞業危機、平台治理，長期投入媒體改革、事實查核與民主公共傳播實踐。</p>
+    <p>羅世宏是國立中正大學傳播學系教授兼系主任，研究媒體制度、新聞業危機與平台治理，並持續投入媒體改革、事實查核及民主公共傳播實踐。</p>
   </div>
 </div>
 
 羅世宏在研究媒體的同時，也持續試圖改變它。
 
-過去二十多年來，他在國立中正大學傳播系任教，研究新聞業如何在數位平台的衝擊下求存，曾與馮建三等人共同創辦媒體改造學社（媒改社），與胡元輝等人共同創辦 weReport 調查報導公眾委製平台。此外，他曾擔任台灣媒體觀察教育基金會董事長（2019–2024）、台灣事實查核中心董事（2020–2026）及董事長（2022–2026）。學者與行動者的雙重身份，貫穿他迄今的學術生涯。
+過去二十多年來，他在國立中正大學傳播系任教，研究新聞業如何在數位平台的衝擊下求存，曾與馮建三等人共同創辦媒體改造學社（媒改社），與胡元輝等人共同創辦 weReport 調查報導公眾委製平台。此外，他曾擔任台灣媒體觀察教育基金會董事長（2019–2024）、台灣事實查核教育基金會董事長，現為該基金會董事。學者與行動者的雙重身份，貫穿他迄今的學術生涯。
 
 他的研究核心：當數位平台重組傳播生態、民主政治陷入資訊危機，新聞業能否存續？公共政策應當如何回應？這個問題在他的期刊論文、政策諮詢與公共評論中反覆出現，以不同形式尋找答案。
 
@@ -28,9 +29,9 @@ title: "關於我"
 
 ## English Profile
 
-Shih-Hung Lo is Professor of Communication at National Chung Cheng University, Taiwan. His research focuses on media institutions, journalism crisis, platform governance, fact-checking, media reform, and the transformation of public communication in the age of AI.
+Shih-Hung Lo is Professor and Chair of the Department of Communication at National Chung Cheng University, Taiwan. His research focuses on media institutions, journalism crisis, platform governance, fact-checking, media reform, and the transformation of public communication in the age of AI.
 
-Alongside his academic work, he has long been involved in public media reform and civic communication initiatives in Taiwan. He co-founded the Media Reform Coalition and the weReport investigative journalism platform, and served as Board Chair of the Taiwan FactCheck Center from 2022 to 2026.
+Alongside his academic work, he has long been involved in public media reform and civic communication initiatives in Taiwan. He co-founded the Media Reform Coalition and the weReport investigative journalism platform, and previously served as Board Chair of the Taiwan FactCheck Center, where he remains a board member.
 
 His current work examines how democratic societies can rebuild public knowledge and social trust under the pressures of platformization, information disorder, and generative AI.
 
@@ -38,7 +39,7 @@ His current work examines how democratic societies can rebuild public knowledge 
 
 ## 學術經歷
 
-- 教授，國立中正大學傳播系（2013 年迄今）
+- 教授，國立中正大學傳播系（2013 年迄今）；現兼系主任
 - 副教授，國立中正大學傳播系（2004–2013）
 - 助理教授，國立中正大學傳播系（2001–2004）
 
@@ -65,7 +66,9 @@ His current work examines how democratic societies can rebuild public knowledge 
 
 ## 社會參與
 
-- 台灣事實查核中心諮議委員（2018-2020）、董事（2020-）、董事長（2022-2026）
+- 台灣事實查核教育基金會董事；曾任董事長、台灣事實查核中心諮議委員
 - 台灣媒體觀察教育基金會董事長（2019–2024）
 - 媒體改造學社（媒改社）創始成員（2003），曾任召集人、理事長；2024 年後不再參與其組織運作
 - weReport 調查報導公眾委製平台共同創辦人（2011–2018）
+
+職務資料：[中正大學官方師資頁](https://telecom.ccu.edu.tw/p/406-1088-11475,r786.php?Lang=zh-tw)、[台灣事實查核教育基金會董事會](https://tfc-taiwan.org.tw/board-of-directors/)。
