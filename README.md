@@ -162,3 +162,35 @@ A：購買網域後，在 GitHub Pages 設定中加入 Custom domain，
 
 文件製作：Claude（協助建置）  
 最後更新：2026 年 6 月
+
+## 全站搜尋
+
+每頁右上方及頁尾的「搜尋」可開啟 `/search/`，手機版不必先展開選單。
+
+- 支援中文子字串、英文大小寫與全形字正規化；空格分隔的關鍵字必須全部符合。
+- 可依公共評論、代表著作、學術出版、媒體訪談、研究與專題等範圍篩選。
+- 搜尋標題、摘要、標籤、來源、日期及本站內文，標題符合者優先，相同相關度再按日期排序。
+- 外部文章只搜尋本站收錄的資料，不會爬取外站全文。結果提供站內索引與「閱讀外部原文」連結。
+- 索引 `/search/index.json` 由 Hugo 每次建置自動更新；不需要帳號、第三方搜尋服務或額外套件。只有開啟搜尋並輸入關鍵字時才下載索引。
+- `layouts/search/single.json` 管理索引；`assets/js/search.js` 管理搜尋與互動；`assets/css/search.css` 管理樣式。要排除個別頁面，可在 front matter 設 `search_exclude: true`。
+- 可分享含 `?q=關鍵字` 的搜尋網址，亦可使用 `type` 指定分類。
+
+### 搜尋回歸測試
+
+建置版本與 GitHub Actions 一致，使用 Hugo extended 0.123.7：
+
+```bash
+hugo --minify
+SEARCH_INDEX=public/search/index.json node --test tests/search.test.cjs
+node tests/search-history.cjs
+```
+
+瀏覽器測試另需 Playwright 與 Chromium。啟動本機靜態伺服器後執行：
+
+```bash
+python -m http.server 8765 --directory public
+# 在另一個終端機：
+SEARCH_BASE=http://127.0.0.1:8765 CHROMIUM_PATH=/usr/bin/chromium node tests/search-browser.cjs
+```
+
+瀏覽器測試包含繁中查詢、分類、分批顯示、返回、清除、錯誤重試、慢速請求、輸入法、無 JavaScript 提示與 320–1440px 版面。

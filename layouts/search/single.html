@@ -1,0 +1,51 @@
+{{ define "main" }}
+<div class="page-container search-page" id="site-search" data-index-url="{{ (.OutputFormats.Get "JSON").RelPermalink }}">
+  <header class="page-header search-heading">
+    <p class="section-label">Search the Archive</p>
+    <h1 class="page-title">全站搜尋</h1>
+    <p class="page-description">從一個關鍵字，找回值得重讀的觀點。</p>
+  </header>
+
+  <form class="search-form" id="search-form" role="search" action="{{ .RelPermalink }}" method="get">
+    <label for="search-query">搜尋標題、內文或主題</label>
+    <div class="search-input-row">
+      <input type="search" id="search-query" name="q" placeholder="例如：公共媒體、事實查核、AI" maxlength="160" autocomplete="off" enterkeyhint="search" aria-describedby="search-help">
+      <button type="submit" class="search-submit">搜尋</button>
+    </div>
+    <div class="search-tools">
+      <div class="search-filter">
+        <label for="search-category">搜尋範圍</label>
+        <select id="search-category" name="type">
+          <option value="">全站內容</option>
+          <option>公共評論</option>
+          <option>代表著作</option>
+          <option>學術出版</option>
+          <option>媒體訪談</option>
+          <option>研究與專題</option>
+          <option>關於與其他</option>
+        </select>
+      </div>
+      <button type="button" class="search-clear" id="search-clear" hidden>清除搜尋</button>
+    </div>
+    <p id="search-help" class="search-help">支援中文與英文，可用空格組合多個關鍵字。搜尋本站已收錄的標題、摘要、標籤與內文；外部網站的原文全文不在搜尋範圍內。</p>
+  </form>
+
+  <div class="search-suggestions" aria-label="搜尋示例">
+    <span>試試看</span>
+    {{ range slice "公共媒體" "事實查核" "平台治理" "AI" }}
+    <a href="?q={{ . | urlquery }}" data-query="{{ . }}">{{ . }}</a>
+    {{ end }}
+  </div>
+
+  <noscript><p class="search-notice">請啟用 JavaScript 使用站內搜尋，或直接瀏覽<a href="/commentary/">公共評論</a>、<a href="/books/">代表著作</a>及<a href="/publications/">學術出版</a>。</p></noscript>
+  <section class="search-results-section" aria-label="搜尋結果" aria-busy="false">
+    <p id="search-status" class="search-status" role="status" aria-live="polite" aria-atomic="true">輸入關鍵字，探索公共評論、著作、學術出版與媒體訪談。</p>
+    <button type="button" id="search-retry" class="search-secondary" hidden>重新載入搜尋資料</button>
+    <ol id="search-results" class="search-results"></ol>
+    <button type="button" id="search-more" class="search-secondary" hidden>顯示更多結果</button>
+  </section>
+  <p class="search-privacy">搜尋在你的瀏覽器內完成，不會將關鍵字傳送給第三方搜尋服務。</p>
+</div>
+{{ $searchJS := resources.Get "js/search.js" | minify | fingerprint }}
+<script src="{{ $searchJS.RelPermalink }}" integrity="{{ $searchJS.Data.Integrity }}" defer></script>
+{{ end }}

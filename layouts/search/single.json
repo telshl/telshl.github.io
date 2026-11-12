@@ -1,0 +1,39 @@
+{{- $entries := slice -}}
+{{- $labels := dict "commentary" "公共評論" "books" "代表著作" "publications" "學術出版" "media" "媒體訪談" "research" "研究與專題" "topics" "研究與專題" "en" "關於與其他" -}}
+{{- range .Site.Pages -}}
+  {{- if and (or .IsHome .File) (ne .Type "search") (not .Params.search_exclude) (ne .Kind "taxonomy") (ne .Kind "term") -}}
+    {{- $section := .Section -}}
+    {{- if not $section -}}{{- with .File -}}{{- $section = .ContentBaseName -}}{{- end -}}{{- end -}}
+    {{- $category := index $labels $section | default "關於與其他" -}}
+    {{- $title := .Title -}}
+    {{- $body := .Plain -}}
+    {{- if .IsHome -}}
+      {{- $title = printf "%s｜首頁" .Site.Params.name -}}
+      {{- $body = printf "%s %s %s" .Site.Params.nameEn .Site.Params.position .Site.Params.description -}}
+    {{- end -}}
+    {{- /* Some content uses English front matter and a Chinese visible heading. */ -}}
+    {{- if eq .Section "publications" -}}{{- $title = "學術出版與活動｜Academic Publications and Activities" -}}{{- end -}}
+    {{- $summary := .Params.summary | default .Description | default "" -}}
+    {{- $date := "" -}}
+    {{- if .Params.article -}}{{- $date = .Date.Format "2006-01-02" -}}{{- end -}}
+    {{- $keywords := slice -}}
+    {{- with .Params.tags -}}{{- $keywords = $keywords | append (delimit . " ") -}}{{- end -}}
+    {{- with .Params.topics -}}
+      {{- range . -}}
+        {{- $slug := . -}}
+        {{- with where site.Data.curated_topics "slug" $slug -}}
+          {{- range . -}}{{- $keywords = $keywords | append .title -}}{{- end -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+    {{- $keywords = $keywords | append (.Params.title_en | default "") -}}
+    {{- $entries = $entries | append (dict
+      "title" $title "url" .RelPermalink "category" $category
+      "summary" ($summary | plainify | htmlUnescape)
+      "content" ($body | htmlUnescape | replaceRE "\\s+" " " | replaceRE "^ +| +$" "")
+      "keywords" (delimit $keywords " ") "date" $date
+      "source" (.Params.source | default "")
+      "external" (.Params.external_url | default "")) -}}
+  {{- end -}}
+{{- end -}}
+{{- $entries | jsonify -}}

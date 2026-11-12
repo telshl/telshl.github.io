@@ -30,6 +30,11 @@ jobs:
       - name: Build
         run: hugo --minify
 
+      - name: Test sitewide search
+        env:
+          SEARCH_INDEX: public/search/index.json
+        run: node --test tests/search.test.cjs tests/search-history.cjs
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
