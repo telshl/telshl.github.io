@@ -37,6 +37,7 @@ const screenshots = process.env.SEARCH_SCREENSHOTS;
   await page.locator('#search-more').click();
   assert.equal(await page.locator('#search-results li').count(), 40);
   assert.equal(await page.evaluate(() => document.activeElement === document.querySelectorAll('#search-results h2 a')[20]), true);
+  await query('文化研究');
   await page.locator('#search-category').selectOption('代表著作');
   await page.waitForFunction(() => document.querySelectorAll('#search-results li').length < 20);
   assert.ok(await page.locator('#search-results li').count() > 0);
