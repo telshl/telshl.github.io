@@ -136,7 +136,7 @@ description: "羅世宏教授正式學術出版清單，包括專書譯著、編
 </div>
 
 <div class="publication-item">
-<strong>Tsai, S. H. Y., &amp; Lo, S. H. (2016).</strong> Media reform movements in Taiwan. In D. Freeman, R. McChesney et al. (Eds.), <em>Strategies for Media Reform: International Perspectives.</em> Bronx, NY: Fordham University Press.
+<strong>Tsai, S. H. Y., &amp; Lo, S. H. (2016).</strong> Media reform movements in Taiwan. In D. Freeman, R. McChesney et al. (Eds.), <em>Strategies for Media Reform: International Perspectives</em> (pp. 153-166). Bronx, NY: Fordham University Press.
 </div>
 
 <div class="publication-item">
