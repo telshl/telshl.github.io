@@ -76,6 +76,10 @@ description: "羅世宏教授正式學術出版清單，包括專書譯著、編
 
 <div class="publication-list">
 
+<div class="publication-item">
+<strong>羅世宏（2026）。</strong>〈從認知戰到民主韌性：中國對臺資訊操弄與臺灣因應策略〉，《展望與探索》，24(11)，頁81–100。<a href="https://www.mjib.gov.tw/FileUploads/eBooks/f432425af35241069a76111cf66b7f3a/Section_file/e3d8db878ab94e23a54f7424fbeef589.pdf" target="_blank" rel="noopener">全文 PDF</a>
+</div>
+
 
 <div class="publication-item">
 <strong>羅世宏（2023）。</strong>〈以公共政策介入手段扶持新聞業存續與發展：平台問責途徑與公共預算途徑的跨國比較〉，《中華傳播學刊》，43，頁93–151。DOI: <a href="https://doi.org/10.53106/172635812023060043003" target="_blank" rel="noopener">10.53106/172635812023060043003</a>
